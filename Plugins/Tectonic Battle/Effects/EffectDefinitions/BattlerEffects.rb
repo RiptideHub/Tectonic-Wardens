@@ -793,7 +793,7 @@ GameData::BattleEffect.register_effect(:Battler, {
     :type => :Integer,
     :baton_passed => true,
     :apply_proc => proc do |battle, battler, value|
-        if battler.boss?
+        if value > 5
             battle.pbDisplay(_INTL("{1} heard the Perish Song, but weakly!", battler.pbThis, value))
             battle.pbDisplay(_INTL("It will faint in {2} turns!", battler.pbThis, value))
         else
@@ -810,6 +810,8 @@ GameData::BattleEffect.register_effect(:Battler, {
             battler.hp = battler.totalhp
             battler.pbChangeForm(1,_INTL("{1} begins the harvest!",battler.pbThis))
             battler.pbChangeTypes(battler.species_data.id)
+            setDefaultAvatarMoveset(battler.pokemon) if battler.boss?
+            battler.resetMoves
             battle.scene.reviveBattler(battler.index)
             battler.hideMyAbilitySplash
         end
@@ -1231,9 +1233,8 @@ GameData::BattleEffect.register_effect(:Battler, {
 
 GameData::BattleEffect.register_effect(:Battler, {
     :id => :Type3,
-    :real_name => "Type 3",
+    :real_name => "Added Type",
     :type => :Type,
-    :info_displayed => false,
     :avatars_purge => true,
     :apply_proc => proc do |battle, battler, value|
         typeName = GameData::Type.get(value).name
@@ -1266,7 +1267,6 @@ GameData::BattleEffect.register_effect(:Battler, {
         battle.pbDisplay(_INTL("{1} caused an uproar!", battler.pbThis))
         battle.pbPriority(true).each do |b|
             next if b.fainted?
-            next if b.hasActiveAbility?(:SOUNDPROOF)
             b.pbCureStatus(true, :SLEEP)
         end
     end,
@@ -1703,27 +1703,11 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
-    :id => :Maestro,
-    :real_name => "Maestro",
-    :resets_eor	=> true,
-})
-
-GameData::BattleEffect.register_effect(:Battler, {
-    :id => :GaleWings,
-    :real_name => "GaleWings",
-    :resets_eor	=> true,
-})
-
-GameData::BattleEffect.register_effect(:Battler, {
-    :id => :TrenchCarver,
-    :real_name => "Trench Carver",
-    :resets_eor	=> true,
-})
-
-GameData::BattleEffect.register_effect(:Battler, {
-    :id => :SwiftStomps,
-    :real_name => "Swift Stomps",
-    :resets_eor	=> true,
+    :id => :MoveSpeedDoubled,
+    :real_name => "Move Speed Doubled",
+    :type => :Ability,
+    :resets_on_cancel => true,
+    :resets_battlers_eot => true,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {

@@ -175,6 +175,12 @@ class PokeBattle_Move_TransformTargetPreEvolution < PokeBattle_Move
             end
             return true
         end
+        if target.boss?
+            if show_message
+                @battle.pbDisplay(_INTL("But it failed, since #{target.pbThis(true)} is an avatar!"))
+            end
+            return true
+        end
         unless target.species_data
             if show_message
                 @battle.pbDisplay(_INTL("But it failed, since #{target.pbThis(true)} doesn't have a defined species somehow!"))
@@ -682,7 +688,7 @@ end
 #===============================================================================
 class PokeBattle_Move_KyogreSummonAvatarLuvdiscRemoraid < PokeBattle_Move
     def pbMoveFailed?(user, _targets, show_message)
-        if !user.countsAs?(:KYOGRE) || !user.boss?
+        if !user.countsAs?(:KYOGRE)# || !user.boss?
             @battle.pbDisplay(_INTL("But {1} can't use the move!", user.pbThis(true))) if show_message
             return true
         end

@@ -1162,7 +1162,7 @@ Accuracy = 100
 TotalPP = 20
 Target = NearOther
 FunctionCode = NumbFlinchTarget
-Flags = CanProtect,CanMirrorMove,Biting
+Flags = CanProtect,CanMirrorMove,Biting,FakeRandomEffect
 EffectChance = 100
 Description = The user bites with electrified fangs. It has a 10% chance to flinch and a 10% chance to numb.
 #-------------------------------
@@ -1290,13 +1290,13 @@ Description = A weak electric charge is launched to numb the target.
 Name = Bolt Beak
 Type = ELECTRIC
 Category = Physical
-Power = 85
+Power = 90
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
-FunctionCode = DoubleDamageTargetNotAttacked
+FunctionCode = DamageBoost50PercentTargetNotAttacked
 Flags = CanProtect,CanMirrorMove
-Description = Attacks with an electrified beak. Power doubles unless the target has moved this turn.
+Description = Attacks with an electrified beak. Deals 50% more damage unless the target has moved this turn.
 #-------------------------------
 [THUNDEROUSKICK]
 Name = Thunderous Kick
@@ -2321,7 +2321,7 @@ Accuracy = 100
 TotalPP = 20
 Target = NearOther
 FunctionCode = BurnFlinchTarget
-Flags = CanProtect,CanMirrorMove,Biting
+Flags = CanProtect,CanMirrorMove,Biting,FakeRandomEffect
 EffectChance = 100
 Description = The user bites with flame-cloaked fangs. It has a 10% chance to flinch and a 10% chance to burn.
 #-------------------------------
@@ -2530,8 +2530,8 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = Basic
-Flags = CanProtect,CanMirrorMove
-Description = A corkscrewing attack with the sharp beak acting as a drill.
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = A corkscrewing attack with the sharp beak acting as a drill. Critical hits twice as often.
 #-------------------------------
 [OBLIVIONWING]
 Name = Oblivion Wing
@@ -3730,7 +3730,7 @@ Accuracy = 100
 TotalPP = 20
 Target = NearOther
 FunctionCode = FrostbiteFlinchTarget
-Flags = CanProtect,CanMirrorMove,Biting
+Flags = CanProtect,CanMirrorMove,Biting,FakeRandomEffect
 EffectChance = 100
 Description = The user bites with cold-infused fangs. It has a 10% chance to flinch and a 10% chance to frostbite.
 #-------------------------------
@@ -5263,7 +5263,7 @@ TotalPP = 15
 Target = User
 FunctionCode = UserAddStockpileRaiseDefSpDef1
 Flags = CanSnatch
-Description = The user charges up power and raises both its Defense and Sp. Def. The move can be used three times.
+Description = The user charges up power and raises both its Defense and Sp. Def. The move can be used twice.
 #-------------------------------
 [SUBSTITUTE]
 Name = Substitute
@@ -5530,7 +5530,7 @@ Accuracy = 0
 TotalPP = 12
 Target = NearOther
 FunctionCode = ResetTargetStatSteps
-Flags = CanProtect,CanMirrorMove
+Flags = CanProtect,CanMirrorMove,Wind
 Description = The user attacks with a cloud of white smoke. All of the target's stat step changes are returned to normal.
 #-------------------------------
 [POISONFANG]
@@ -5594,7 +5594,7 @@ Accuracy = 100
 TotalPP = 30
 Target = NearOther
 FunctionCode = Poison
-Flags = CanProtect,CanMirrorMove
+Flags = CanProtect,CanMirrorMove,Wind
 EffectChance = 30
 Description = The target is attacked with a discharge of filthy gases. It has a 30% chance to poison.
 #-------------------------------
@@ -7040,13 +7040,13 @@ Description = Ignores all attempts at redirection, allowing this move to hit the
 Name = Fishious Rend
 Type = WATER
 Category = Physical
-Power = 85
+Power = 90
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
-FunctionCode = DoubleDamageTargetNotAttacked
+FunctionCode = DamageBoost50PercentTargetNotAttacked
 Flags = CanProtect,CanMirrorMove,Biting
-Description = Rends the target with its hard gills. Power doubles unless the target has moved this turn.
+Description = Rends the target with its hard gills. Deals 50% more damage unless the target has moved this turn.
 #-------------------------------
 [LIFEDEW]
 Name = Life Dew

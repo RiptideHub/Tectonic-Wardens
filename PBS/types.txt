@@ -39,7 +39,7 @@ InternalName = GROUND
 Color = 224,192,104
 DarkColor = 104,56,8
 Weaknesses = WATER,GRASS,ICE
-Resistances = POISON,ROCK
+Resistances = POISON,ROCK,LIGHT
 Immunities = ELECTRIC
 #-------------------------------
 [5]
@@ -48,7 +48,7 @@ InternalName = ROCK
 Color = 184,160,56
 DarkColor = 80,48,32
 Weaknesses = FIGHTING,GROUND,STEEL,WATER,GRASS
-Resistances = NORMAL,FLYING,POISON,FIRE,ICE
+Resistances = NORMAL,FLYING,POISON,FIRE,ICE,LIGHT
 #-------------------------------
 [6]
 Name = Bug
@@ -63,7 +63,7 @@ Name = Ghost
 InternalName = GHOST
 Color = 112,88,152
 DarkColor = 72,40,64
-Weaknesses = GHOST,DARK
+Weaknesses = GHOST,DARK,LIGHT
 Resistances = POISON,BUG
 Immunities = NORMAL,FIGHTING
 #-------------------------------
@@ -106,7 +106,7 @@ Color = 120,200,80
 DarkColor = 48,96,24
 IsSpecialType = true
 Weaknesses = FLYING,POISON,BUG,FIRE,ICE
-Resistances = GROUND,WATER,GRASS,ELECTRIC,FAIRY,PSYCHIC,GHOST
+Resistances = GROUND,WATER,GRASS,ELECTRIC,FAIRY,LIGHT,PSYCHIC,GHOST
 #-------------------------------
 [13]
 Name = Electric
@@ -141,7 +141,7 @@ InternalName = DRAGON
 Color = 112,56,248
 DarkColor = 48,32,136
 IsSpecialType = true
-Weaknesses = ICE,DRAGON,FAIRY
+Weaknesses = ICE,DRAGON,FAIRY,LIGHT
 Resistances = FIRE,WATER,GRASS,ELECTRIC
 #-------------------------------
 [17]
@@ -150,7 +150,7 @@ InternalName = DARK
 Color = 112,88,72
 DarkColor = 80,40,48
 IsSpecialType = true
-Weaknesses = FIGHTING,BUG,FAIRY
+Weaknesses = FIGHTING,BUG,FAIRY,LIGHT
 Resistances = GHOST,DARK
 Immunities = PSYCHIC
 #-------------------------------
@@ -164,11 +164,20 @@ Weaknesses = POISON,STEEL,BUG
 Resistances = FIGHTING,DARK,DRAGON
 #-------------------------------
 [19]
-Name = Mutant
-InternalName = MUTANT
+Name = Cosmic
+InternalName = COSMIC
 Color = 162,114,146
 DarkColor = 110,59,93
 IsPseudoType = true
-Weaknesses = NORMAL,DRAGON
+Weaknesses = NORMAL,DRAGON,LIGHT
 Resistances = ELECTRIC,FIGHTING,POISON,ROCK,GHOST,DARK
 Immunities = FIRE,ICE
+#-------------------------------
+[19]
+Name = Light
+InternalName = LIGHT
+Color = 162,114,146
+DarkColor = 110,59,93
+IsPseudoType = true
+Weaknesses = GRASS,POISON,PSYCHIC,DARK
+Resistances = ELECTRIC,GHOST,DRAGON,COSMIC,LIGHT

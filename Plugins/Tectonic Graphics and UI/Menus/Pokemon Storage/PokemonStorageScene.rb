@@ -80,7 +80,7 @@ class PokemonStorageScene
 
     def pbDisplay(message)
         msgwindow = Window_UnformattedTextPokemon.newWithSize("", 180, 0, Graphics.width - 180, 32)
-        msgwindow.viewport       = @viewport
+        msgwindow.z       = @viewport.z + 1
         msgwindow.visible        = true
         msgwindow.letterbyletter = false
         msgwindow.resizeHeightToFit(message, Graphics.width - 180)
@@ -100,14 +100,14 @@ class PokemonStorageScene
     def pbShowCommands(message, commands, index = 0)
         ret = -1
         msgwindow = Window_UnformattedTextPokemon.newWithSize("", 180, 0, Graphics.width - 180, 32)
-        msgwindow.viewport       = @viewport
+        msgwindow.z = @viewport.z+1
         msgwindow.visible        = true
         msgwindow.letterbyletter = false
         msgwindow.text           = message
         msgwindow.resizeHeightToFit(message, Graphics.width - 180)
         pbBottomRight(msgwindow)
         cmdwindow = Window_CommandPokemon.new(commands)
-        cmdwindow.viewport = @viewport
+        cmdwindow.z = @viewport.z+1
         cmdwindow.visible  = true
         cmdwindow.resizeToFit(cmdwindow.commands)
         cmdwindow.height = Graphics.height - msgwindow.height if cmdwindow.height > Graphics.height - msgwindow.height
@@ -653,10 +653,14 @@ class PokemonStorageScene
         return pbShowCommands(msg, found)
     end
 
+    def inDonationBox?
+        return @storage[@storage.currentBox].isDonationBox?
+    end
+
     def pbBoxName(helptext, minchars, maxchars)
         oldsprites = pbFadeOutAndHide(@sprites)
         # TODO: Remove this if when a suitable icon is present on donation boxes
-        if @storage[@storage.currentBox].isDonationBox?
+        if inDonationBox?
             ret = pbEnterBoxName(helptext, minchars, maxchars-3) + "(D)"
         else
             ret = pbEnterBoxName(helptext, minchars, maxchars)
