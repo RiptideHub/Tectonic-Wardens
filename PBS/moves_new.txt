@@ -6818,3 +6818,52 @@ Target = User
 FunctionCode = LowerUserDefSpDef2RaiseUserAtkSpAtkSpd3
 Flags = CanSnatch
 Description = The user shatters its core, lowering its defensive stats by two steps but raising attacking and Speed stats by three steps each.
+#-------------------------------
+[AURABEAM]
+Name = Aura Beam
+Type = LIGHT
+Category = Special
+Power = 65
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetAtk1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The target is hit with a beam. It has a 30% chance to lower Attack.
+#-------------------------------
+[SHINYPLUMES]
+Name = Shiny Plumes
+Type = LIGHT
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Blade
+Description = The user shoots shiny feathers at the targets. Critical hits twice as often. 
+#-------------------------------
+[DIVINEPUNISHMENT]
+Name = Divine Punishment
+Type = LIGHT
+Category = Special
+Power = 130
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserSpAtk4
+Flags = CanProtect,CanMirrorMove
+Description = Deities smite the target. The attack's recoil harshly reduces the user's Sp. Atk stat.
+#-------------------------------
+[REJUVENATE]
+Name = Rejuvenate
+Type = LIGHT
+Category = Special
+Power = 25
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect,CanMirrorMove
+Description = The user rejuvenates itself. The user's HP is restored by half the damage taken by the target.
