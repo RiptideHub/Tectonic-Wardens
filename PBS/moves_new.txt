@@ -6842,7 +6842,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = Basic
 Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Blade
-Description = The user shoots shiny feathers at the targets. Critical hits twice as often. 
+Description = The user shoots shiny feathers at the targets. Critical hits twice as often.
 #-------------------------------
 [DIVINEPUNISHMENT]
 Name = Divine Punishment
