@@ -173,7 +173,7 @@ Weaknesses = NORMAL,DRAGON,LIGHT
 Resistances = ELECTRIC,FIGHTING,POISON,ROCK,GHOST,DARK
 Immunities = FIRE,ICE
 #-------------------------------
-[19]
+[20]
 Name = Light
 InternalName = LIGHT
 Color = 162,114,146

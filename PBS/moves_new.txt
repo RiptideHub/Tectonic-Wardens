@@ -6808,13 +6808,13 @@ FunctionCode = Basic
 Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
 Description = The user throws a chemical mixture at the target. High Crit ratio.
 #-------------------------------
-[INFATUATE]
-Name = Attract
-Type = NORMAL
+[CORESMASH]
+Name = Core Collapse
+Type = COSMIC
 Category = Status
-Accuracy = 100
+Accuracy = 0
 TotalPP = 12
-Target = NearOther
-FunctionCode = Dizzy
-Flags = CanProtect,CanMagicCoat,CanMirrorMove,Sound
-Description = The target becomes dizzy.
+Target = User
+FunctionCode = LowerUserDefSpDef2RaiseUserAtkSpAtkSpd3
+Flags = CanSnatch
+Description = The user shatters its core, lowering its defensive stats by two steps but raising attacking and Speed stats by three steps each.
