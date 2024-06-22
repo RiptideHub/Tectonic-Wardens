@@ -1,7 +1,7 @@
 class PokemonPartyShowcase_Scene
     POKEMON_ICON_SIZE = 64
-    base   = Color.new(80, 80, 88)
-    shadow = Color.new(160, 160, 168)
+    BASE_COLOR   = Color.new(225, 225, 225)
+    SHADOW_COLOR = Color.new(20, 20, 20)
 
     def initialize(trainer,snapshot: false,snapShotName: nil,fastSnapshot: false, flags: [])
         base = MessageConfig::DARK_TEXT_MAIN_COLOR
