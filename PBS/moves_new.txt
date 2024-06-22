@@ -6674,5 +6674,147 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = Basic
 Flags = CanProtect,CanMirrorMove
-Description = A corrosive substance is sprayed on the target. 
-# It may also poison the target.
+Description = A corrosive substance is sprayed on the target.
+#-------------------------------
+[GAMMARAY]
+Name = Gamma Ray
+Type = COSMIC
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = The user shoots gamma radiation at the target. High Crit ratio.
+#-------------------------------
+[NECTARTAP]
+Name = Nectar Tap
+Type = BUG
+Category = Status
+Accuracy = 0
+TotalPP = 8
+Target = User
+FunctionCode = HealUserHalfOfTotalHP
+Flags = CanSnatch
+Description = Drinks nectar and restores its own HP by half of its max HP.
+#-------------------------------
+[POLLENBLAST]
+Name = Pollen Blast
+Type = BUG
+Category = Special
+Power = 130
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserSpAtk4
+Flags = CanProtect,CanMirrorMove
+Description = Chucks a massive pollen bomb at the target. The attack's recoil harshly reduces the user's Sp. Atk stat.
+#-------------------------------
+[SWARMOVERLOAD]
+Name = Swarm Overload
+Type = BUG
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = RecoilThirdOfDamageDealtNumbTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = Calls its species to charges its foe, damaging the user a lot. Chance to paralyze.
+#-------------------------------
+[ANTIMATTER]
+Name = Antimatter
+Type = COSMIC
+Category = Physical
+Power = 80
+Accuracy = 0
+TotalPP = 12
+Target = NearOther
+FunctionCode = ResetTargetStatSteps
+Flags = CanProtect,CanMirrorMove,Wind
+Description = The target is bombarded with anti-particles, resetting any stat changes.
+#-------------------------------
+[ASTEROIDBELT]
+Name = Asteroid Belt
+Type = COSMIC
+Category = Status
+Accuracy = 0
+TotalPP = 3
+Target = User
+Priority = 4
+FunctionCode = ProtectUserHurtPhysAttackerForEightOfTotalHP
+Description = The user shields itself with space debris, damaging attackers that make contact.
+#-------------------------------
+[BLACKHOLE]
+Name = Black Hole
+Type = COSMIC
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 12
+Target = AllNearFoes
+FunctionCode = HitsTargetInSkyGroundsTarget
+Flags = CanProtect,CanMirrorMove
+Description = Creates a gravitational field knocking down airborne units to the ground.
+#-------------------------------
+[COMET]
+Name = Comet
+Type = COSMIC
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Dizzy
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = A comet is shot towards the target. It may also dizzy the target.
+#-------------------------------
+[RAYOFLIGHT]
+Name = Ray of Light
+Type = LIGHT
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = UserAndAllies
+FunctionCode = HealUserAndAlliesQuarterOfTotalHP
+Flags = CanSnatch
+Description = The user chants a prayer, restoring their side's HP and curing status.
+#-------------------------------
+[SIZZLE]
+Name = Sizzle
+Type = FIRE
+Category = Physical
+Power = 20
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Burn
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user nuzzles its burning body against the target. This also leaves the target with burn.
+#-------------------------------
+[ALKALINEBOMB]
+Name = Alkaline Bomb
+Type = POISON
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = The user throws a chemical mixture at the target. High Crit ratio.
+#-------------------------------
+[INFATUATE]
+Name = Attract
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Dizzy
+Flags = CanProtect,CanMagicCoat,CanMirrorMove,Sound
+Description = The target becomes dizzy.
