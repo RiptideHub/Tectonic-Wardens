@@ -6663,3 +6663,16 @@ Target = NearOther
 FunctionCode = DamageBoost50PercentTargetHitUser
 Flags = CanProtect,CanMirrorMove
 Description = Attacks with pressurized water. Deals 50% more damage if the user has been hurt by the foe in the same turn.
+#-------------------------------
+[BATTERYACID]
+Name = Battery Acid
+Type = ELECTRIC
+Category = Special
+Power = 115
+Accuracy = 80
+TotalPP = 5
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove
+Description = A corrosive substance is sprayed on the target. 
+# It may also poison the target.
