@@ -6867,3 +6867,80 @@ Target = NearOther
 FunctionCode = HealUserByHalfOfDamageDone
 Flags = CanProtect,CanMirrorMove
 Description = The user rejuvenates itself. The user's HP is restored by half the damage taken by the target.
+#-------------------------------
+[DIMENSIONWARP]
+Name = Dimension Warp
+Type = COSMIC
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = SwitchOutUserDamagingMove
+Flags = CanProtect,CanMirrorMove
+Description = After making its attack, the user escapes through a dimensional portal to switch places with a party Pokémon in waiting.
+#-------------------------------
+[ICECOMET]
+Name = Ice Comet
+Type = COSMIC
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Frostbite
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = A comet composed of ice and rock is shot towards the target. It has a 10% chance to frostbite.
+#-------------------------------
+[METEORDRIVE]
+Name = Meteor Drive
+Type = COSMIC
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = RaiseUserSpd1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user strikes the target with a meteor, Building up more power, it raises the user's Speed.
+#-------------------------------
+[ORBITALSTRIKE]
+Name = Orbital Strike
+Type = COSMIC
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+FunctionCode = Numb
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The user throws a projectile from orbit towards the target. It has a 10% chance to numb.
+#-------------------------------
+[QUANTUMSTAR]
+Name = Quantum Star
+Type = COSMIC
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Flinch
+Flags = CanProtect,CanMirrorMove
+EffectChance = 40
+Description = The user summons a star that collides with the foe. It has a 40% chance to make the target flinch.
+#-------------------------------
+[SHOOTINGSTAR]
+Name = Shooting Star
+Type = COSMIC
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+Priority = 1
+FunctionCode = FailsIfTargetActed
+Flags = CanProtect,CanMirrorMove
+Description = This move enables the user to attack first. It fails if the target is not readying an attack, however.
