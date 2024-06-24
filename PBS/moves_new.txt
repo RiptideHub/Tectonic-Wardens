@@ -6944,3 +6944,106 @@ Priority = 1
 FunctionCode = FailsIfTargetActed
 Flags = CanProtect,CanMirrorMove
 Description = This move enables the user to attack first. It fails if the target is not readying an attack, however.
+#-------------------------------
+[SOLARECLIPSE]
+Name = Solar Eclipse
+Type = COSMIC
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Dizzy
+Flags = CanProtect,CanMirrorMove,Wind
+EffectChance = 10
+Description = The user engulfs the target in a shadow cast by the moon. There's a 10% chance it becomes dizzy.
+#-------------------------------
+[SOLARFLARE]
+Name = Solar Flare
+Type = COSMIC
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = Burn
+Flags = CanProtect,CanMirrorMove,Wind
+EffectChance = 10
+Description = The user releases an intense burst of heat on the foes. It has a 10% chance to burn.
+#-------------------------------
+[SOLARMETEOR]
+Name = Solar Meteor
+Type = COSMIC
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Burn
+Flags = CanProtect,CanMirrorMove
+EffectChance = 20
+Description = The user hurls a thermally charged meteor at the target. It has a 20% chance to burn.
+#-------------------------------
+[SPACEINVADERS]
+Name = Space Invaders
+Type = COSMIC
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitOncePerUserTeamMemberPhysical
+Flags = CanProtect,CanMirrorMove
+Description = The user gets all the party Pokémon to attack the foe with an army of martians.
+#-------------------------------
+[SPATIALGRIP]
+Name = Spatial Grip
+Type = COSMIC
+Category = Special
+Power = 55
+Accuracy = 100
+TotalPP = 15
+Target = AllNearOthers
+FunctionCode = LowerTargetSpd1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user creates a force that slows down opponents. It reduces hit Pokémon's Speed.
+#-------------------------------
+[STARDASH]
+Name = Star Dash
+Type = COSMIC
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+Priority = 1
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove
+Description = The user hurls a meteor at a speed that makes it almost invisible. It is sure to strike first.
+#-------------------------------
+[STARDUSTREVERIE]
+Name = Stardust Reverie
+Type = COSMIC
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = AllNearFoes
+FunctionCode = Dizzy
+Flags = CanProtect,CanMirrorMove
+EffectChance = 20
+Description = The opposing team is engulfed in a sea of stardust. It has a 20% chance to dizzy.
+#-------------------------------
+[STARFALL]
+Name = Starfall
+Type = COSMIC
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Flinch
+Flags = CanProtect,CanMirrorMove
+EffectChance = 40
+Description = The user summons a shower of stars. It has a 40% chance to make the target flinch.
