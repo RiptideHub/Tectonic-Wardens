@@ -6664,6 +6664,9 @@ FunctionCode = DamageBoost50PercentTargetHitUser
 Flags = CanProtect,CanMirrorMove
 Description = Attacks with pressurized water. Deals 50% more damage if the user has been hurt by the foe in the same turn.
 #-------------------------------
+
+# Soulstones 2 moves
+
 [BATTERYACID]
 Name = Battery Acid
 Type = ELECTRIC

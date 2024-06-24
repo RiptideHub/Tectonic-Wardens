@@ -1936,6 +1936,7 @@ FunctionCode = RaiseUserSpAtk1
 Flags = CanProtect,CanMirrorMove,Dance
 EffectChance = 50
 Description = Cloaked in flames the user dances, raising the user's Sp. Atk stat.
+# Replaced with Up In Flames
 #-------------------------------
 [FIRELASH]
 Name = Fire Lash
@@ -3366,6 +3367,7 @@ TotalPP = 30
 Target = BothSides
 FunctionCode = ResetAllBattlersStatStages
 Description = The user creates a haze that eliminates every stat change among all the Pokémon engaged in battle.
+# Replaced with Grey Mist
 #-------------------------------
 [MIST]
 Name = Mist
@@ -3376,6 +3378,7 @@ TotalPP = 30
 Target = UserSide
 FunctionCode = StartUserSideImmunityToStatStageLowering
 Description = The user cloaks its body with a white mist that prevents any of its stats from being cut for five turns.
+# Replaced with Grey Mist
 #-------------------------------
 [TRIPLEAXEL]
 Name = Triple Axel
@@ -4226,6 +4229,7 @@ TotalPP = 40
 Target = User
 FunctionCode = RaiseUserDefense1CurlUpUser
 Description = The user curls up to conceal weak spots and raise its Defense stat.
+# Replaced with Curl Up
 #-------------------------------
 [DISABLE]
 Name = Disable
@@ -4968,6 +4972,7 @@ Target = NearOther
 FunctionCode = BadPoisonTarget
 Flags = CanProtect,CanMirrorMove
 Description = A move that leaves the target badly poisoned. Its poison damage worsens every turn.
+# Replaced with Envenom
 #-------------------------------
 [TOXICSPIKES]
 Name = Toxic Spikes
@@ -5010,6 +5015,7 @@ TotalPP = 40
 Target = AllNearOthers
 FunctionCode = CorrodeTargetItem
 Description = The user surrounds everything around it with highly acidic gas and melts away items they hold.
+# Replaced with Knock Off
 #-------------------------------
 [SHELLSIDEARM]
 Name = Shell Side Arm
@@ -7609,6 +7615,7 @@ FunctionCode = LowerTargetAttack1
 Flags = CanProtect,CanMirrorMove,Pulse
 EffectChance = 10
 Description = The targets are hit with a rainbow-colored beam. Chance to lower the targets' Attack stat.
+# Added, renamed Aura Beam
 #-------------------------------
 [AURORAVEIL]
 Name = Aurora Veil
@@ -8831,6 +8838,7 @@ Target = RandomNearFoe
 FunctionCode = MultiTurnAttackConfuseUserAtEnd
 Flags = Contact,CanProtect,CanMirrorMove
 Description = Forces its subjects to maim the target for two to three turns. It then becomes confused however.
+# Dupe move with Tectonic, excluded for now
 #-------------------------------
 [INFECTION]
 Name = Infection
@@ -8843,6 +8851,7 @@ Target = NearOther
 FunctionCode = DoublePowerIfTargetStatusProblem
 Flags = CanProtect,CanMirrorMove
 Description = This infectious attack does massive damage to a target affected by status problems.
+# Replaced with Droning
 #-------------------------------
 [NECTARTAP]
 Name = Nectar Tap
@@ -8853,6 +8862,7 @@ TotalPP = 10
 Target = User
 FunctionCode = HealUserHalfOfTotalHP
 Description = Drinks nectar and restores its own HP by half of its max HP.
+# Added
 #-------------------------------
 [PHEROMONESTREAM]
 Name = Pheromone Stream
@@ -8866,6 +8876,7 @@ FunctionCode = ConfuseTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 20
 Description = The user oozes pheromones from its body. It may also confuse the targets.
+# Replaced with Terror Swarm
 #-------------------------------
 [POLLENBLAST]
 Name = Pollen Blast
@@ -8878,6 +8889,7 @@ Target = NearOther
 FunctionCode = LowerUserSpAtk2
 Flags = CanProtect,CanMirrorMove
 Description = Chucks a massive pollen bomb at the target. The attack's recoil harshly reduces the user's Sp. Atk stat.
+# Added
 #-------------------------------
 [STRAFE]
 Name = Strafe
@@ -8891,6 +8903,7 @@ Priority = 1
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove,Biting
 Description = The user lunges at the target at a speed that makes it almost invisible. It is sure to strike first.
+# Replaced with Smush
 #-------------------------------
 [SWARMOVERLOAD]
 Name = Swarm Overload
@@ -8904,6 +8917,7 @@ FunctionCode = RecoilThirdOfDamageDealtParalyzeTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 10
 Description = Calls its species to charges its foe, damaging the user a lot. Chance to paralyze.
+# Added
 #-------------------------------
 [ANTIMATTER]
 Name = Antimatter
@@ -8916,6 +8930,7 @@ Target = NearOther
 FunctionCode = ResetTargetStatStages
 Flags = CanProtect,CanMirrorMove
 Description = The target is bombarded with anti-particles, resetting any stat changes.
+# Added
 #-------------------------------
 [ASTEROIDBELT]
 Name = Asteroid Belt
@@ -8927,6 +8942,7 @@ Target = User
 Priority = 4
 FunctionCode = ProtectUserFromTargetingMovesSpikyShield
 Description = The user shields itself with space debris, damaging attackers that make contact.
+# Added
 #-------------------------------
 [BLACKHOLE]
 Name = Black Hole
@@ -8939,6 +8955,7 @@ Target = AllNearFoes
 FunctionCode = HitsTargetInSkyGroundsTarget
 Flags = CanProtect,CanMirrorMove
 Description = Creates a gravitational field knocking down airborne units to the ground.
+# Added
 #-------------------------------
 [COMET]
 Name = Comet
@@ -8952,6 +8969,7 @@ FunctionCode = ConfuseTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 30
 Description = A comet is shot towards the target. It may also confuse the target.
+# Added
 #-------------------------------
 [CORECOLLAPSE]
 Name = Core Collapse
@@ -8962,6 +8980,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = LowerUserDefSpDef1RaiseUserAtkSpAtkSpd2
 Description = The user shatters its core lowering its defenses but sharply raising attacking and Speed stats.
+# Added, renamed to Core Smash as Core Collapse is in Tectonic
 #-------------------------------
 [DIMENSIONWARP]
 Name = Dimension Warp
@@ -8974,6 +8993,7 @@ Target = NearOther
 FunctionCode = SwitchOutUserDamagingMove
 Flags = CanProtect,CanMirrorMove
 Description = The user attacks the target then escapes using a nearby dimensional portal.
+# Added
 #-------------------------------
 [DIMENSIONALRUSH]
 Name = Dimensional Rush
@@ -8984,6 +9004,7 @@ TotalPP = 30
 Target = User
 FunctionCode = RaiseUserSpeed2
 Description = The user warps around in the cosmos. It sharply boosts the Speed stat.
+# Replaced for agility
 #-------------------------------
 [GAMMARAY]
 Name = Gamma Ray
@@ -8996,6 +9017,7 @@ Target = NearOther
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
 Description = The user shoots gamma radiation at the target. High Crit ratio.
+# Added
 #-------------------------------
 [ICECOMET]
 Name = Ice Comet
@@ -9009,6 +9031,7 @@ FunctionCode = FreezeTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 10
 Description = A comet composed of ice and rock is shot towards the target. It may also freeze the target.
+# Added
 #-------------------------------
 [INNERVATE]
 Name = Innervate
@@ -9019,6 +9042,7 @@ TotalPP = 10
 Target = AllNearFoes
 FunctionCode = DisableTargetHealingMoves
 Description = For five turns, the foe is prevented from using any moves, Abilities, or held items that recover HP.
+# Replaced for heal block
 #-------------------------------
 [METEORDRIVE]
 Name = Meteor Drive
@@ -9032,6 +9056,7 @@ FunctionCode = RaiseUserSpeed1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user strikes the target with a meteor and then raises its Speed stat.
+# Added
 #-------------------------------
 [ORBITALSTRIKE]
 Name = Orbital Strike
@@ -9045,6 +9070,7 @@ FunctionCode = ParalyzeTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 10
 Description = The user throws a projectile from orbit towards the target. It may also paralyze the target.
+# Added
 #-------------------------------
 [QUANTUMSTAR]
 Name = Quantum Star
@@ -9058,6 +9084,7 @@ FunctionCode = FlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 30
 Description = The user summons a star that collides with the foe. It may make the target flinch.
+# Added
 #-------------------------------
 [SHOOTINGSTAR]
 Name = Shooting Star
@@ -9071,6 +9098,7 @@ Priority = 1
 FunctionCode = FailsIfTargetActed
 Flags = Contact,CanProtect,CanMirrorMove
 Description = This move enables the user to attack first. It fails if the target is not readying an attack however.
+# Added
 #-------------------------------
 [SOLARECLIPSE]
 Name = Solar Eclipse
@@ -9084,6 +9112,7 @@ FunctionCode = LowerTargetAccuracy1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 20
 Description = The user engulfs the target in a shadow cast by the moon. It may also lower the target's accuracy.
+# Added, Dizzies now
 #-------------------------------
 [SOLARFLARE]
 Name = Solar Flare
@@ -9097,6 +9126,7 @@ FunctionCode = BurnTarget
 Flags = CanProtect,CanMirrorMove,ThawsUser
 EffectChance = 10
 Description = The user releases an intense burst of heat on the foes. It may also leave targets with a burn.
+# Added
 #-------------------------------
 [SOLARMETEOR]
 Name = Solar Meteor
@@ -9110,6 +9140,7 @@ FunctionCode = BurnTarget
 Flags = CanProtect,CanMirrorMove,ThawsUser
 EffectChance = 20
 Description = The user hurls a thermally charged meteor at the target. It may also burn the target.
+# Added
 #-------------------------------
 [SPACEINVADERS]
 Name = Space Invaders
@@ -9122,6 +9153,7 @@ Target = NearOther
 FunctionCode = HitOncePerUserTeamMember
 Flags = CanProtect,CanMirrorMove
 Description = An army of martians are summoned to attack the foe. The more party Pokémon the more damage.
+# Added
 #-------------------------------
 [SPATIALGRIP]
 Name = Spatial Grip
@@ -9135,6 +9167,7 @@ FunctionCode = LowerTargetSpeed1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user creates a force that slows down opponents. It also lowers the target's speed stat.
+# Added
 #-------------------------------
 [STARDASH]
 Name = Star Dash
@@ -9148,6 +9181,7 @@ Priority = 1
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user hurls a meteor at a speed that makes it almost invisible. It is sure to strike first.
+# Added
 #-------------------------------
 [STARDUST]
 Name = Stardust
@@ -9159,6 +9193,7 @@ Target = NearOther
 FunctionCode = LowerTargetAccuracy1
 Flags = CanProtect,Powder
 Description = Stardust is hurled in the target's face reducing its accuracy.
+# Removed
 #-------------------------------
 [STARDUSTREVERIE]
 Name = Stardust Reverie
@@ -9172,6 +9207,7 @@ FunctionCode = ConfuseTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 20
 Description = The opposing team is engulfed in a sea of stardust. It may also confuse the targets.
+# Added
 #-------------------------------
 [STARFALL]
 Name = Starfall
@@ -9185,6 +9221,7 @@ FunctionCode = FlinchTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 30
 Description = The user summons a shower of stars. May flinch the target.
+# Added
 #-------------------------------
 [STARSALIGNED]
 Name = Stars Aligned
@@ -9197,6 +9234,7 @@ Target = NearOther
 FunctionCode = PowerHigherWithUserPositiveStatStages
 Flags = CanProtect,CanMirrorMove
 Description = Stars synch their energy to attack. The more the user's stats are raised the greater the damage.
+# Removed
 #-------------------------------
 [STELLARRUSH]
 Name = Stellar Rush
@@ -9674,6 +9712,7 @@ FunctionCode = PoisonTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 30
 Description = A corrosive substance is sprayed on the target. It may also poison the target.
+# Added
 #-------------------------------
 [CHAINLIGHTNING]
 Name = Chain Lightning
@@ -10279,6 +10318,7 @@ FunctionCode = BurnTarget
 Flags = Contact,CanProtect,CanMirrorMove,ThawsUser
 EffectChance = 100
 Description = The user nuzzles its burning body against the target. This also leaves the target with burn.
+# Added
 #-------------------------------
 [BOREASBREATH]
 Name = Boreas Breath
@@ -10721,6 +10761,7 @@ Target = NearOther
 FunctionCode = UserStealTargetPositiveStatStages
 Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
 Description = The user steals the target's stat boosts, and then attacks.
+# Replaced with Tremor
 #-------------------------------
 [MUDSHACKLES]
 Name = Mud Shackles
@@ -10964,6 +11005,7 @@ Target = NearOther
 FunctionCode = LowerUserSpAtk2
 Flags = CanProtect,CanMirrorMove
 Description = Deities smite the target. The attack's recoil harshly reduces the user's Sp. Atk stat.
+# Added
 #-------------------------------
 [DIVINEVISION]
 Name = Divine Vision
@@ -11132,6 +11174,7 @@ Target = UserAndAllies
 FunctionCode = HealUserAndAlliesQuarterOfTotalHPCureStatus
 Flags = CannotMetronome
 Description = The user chants a prayer, restoring their side's HP and curing status.
+# Added
 #-------------------------------
 [REBUKE]
 Name = Rebuke
@@ -11157,6 +11200,7 @@ Target = NearOther
 FunctionCode = HealUserByHalfOfDamageDone
 Flags = CanProtect,CanMirrorMove
 Description = The user rejuvenates itself, draining 50% of damage dealt.
+# Added
 #-------------------------------
 [RENEWAL]
 Name = Renewal
@@ -11204,6 +11248,7 @@ Target = AllNearFoes
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Slicing
 Description = The user shoots shiny feathers at the targets. High critical hit rate.
+# Added
 #-------------------------------
 [SKYBLESSING]
 Name = Sky Blessing
@@ -11478,6 +11523,7 @@ Target = AllNearOthers
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove
 Description = Dark clouds approach and a downpour of acid hits the battlefield.
+# Replaced with Sludge Wave (why was this even made)
 #-------------------------------
 [ALLERGY]
 Name = Allergy
@@ -12499,6 +12545,7 @@ Target = NearOther
 FunctionCode = UseTargetSpDefInsteadOfTargetDefense
 Flags = CanProtect,CanMirrorMove,Bomb
 Description = The user throws a chemical mixture at the target. This attack does special damage.
+# Added, Bomb tag needed in Tectonic
 #-------------------------------
 [MIXEDWAVES]
 Name = Mixed Waves
@@ -12853,6 +12900,7 @@ Target = NearOther
 FunctionCode = RaiseUserSpAtk2IfTargetFaints
 Flags = CanProtect,CanMirrorMove
 Description = The user blasts the target with sand. KOing raises user's SpAtk sharply.
+# Replaced with Mud Shot (I think)
 #-------------------------------
 [SANDSNARE]
 Name = Sand Snare
