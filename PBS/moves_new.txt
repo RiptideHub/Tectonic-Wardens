@@ -7122,3 +7122,223 @@ Target = NearOther
 FunctionCode = LowerTargetSpd4
 Flags = CanProtect,CanMagicCoat,CanMirrorMove
 Description = The target is pulled towards the void to reduce its Speed stat by four steps.
+#-------------------------------
+[CHEAPSHOT]
+Name = Cheap Shot
+Type = DARK
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = SwitchOutUserDamagingMove
+Flags = CanProtect,CanMirrorMove
+Description = The user takes a cheap shot and switches places with a party Pokémon in waiting.
+#-------------------------------
+[DARKRECITAL]
+Name = Dark Recital
+Type = DARK
+Category = Special
+Power = 110
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetSpDef1
+Flags = CanProtect,CanMirrorMove,Sound
+EffectChance = 10
+Description = The user performs a medley of ballads filled with malice. It has a 10% chance to reduce Sp. Def.
+#-------------------------------
+[SCORESETTLER]
+Name = Score Settler
+Type = DARK
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = DoubleDamageAvengingFaint
+Flags = CanProtect,CanMirrorMove
+Description = Gets revenge for a fainted ally. If an ally fainted in the last turn, this attack's damage increases.
+#-------------------------------
+[SINFULSMITE]
+Name = Sinful Smite
+Type = DARK
+Category = Physical
+Power = 60
+Accuracy = 0
+TotalPP = 12
+Target = NearOther
+FunctionCode = ResetTargetStatSteps
+Flags = CanProtect,CanMirrorMove,Wind
+Description = The user attacks with a scathing attack. All of the target's stat step changes are returned to normal.
+#-------------------------------
+[FRENZY]
+Name = Frenzy
+Type = DARK
+Category = Physical
+Power = 130
+Accuracy = 100
+TotalPP = 10
+Target = AllNearOthers
+FunctionCode = RecoilHalfOfDamageDealt
+Flags = CanProtect,CanMirrorMove
+Description = The user attacks wildly at all nearby Pokémon, taking 50% recoil.
+#-------------------------------
+[VENDETTA]
+Name = Vendetta
+Type = DARK
+Category = Physical
+Power = 85
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = IgnoreTargetDefSpDefEvaStatStages
+Flags = CanProtect,CanMirrorMove
+Description = TThe user attacks with a vengeance. Ignores the target's stat step changes.
+#-------------------------------
+[DRACONICCRASH]
+Name = Draconic Crash
+Type = DRAGON
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = RecoilThirdOfDamageDealt
+Flags = CanProtect,CanMirrorMove
+Description = A reckless, life-risking tackle. The user also takes 33% recoil.
+#-------------------------------
+[ENDERSHOCK]
+Name = Ender Shock
+Type = DRAGON
+Category = Special
+Power = 55
+Accuracy = 100
+TotalPP = 15
+Target = AllNearFoes
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = The user generates a shockwave that hits all opponents. Critical hits twice as often.
+#-------------------------------
+[NAGASKIN]
+Name = Naga Skin
+Type = DRAGON
+Category = Status
+Accuracy = 0
+TotalPP = 8
+Target = User
+FunctionCode = HealUserHalfOfTotalHP
+Flags = CanSnatch
+Description = The user sheds its skin to restore its own HP by half of its max HP.
+#-------------------------------
+[SALAMANDERTOSS]
+Name = Salamander Toss
+Type = DRAGON
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = SwitchOutUserDamagingMove
+Flags = CanProtect,CanMirrorMove
+Description = After making its attack, the user rushes back to switch places with a party Pokémon in waiting.
+#-------------------------------
+[WYVERNSLASH]
+Name = Wyvern Slash
+Type = DRAGON
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Blade
+Description = The target is slashed apart by draconic claws. Critical hits twice as often.
+#-------------------------------
+[EXCALIBUR]
+Name = Excalibur
+Type = FAIRY
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Blade
+Description = The target is attacked with a sword. Critical hits twice as often.
+#-------------------------------
+[FAIRYTALE]
+Name = Fairy Tale
+Type = FAIRY
+Category = Status
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = SetTargetTypesToWater
+Flags = CanProtect,CanMagicCoat,CanMirrorMove
+Description = You make the target part of a fairy tale and  the target's type to Fairy.
+# Not sure if just changing TypesToWater to TypesToFairy works
+#-------------------------------
+[LOVEBURST]
+Name = Love Burst
+Type = FAIRY
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Dizzy
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The user bursts into an explosion of love. 10% chance to Dizzy.
+# Needs bomb tag
+#-------------------------------
+[MYSTICPULSE]
+Name = Mystic Pulse
+Type = FAIRY
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Flinch
+Flags = CanProtect,CanMirrorMove,Pulse
+EffectChance = 40
+Description = The user invokes its mystical power. It has a 40% chance to flinch the target.
+#-------------------------------
+[OBERONSWRATH]
+Name = Oberon's Wrath
+Type = FAIRY
+Category = Physical
+Power = 130
+Accuracy = 100
+TotalPP = 5
+Target = AllNearFoes
+FunctionCode = ScalesWithUserHP
+Flags = CanProtect,CanMirrorMove
+Description = Using the power of the King of fairies. Weakens in damage as the user loses HP. Weakest at half HP.
+#-------------------------------
+[SIRENSSONG]
+Name = Siren's Song
+Type = FAIRY
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TrapTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user sings a lovely melody to prevent it fleeing.
+#-------------------------------
+[SYLPHSHORN]
+Name = Sylph's Horn
+Type = FAIRY
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect,CanMirrorMove
+Description = Uses its fabled horns. The user's HP is restored by half the damage taken by the target.

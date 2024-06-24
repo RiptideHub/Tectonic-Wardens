@@ -9349,6 +9349,7 @@ Target = NearOther
 FunctionCode = SwitchOutUserDamagingMove
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user takes a cheap shot at the target and switch places with a party Pokémon in waiting.
+# Added
 #-------------------------------
 [DARKRECITAL]
 Name = Dark Recital
@@ -9362,6 +9363,7 @@ FunctionCode = LowerTargetSpDef1
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 10
 Description = The user performs a medley of ballads filled with malice. It may also lower the target's Sp. Def.
+# Added
 #-------------------------------
 [DEATHGATE]
 Name = Death Gate
@@ -9375,6 +9377,7 @@ FunctionCode = LowerTargetSpDef1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user summons a portal that drags the target to the underworld. Always reduces Sp. Def.
+# Replaced with dark allure
 #-------------------------------
 [DEATHREAP]
 Name = Death Reap
@@ -9388,6 +9391,7 @@ FunctionCode = LowerTargetDefense1
 Flags = Contact,CanProtect,CanMirrorMove,Slicing
 EffectChance = 100
 Description = The user slices the target with its scythes leaving a hollowed husk behind. Always - Def.
+# Replaced with Sever
 #-------------------------------
 [EVILTHORN]
 Name = Evil Thorn
@@ -9401,6 +9405,7 @@ FunctionCode = SleepTargetSuperEffectiveAgainstFairy
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 10
 Description = An evil thorn is used to stab the target. Chance to cause Sleep. SE on Fairy.
+# Replaced with night slash
 #-------------------------------
 [FEIGN]
 Name = Feign
@@ -9413,6 +9418,7 @@ Target = AllNearOthers
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove
 Description = The user draws up to the foes disarmingly then scare them. It hits without fail.
+# Replaced with feint attack
 #-------------------------------
 [HEARTBREAK]
 Name = Heartbreak
@@ -9424,6 +9430,7 @@ Target = NearOther
 FunctionCode = LowerTargetDefSpDef1
 Flags = CanProtect,CanMirrorMove
 Description = The user breaks the target's heart, lowering their -Def and SpDef by 1.
+# Removed
 #-------------------------------
 [OBFUSCATE]
 Name = Obfuscate
@@ -9437,6 +9444,7 @@ FunctionCode = LowerTargetAccuracy1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = The user causes a blackout around its vicinity. It may also lower the target's accuracy.
+# Replaced with harsh voice
 #-------------------------------
 [PRANKCALL]
 Name = Prank Call
@@ -9450,6 +9458,7 @@ FunctionCode = ConfuseTarget
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 30
 Description = Plays a nasty prank on the target. It may also confuse the target.
+# Replaced with tease
 #-------------------------------
 [SCORESETTLER]
 Name = Score Settler
@@ -9462,6 +9471,7 @@ Target = NearOther
 FunctionCode = DoublePowerIfAllyFaintedLastTurn
 Flags = Contact,CanProtect,CanMirrorMove
 Description = Deals 2x damage if an ally fainted in the last turn.
+# Added
 #-------------------------------
 [SINFULSMITE]
 Name = Sinful Smite
@@ -9474,6 +9484,7 @@ Target = NearOther
 FunctionCode = ResetTargetStatStages
 Flags = Contact,CanProtect,CanMirrorMove
 Description = This scathing attack clears the foe's stat changes.
+# Added
 #-------------------------------
 [VENDETTA]
 Name = Vendetta
@@ -9486,6 +9497,7 @@ Target = NearOther
 FunctionCode = IgnoreTargetDefSpDefEvaStatStages
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user attacks with a vengeance, and doesn't consider the foe's stat changes.
+# Added
 #-------------------------------
 [FRENZY]
 Name = Frenzy
@@ -9498,6 +9510,7 @@ Target = AllNearOthers
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user attacks wildly that strikes every Pokémon around it.
+# Added
 #-------------------------------
 [EXECUTION]
 Name = Execution
@@ -9510,6 +9523,7 @@ Target = NearOther
 FunctionCode = LowerUserAttack2
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user performs a decisive technique that harshly reduces the user's Atk stat.
+# Replaced with crunch
 #-------------------------------
 [VITALITYDRAIN]
 Name = Vitality Drain
@@ -9522,6 +9536,7 @@ Target = NearOther
 FunctionCode = HealUserByHalfOfDamageDone
 Flags = CanProtect,CanMirrorMove
 Description = The user stabs the target and drains their vitality. The user's HP is restored by over half.
+# Replaced with Scam
 #-------------------------------
 [WICKEDSTRIKE]
 Name = Wicked Strike
@@ -9535,6 +9550,7 @@ FunctionCode = ParalyzeTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 30
 Description = With wicked glee, the user strikes the target in its weak spot. Chance to paralyze.
+# Replaced with Darkest Lariat
 #-------------------------------
 [ANCIENTGLARE]
 Name = Ancient Glare
@@ -9548,6 +9564,7 @@ FunctionCode = LowerTargetAttack1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user gives off a devestating glare that intimidates the target. This lowers the target's Attack stat.
+# Replaced with Diametric Breath
 #-------------------------------
 [DRACARYS]
 Name = Dracarys
@@ -9561,6 +9578,7 @@ FunctionCode = BurnTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = Produces dragonfire similar to that of a creature belonging in a far-away land. May cause a burn.
+# Removed
 #-------------------------------
 [DRACOSHRED]
 Name = Draco Shred
@@ -9574,6 +9592,7 @@ FunctionCode = LowerTargetDefense1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 20
 Description = The user grabs and proceeds to pulverize the target. Chance to lower the target's Defense.
+# Replaced with calamitous slash
 #-------------------------------
 [DRAGONBLOOD]
 Name = Dragon Blood
@@ -9585,6 +9604,7 @@ Target = AllNearFoes
 FunctionCode = PoisonTarget
 Flags = CanProtect,CanMirrorMove
 Description = The user spits contaminated blood at the targets and may poison them.
+# Replaced with envenom
 #-------------------------------
 [DRAGONGALE]
 Name = Dragon Gale
@@ -9598,6 +9618,7 @@ FunctionCode = FlinchTargetDoublePowerIfTargetInSky
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = Whips a violent current of air towards the foes, hitting airborne targets as well. Chance to flinch.
+# Replaced with Guttural Roar
 #-------------------------------
 [DRAGONGNAW]
 Name = Dragon Gnaw
@@ -9610,6 +9631,7 @@ Target = NearOther
 FunctionCode = HealUserByThreeQuartersOfDamageDone
 Flags = Contact,CanProtect,CanMirrorMove,Biting
 Description = User nibbles the target persistently. The user's HP is restored by 75% of the damage dealt.
+# Replaced with Shred
 #-------------------------------
 [DRAGONMAGIC]
 Name = Dragon Magic
@@ -9622,6 +9644,7 @@ FunctionCode = InflictRandomStatus
 Flags = Sound,CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user utters a spell that inflicts a random status condition on the target
+# Removed
 #-------------------------------
 [DRACONICCRASH]
 Name = Draconic Crash
@@ -9635,6 +9658,7 @@ FunctionCode = RecoilThirdOfDamageDealtParalyzeTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 10
 Description = The user charges at the foe, taking damage but may also paralyze the target.
+# Added
 #-------------------------------
 [DRAGONWING]
 Name = Dragon Wing
@@ -9648,6 +9672,7 @@ FunctionCode = LowerTargetDefense1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 10
 Description = Target is struck with large imposing wings. Chance to lower the target's Def.
+# Replaced with clash
 #-------------------------------
 [DRACOSURGE]
 Name = Draco Surge
@@ -9661,6 +9686,7 @@ FunctionCode = LowerTargetSpDef1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 20
 Description = Blasts the target with scorching breath. Chance to lower the target's Sp.Def.
+# Replaced with scour
 #-------------------------------
 [ENDERSHOCK]
 Name = Ender Shock
@@ -9673,6 +9699,7 @@ Target = AllNearFoes
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
 Description = The user generates a shockwave that hits all opponents. High Crit ratio.
+# Added
 #-------------------------------
 [NAGASKIN]
 Name = Naga Skin
@@ -9683,6 +9710,7 @@ TotalPP = 10
 Target = User
 FunctionCode = HealUserHalfOfTotalHP
 Description = The user sheds its skin to heal itself for half of its max HP.
+# Added
 #-------------------------------
 [SALAMANDERTOSS]
 Name = Salamander Toss
@@ -9695,6 +9723,7 @@ Target = NearOther
 FunctionCode = SwitchOutUserDamagingMove
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user maims the target, and switches places with a party Pokémon in waiting.
+# Added
 #-------------------------------
 [WYVERNSLASH]
 Name = Wyvern Slash
@@ -9707,6 +9736,7 @@ Target = NearOther
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate,Slicing
 Description = The target is slashed apart by draconic claws. Critical hits land more easily.
+# Added
 #-------------------------------
 [BATTERYACID]
 Name = Battery Acid
@@ -9734,6 +9764,7 @@ FunctionCode = RaiseUserSpAtk1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 30
 Description = A streak of lightning chains to the target's side. May + user's Sp.Atk.
+# Replaced with thunderbolt
 #-------------------------------
 [ELECTRONCRUSH]
 Name = Electron Crush
@@ -9746,6 +9777,7 @@ Target = AllNearFoes
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove
 Description = Crushes all electrons in the vicinity, dealing significant damage to the enemy's side of the field.
+# Replaced with Electroslash
 #-------------------------------
 [MAGNETFORCE]
 Name = Magnet Force
@@ -9759,6 +9791,7 @@ FunctionCode = RaiseUserSpDef1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 30
 Description = Creates a magnet field, with a chance to +Sp.Def of the user by 1 stage.
+# Replaced with thunderbolt
 #-------------------------------
 [PROTONCRASH]
 Name = Proton Crash
@@ -9772,6 +9805,7 @@ FunctionCode = RaiseUserSpeed1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 30
 Description = A strong electric blast crashes down on the target. This may also raise the user's speed.
+# Replaced with Electroslash
 #-------------------------------
 [SHORTFUSE]
 Name = Short Fuse
@@ -9785,6 +9819,7 @@ Priority = 1
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user uncontrollably loses its temper in a flash. Strikes with priority.
+# Replaced with Jolt
 #-------------------------------
 [STATICSHOCK]
 Name = Static Shock
@@ -9798,6 +9833,7 @@ FunctionCode = LowerTargetSpeed1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 10
 Description = The target gets jolted with electricity. This may lower the target's speed stat.
+# Replaced with current crash
 #-------------------------------
 [APHRODITESMIRROR]
 Name = Aphrodite's Mirror
@@ -9811,6 +9847,7 @@ FunctionCode = LowerTargetSpAtk1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 30
 Description = The user reflects back all evil. This also may lower the target's Sp. Atk stat.
+# Replaced with Humble
 #-------------------------------
 [CHANGELINGS]
 Name = Changelings
@@ -9822,6 +9859,7 @@ Target = NearOther
 FunctionCode = UserTargetSwapStatStages
 Flags = CanProtect,CanMirrorMove
 Description = Making a bewitched trade with the target the user switches stat changes with them.
+# Replaced with psych up
 #-------------------------------
 [CUPIDSARROW]
 Name = Cupid's Arrow
@@ -9835,6 +9873,7 @@ Priority = 1
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove
 Description = Shoots a lovesick arrow extremely fast at the target. It is sure to strike first.
+# Replaced with eager tickling
 #-------------------------------
 [ETHEREALBURST]
 Name = Ethereal Burst
@@ -9847,6 +9886,7 @@ Target = AllNearOthers
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,Pulse
 Description = The user releases a burst of supernatural energy hitting everyone on the field.
+# Replaced with mist burst
 #-------------------------------
 [EXCALIBUR]
 Name = Excalibur
@@ -9859,6 +9899,7 @@ Target = NearOther
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate,Slicing
 Description = Wielding Excalibur, the user slices the target. High Crit ratio.
+# Added
 #-------------------------------
 [FABLEDRUSH]
 Name = Fabled Rush
@@ -9872,6 +9913,7 @@ Priority = 2
 FunctionCode = LowerUserDefense1
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user charges the target with fabled speed (+2 priority) but lowers user's defense.
+# Replaced with spirit break
 #-------------------------------
 [FAESBLESSING]
 Name = Fae's Blessing
@@ -9882,6 +9924,7 @@ TotalPP = 20
 Target = User
 FunctionCode = RaiseUserSpAtk2
 Description = Summons faes to bless the user, sharply raising its Sp. Atk.
+# Replaced with dream dance
 #-------------------------------
 [FAIRYRING]
 Name = Fairy Ring
@@ -9895,6 +9938,7 @@ FunctionCode = LowerTargetSpeed1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 100
 Description = Fae-like creatures are summoned to lower the target's speed.
+# Replaced with disarming voice
 #-------------------------------
 [FAIRYTALE]
 Name = Fairy Tale
@@ -9906,6 +9950,7 @@ Target = NearOther
 FunctionCode = SetTargetTypesToFairy
 Flags = CanProtect,CanMirrorMove
 Description = The target becomes part of a fairy tale and becomes a Fairy-type.
+# Added sort of
 #-------------------------------
 [GOBLINSTRIKE]
 Name = Goblin Strike
@@ -9919,6 +9964,7 @@ FunctionCode = RaiseUserAttack1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 30
 Description = With mischievous intent the user pummels the target. Chance to +Atk.
+# Replaced with glitter bomb
 #-------------------------------
 [LOVEBURST]
 Name = Love Burst
@@ -9932,6 +9978,7 @@ FunctionCode = ConfuseTarget
 Flags = CanProtect,CanMirrorMove,Bomb
 EffectChance = 10
 Description = The user bursts into an explosion of love, hitting all on the field and may confuse.
+# Added
 #-------------------------------
 [MYSTICPULSE]
 Name = Mystic Pulse
@@ -9944,6 +9991,7 @@ Target = AllNearFoes
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,Pulse
 Description = The user invokes its mystical power to strike nearby foes.
+# Added
 #-------------------------------
 [NYMPHSSPELL]
 Name = Nymph's Spell
@@ -9957,6 +10005,7 @@ FunctionCode = LowerTargetAttack1
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 100
 Description = Nymphs chant a calming but harmful spell onto the targets lowering their Attack stat.
+# Replaced with baleful bop
 #-------------------------------
 [OBERONSWRATH]
 Name = Oberon's Wrath
@@ -9969,6 +10018,7 @@ Target = AllNearFoes
 FunctionCode = PowerHigherWithUserHP
 Flags = CanProtect,CanMirrorMove
 Description = Using the power of the King of fairies, the lower the user's HP, the less powerful it is.
+# Added
 #-------------------------------
 [PEEKABOO]
 Name = Peekaboo
@@ -9983,6 +10033,7 @@ FunctionCode = FlinchTargetFailsIfNotUserFirstTurn
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 100
 Description = Flinches the target but only works on the first turn.
+# Replaced with fairy wind
 #-------------------------------
 [PIXIEWAVE]
 Name = Pixie Wave
@@ -9995,6 +10046,7 @@ Target = AllNearFoes
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove
 Description = Small fae gather around to attack the targets. It hits without fail.
+# Replaced with disarming voice
 #-------------------------------
 [SIRENSSONG]
 Name = Siren's Song
@@ -10007,6 +10059,7 @@ Target = NearOther
 FunctionCode = TrapTargetInBattle
 Flags = CanProtect,CanMirrorMove
 Description = Using a lovely melody, the user traps the target in battle.
+# Added
 #-------------------------------
 [SYLPHSHORN]
 Name = Sylph's Horn
@@ -10019,6 +10072,7 @@ Target = NearOther
 FunctionCode = HealUserByHalfOfDamageDone
 Flags = Contact,CanProtect,CanMirrorMove
 Description = Uses its fabled horns to restore 50% of damage dealt.
+# Added
 #-------------------------------
 [TITANIASLAW]
 Name = Titania's Law
