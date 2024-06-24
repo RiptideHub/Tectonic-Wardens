@@ -7050,3 +7050,75 @@ FunctionCode = Flinch
 Flags = CanProtect,CanMirrorMove
 EffectChance = 40
 Description = The user summons a shower of stars. It has a 40% chance to make the target flinch.
+#-------------------------------
+[STELLARRUSH]
+Name = Stellar Rush
+Type = COSMIC
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = RecoilThirdOfDamageDealt
+Flags = CanProtect,CanMirrorMove
+Description = The user hurls itself at the target. The user also takes 33% recoil.
+#-------------------------------
+[SUPERNOVA]
+Name = Supernova
+Type = COSMIC
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 12
+Target = AllNearOthers
+FunctionCode = Burn
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = Explodes in cosmic glory, scorching everything around the user. It has a 30% chance to burn.
+#-------------------------------
+[TRIVEGA]
+Name = Tri-Vega
+Type = COSMIC
+Category = Physical
+Power = 20
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = HitThreeTimesAlwaysCriticalHit
+Flags = CanProtect,CanMirrorMove
+Description = Strikes the target thrice. Always results in a critical hit.
+#-------------------------------
+[TWINSTARS]
+Name = Twin Stars
+Type = COSMIC
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitTwoTimes
+Flags = CanProtect,CanMirrorMove
+Description = The target is hit with a pair of stars in quick succession. The target is hit twice in a row.
+#-------------------------------
+[URANOMETRIA]
+Name = Urano Metria
+Type = COSMIC
+Category = Special
+Power = 170
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = TwoTurnAttack
+Flags = CanProtect,CanMirrorMove,CantForce
+Description = Recites an old spell that summons 88 constellations. The user must rest on the next turn, however.
+#-------------------------------
+[VOIDDRIFT]
+Name = Void Drift
+Type = COSMIC
+Category = Status
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetSpd4
+Flags = CanProtect,CanMagicCoat,CanMirrorMove
+Description = The target is pulled towards the void to reduce its Speed stat by four steps.

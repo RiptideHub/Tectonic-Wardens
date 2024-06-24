@@ -9247,6 +9247,7 @@ Target = NearOther
 FunctionCode = RecoilThirdOfDamageDealt
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user hurls itself at the target. It also damages the user by a fairly large amount however.
+# Added
 #-------------------------------
 [SUPERNOVA]
 Name = Supernova
@@ -9260,6 +9261,7 @@ FunctionCode = BurnTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 30
 Description = Explodes in cosmic glory, scorching everything around the user. It may leave targets with a burn.
+# Added
 #-------------------------------
 [TRIVEGA]
 Name = Tri-Vega
@@ -9272,6 +9274,7 @@ Target = NearOther
 FunctionCode = HitThreeTimesAlwaysCriticalHit
 Flags = Contact,CanProtect,CanMirrorMove
 Description = Hits three times in a row. This attack always deals critical hits.
+# Added but will probably be replaced with a different effect
 #-------------------------------
 [TWINSTARS]
 Name = Twin Stars
@@ -9284,6 +9287,7 @@ Target = NearOther
 FunctionCode = HitTwoTimes
 Flags = CanProtect,CanMirrorMove
 Description = The target is hit with a pair of stars in quick succession.
+# Added
 #-------------------------------
 [URANOMETRIA]
 Name = Urano Metria
@@ -9296,6 +9300,7 @@ Target = NearOther
 FunctionCode = AttackAndSkipNextTurn
 Flags = CanProtect,CanMirrorMove
 Description = Recites an old spell that summons 88 constellations. Recharges next turn.
+# Added
 #-------------------------------
 [VOIDDRIFT]
 Name = Void Drift
@@ -9306,6 +9311,7 @@ TotalPP = 40
 Target = AllNearFoes
 FunctionCode = LowerTargetSpeed2
 Description = The target is pulled towards the void. It also lowers the target's speed by 2.
+# Added
 #-------------------------------
 [BACKSTABBING]
 Name = Backstabbing
@@ -9319,6 +9325,7 @@ Priority = 1
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The target is stabbed with sheer might in priority.
+# Replaced with Pilfer
 #-------------------------------
 [BLACKOUT]
 Name = Blackout
@@ -9329,6 +9336,7 @@ TotalPP = 15
 Target = BothSides
 FunctionCode = StartWeakenLightMoves
 Description = The user causes a blackout around its vicinity. Weakens Light-type moves for 5 turns.
+# Removed
 #-------------------------------
 [CHEAPSHOT]
 Name = Cheap Shot
