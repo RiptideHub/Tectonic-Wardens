@@ -1,10 +1,8 @@
 Steelix (O.Titanix)
 Sableye (O.Rubarior)
-Altaria (OHymnus)
-Altaria2 (Hymnus2)
+Altaria (O. and T.Hymnus)
 Heracross (O.Scarapace)
-Absol (O.Absolus)
-Absol2 (T.Absolus)
+Absol (O. and T.Absolus)
 Medicham (O.Palmantra)
 Sandaconda (O.Saharicane)
 Manectric (O.Manergetic)
@@ -15,63 +13,37 @@ Centiskorch (O.Milliblaze)
 Aerodactyl (O.Pteroflyte)
 Sharpedo (O.Scarodon)
 Donphan (O.Megadon)
+Dodrio and T.Dodrio (Dodinco) (Docinco) (Dosinko) do- cinco (spanish for 5)
 Arbok (Gnikobra)
-Golurk (Teragol)
-Xatu (Qatzu)
-Avalugg (Carvular)
+Starmie (Starotros) (Starsube) (Starus) (Starastro) (Starulus) otros, sube, and us for vosotros subete us to play on the "you" "me" aspect
+Golurk (Teragol) Terracotta golem
+Xatu (Qatzu) based on a quetzel so Q made sense as a final character to end on
+Gyarados (Skullkraken) (Koikuten) first one is what gyarados would've been called. 
+Avalugg (Carvular) Carve + tabular iceberg
+Rapidash (Unidash) (Spikadash)
 Gliscor (Scorgyle)
 Electrode (Zimplode)
+Glalie (Glacegiri) (Onifrost)
+Froslass (Yukimono) (Yukice)
 Beartic (Grizzicle)
+Hippowdon (Hippomut) (Hippopamut)
 Tentacruel (Tentamalish)
 Cofagrigus (Pharagrigus) 
 Ninetales (Kitsumith)
-Masquerain2 (Veilvueran2)
+T.Masquerain (T.Veilvueran)
 Barbaracle (Barbiosis)
 Falinks (Lochorank)
 Mismagius (Mishogan)
 Chimecho (Chimelody)
 Emolga (Voltonga)
 
-#Let me know which of these are the final name you wanna use
-Dodrio and T.Dodrio (Dodinco) (Docinco) (Dosinko) do- cinco (spanish for 5)
-Starmie (Starotros) (Starsube) (Starus) (Starastro) (Starulus) otros, sube, and us for vosotros subete us to play on the "you" "me" aspect
-Gyarados (Skullkraken) (Koikuten) first one is what gyarados would've been called. 
-Rapidash (Unidash) (Spikadash)
-Glalie (Glacegiri) (Onifrost)
-Froslass (Yukimono) (Yukice)
-Hippowdon (Hippomut) (Hippopamut)
 
-#How I plan to handle Converting Mega's into base species through code:
-[:STEELIX_1, :TITANIX, "O.Titanix"],
-[:SABLEYE_1, :RUBARIOR, "O.Rubarior"],
-[:ALTARIA_1, :HYMNUS, "O.Hymnus"],
-[:ALTARIA2_1, :HYMNUS2, "t.Hymnus"],
-[:HERACROSS_1, :SCARAPACE, "O.Scarapace"],
-[:ABSOL_1, :ABSOLUS, "O.Absolus"],
-[:ABSOL2_1, :ABSOLUS2, "T.Absolus"],
-[:MEDICHAM_1, :PALMANTRA, "O.Palmantra"],
-[:SANDACONDA_1, :SAHARICANE, "O.Saharicane"],
-[:MANECTRIC_1, :MANERGETIC, "O.Manergetic"],
-[:ABOMASNOW_1, :CORNIFEAR, "O.Cornifear"],
-[:GARBADOR_1, :DONSTER, "O.Donster"],
-[:HOUNDOOM_1, :HOUNDOMINUS, "O.Houndominus"],
-[:CENTISKORCH_1, :MILLIBLAZE, "O.Milliblaze"],
-[:AERODACTYL_1, :PTEROFLYTE, "O.Pteroflyte"],
-[:SHARPEDO_1, :SCARODON, "O.Scarodon"],
-[:DONPHAN_1, :MEGADON, "O.Megadon"],
-[:ARBOK_1, :GNIKOBRA, "O.Gnikobra"],
-[:GOLURK_1, :TERAGOL, "O.Teragol"],
-[:XATU_1, :QATZU, "O.Qatzu"],
-[:AVALUGG_1, :CARVULAR, "O.Carvular"],
-[:GLISCOR_1, :SCORGYLE, "O.Scorgyle"],
-[:ELECTRODE_1, :ZIMPLODE, "O.Zimplode"],
-[:BEARTIC_1, :GRIZZICLE, "O.Grizzicle"],
-[:TENTACRUEL_1, :TENTAMALISH, "O.Tentamalish"],
-[:COFAGRIGUS_1, :PHARAGRIGUS, "O.Pharagrigus"],
-[:NINETALES_1, :KITSUMITH, "O.Kitsumith"],
-[:MASQUERAIN2_1, :VEILVUERAN2, "O.Veilvueran2"],
-[:BARBARACLE_1, :BARBIOSIS, "O.Barbiosis"],
-[:FALINKS_1, :LOCHORANK, "O.Lochorank"],
-[:MISMAGIUS_1, :MISHOGAN, "O.Mishogan"],
-[:CHIMECHO_1, :CHIMELODY, "O.Chimelody"],
-[:EMOLGA_1, :VOLTONGA, "O.Voltonga"],
+Couldn't find: Froslass, mismagius, cofagrigus, barbaracle, masquerain, ninetales, glalie
+Pulled from google:
+Emolga: Yamonga, Emyini
+Chimecho: Chimeknell, Chaplacharm
+Falinks: Legiondary
+Tentacruel: Tentakraken, Tentachief
+Hippowdon: Hippodune
+Beartic: Eisbearn, Glaciursa
+Electrode: Otomik
