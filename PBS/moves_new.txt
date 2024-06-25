@@ -7342,3 +7342,172 @@ Target = NearOther
 FunctionCode = HealUserByHalfOfDamageDone
 Flags = CanProtect,CanMirrorMove
 Description = Uses its fabled horns. The user's HP is restored by half the damage taken by the target.
+#-------------------------------
+[TITANIASLAW]
+Name = Titania's Law
+Type = FAIRY
+Category = Special
+Power = 115
+Accuracy = 80
+TotalPP = 5
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove
+Description = The Queen of fairies appears to smite the foe.
+#-------------------------------
+[WILDIMAGINATION]
+Name = Wild Imagination
+Type = FAIRY
+Category = Status
+Accuracy = 0
+TotalPP = 12
+Target = NearAlly
+FunctionCode = RaiseTargetAtkSpAtk2
+Description = The user decorates the target, raising their Attack and Sp. Atk by 2 steps each.
+# Idk how to make this work
+#-------------------------------
+[BRUTEFORCE]
+Name = Brute Force
+Type = FIGHTING
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove
+Description = The target is pushed around with brute force.
+#-------------------------------
+[CHIDORI]
+Name = Chidori
+Type = FIGHTING
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Numb
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = Gathers energy into its palm to blast the foe. It has a 30% chance to numb.
+#-------------------------------
+[DEADLYREACH]
+Name = Deadly Reach
+Type = FIGHTING
+Category = Special
+Power = 75
+Accuracy = 0
+TotalPP = 15
+Target = NearOther
+FunctionCode = AlwaysHits
+Flags = CanProtect,CanMirrorMove,Punch
+Description = The user project lines of pure force over a short distance. This move is certain to hit.
+#-------------------------------
+[EDGESTRIKE]
+Name = Edge Strike
+Type = FIGHTING
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Blade
+Description = A swift chop strikes the target's weak spot. Chance to +Atk. Critical hits twice as often.
+#-------------------------------
+[PARRY]
+Name = Parry
+Type = FIGHTING
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = DoubleDamageAvengingFaint
+Flags = CanProtect,CanMirrorMove
+Description = Gets revenge for a fainted ally. If an ally fainted in the last turn, this attack's damage increases.
+#-------------------------------
+[SWEEPINGWIND]
+Name = Sweeping Wind
+Type = FIGHTING
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = LowerTargetSpeed2
+Flags = CanProtect,CanMirrorMove,Wind
+EffectChance = 20
+Description = Sweeps the air towards all foes. It has a 20% chance to lower Speed by 2.
+#-------------------------------
+[CRIMSONGATE]
+Name = Crimson Gate
+Type = FIRE
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = User
+FunctionCode = RaiseUserAtk2Spd1
+Flags = CanSnatch,Dance
+Description = The user walks through a gate of flames
+#-------------------------------
+[FIREBALL]
+Name = Fire Ball
+Type = FIRE
+Category = Physical
+Power = 30
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+FunctionCode = IceBall
+Flags = CanProtect,CanMirrorMove
+Description = The user continually strikes the target with embers. Its power doubles if it hits in succession., raising its Attack by two steps and Speed by one.
+#-------------------------------
+[FLARESWEEP]
+Name = Flare Sweep
+Type = FIRE
+Category = Physical
+Power = 55
+Accuracy = 100
+TotalPP = 12
+Target = AllNearFoes
+FunctionCode = LowerTargetSpd2
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user attacks the target's legs swiftly with a flame slice. It also lowers the targets' Speed stat by two steps.
+#-------------------------------
+[HEATSIPHON]
+Name = Heat Siphon
+Type = FIRE
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect,CanMirrorMove
+Description = The user slams the target and drains heat from them. The user's HP is restored by half the damage taken by the target.
+#-------------------------------
+[INFERNALBLADE]
+Name = Infernal Blade
+Type = FIRE
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttackOneTurnInSun,Blade
+Flags = CanProtect,CanMirrorMove
+Description = The user gathers heat into a blade, then attacks on the second turn. Charges instantly in Sunshine.
+#-------------------------------
+[MELTINGHORN]
+Name = Melting Horn
+Type = FIRE
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = RecoilQuarterOfDamageDealt
+Flags = CanProtect,CanMirrorMove
+Description = Rams the target with blazing horns or a beak. It also damages the user by 25% of the damage dealt.

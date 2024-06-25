@@ -10086,6 +10086,7 @@ FunctionCode = RaiseUserSpDef1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 30
 Description = The Queen of fairies appears to smite the foe. It may also raise the user's Sp. Def stat.
+# Added
 #-------------------------------
 [VALKYRIECHARIOT]
 Name = Valkyrie Chariot
@@ -10098,6 +10099,7 @@ Target = NearOther
 FunctionCode = CrashDamageIfFailsUnusableInGravity
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user rams the target with Valhalla's strength. If it misses, the user is hurt instead.
+# Replaced with morning star
 #-------------------------------
 [WILDIMAGINATION]
 Name = Wild Imagination
@@ -10108,6 +10110,7 @@ TotalPP = 30
 Target = UserOrNearAlly
 FunctionCode = RaiseMinMaxStat1
 Description = The user's wild imagination boosts its highest and lowest stats by 1.
+# Idk how to add this
 #-------------------------------
 [WOOINGHUG]
 Name = Wooing Hug
@@ -10121,6 +10124,7 @@ FunctionCode = LowerTargetDefense1
 EffectChance = 10
 Flags = Contact,CanProtect,CanMirrorMove
 Description = Embraces the target adoringly and has a chance to lower Def by 1 stage.
+# Replaced with fair play
 #-------------------------------
 [ATHENASWISDOM]
 Name = Athena's Wisdom
@@ -10134,6 +10138,7 @@ FunctionCode = RaiseUserSpDef1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 30
 Description = The user renders the opponent helpless with Athena's wisdom. May +user's Sp. Def.
+# This move is not on a single Pokemon
 #-------------------------------
 [BATTLEOFWITS]
 Name = Battle of Wits
@@ -10146,6 +10151,7 @@ Target = NearOther
 FunctionCode = SuperEffectiveAgainstPsychic
 Flags = CanProtect,CanMirrorMove
 Description = A test of mental strength. SE against Psychic type.
+# Replaced with concuss
 #-------------------------------
 [BRUTEFORCE]
 Name = Brute Force
@@ -10158,6 +10164,7 @@ Target = NearOther
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The target is pushed around with brute force.
+# Added
 #-------------------------------
 [CHAKRABLAST]
 Name = Chakra Blast
@@ -10170,6 +10177,7 @@ Target = NearOther
 FunctionCode = LowerUserSpAtk2
 Flags = CanProtect,CanMirrorMove,Bomb
 Description = Charges a ball of Chakra to blast the foe. Harshly lowers the users Sp. Atk
+# Replaced with secret technique
 #-------------------------------
 [CHIDORI]
 Name = Chidori
@@ -10196,6 +10204,7 @@ FunctionCode = ConfuseTarget
 Flags = CanProtect,CanMirrorMove,Bomb
 EffectChance = 10
 Description = The user gathers energy into an orb and fires it at the foe. It may confuse the target.
+# Replaced with valor bolt
 #-------------------------------
 [DEADLYREACH]
 Name = Deadly Reach
@@ -10208,6 +10217,7 @@ Target = NearOther
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,Punching
 Description = The user project lines of pure force over a short distance.
+# Added
 #-------------------------------
 [EDGESTRIKE]
 Name = Edge Strike
@@ -10221,6 +10231,7 @@ FunctionCode = RaiseUserAttack1
 Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate,Slicing
 EffectChance = 10
 Description = A swift chop strikes the target's weak spot. Chance to +Atk. High Crit ratio.
+# Added
 #-------------------------------
 [GIGASMASH]
 Name = Giga Smash
@@ -10233,6 +10244,7 @@ Target = NearOther
 FunctionCode = CrashDamageIfFailsUnusableInGravity
 Flags = Contact,CanProtect,CanMirrorMove
 Description = Uses all its power in a single overwhelming attack. The user can't move on the next turn.
+# Replaced with meteor assault
 #-------------------------------
 [MAGICPALM]
 Name = Magic Palm
@@ -10245,6 +10257,7 @@ Target = NearOther
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove
 Description = Elevates one's Chakra and sends a wave of energy on the foe. Always hit.
+# This is not on a single Pokemon
 #-------------------------------
 [PARRY]
 Name = Parry
@@ -10257,6 +10270,7 @@ Target = NearOther
 FunctionCode = DoublePowerIfAllyFaintedLastTurn
 Flags = Contact,CanProtect,CanMirrorMove
 Description = Deals 2x damage if an ally fainted in the last turn.
+# Added
 #-------------------------------
 [SWEEPINGWIND]
 Name = Sweeping Wind
@@ -10270,6 +10284,7 @@ FunctionCode = LowerTargetSpeed1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 20
 Description = Sweeps the air towards all foes. It may lower targets' speed stat.
+# Added
 #-------------------------------
 [ANCIENTFIRE]
 Name = Ancient Fire
@@ -10283,6 +10298,7 @@ FunctionCode = ConfuseTarget
 Flags = CanProtect,CanMirrorMove,ThawsUser
 EffectChance = 10
 Description = The user chars the target with ancient flames, with a chance to confuse.
+# Removed
 #-------------------------------
 [CRIMSONGATE]
 Name = Crimson Gate
@@ -10294,6 +10310,7 @@ Target = User
 FunctionCode = RaiseUserAtkSpDef1
 Flags = ThawsUser
 Description = The user walks through a gate of flames, raising its Attack and Sp. Def stats by one stage.
+# Added
 #-------------------------------
 [FIREBALL]
 Name = Fire Ball
@@ -10306,6 +10323,7 @@ Target = NearOther
 FunctionCode = MultiTurnAttackPowersUpEachTurn
 Flags = CanProtect,CanMirrorMove,ThawsUser,Bomb
 Description = The user continually strikes the target with embers. It becomes stronger each time it hits.
+# Added
 #-------------------------------
 [FLAMEVOLLEY]
 Name = Flame Volley
@@ -10318,6 +10336,7 @@ Target = NearOther
 FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect,CanMirrorMove,ThawsUser
 Description = Burning projectiles are shot at the target in rapid succession. They hit two to five times in a row.
+# Replaced with flame wheel
 #-------------------------------
 [FLARESWEEP]
 Name = Flare Sweep
@@ -10331,6 +10350,7 @@ FunctionCode = LowerTargetSpeed1
 Flags = Contact,CanProtect,CanMirrorMove,ThawsUser
 EffectChance = 100
 Description = The user attacks the target's legs swiftly with a flame slice reducing the target's Speed stat.
+# Added
 #-------------------------------
 [HEATSIPHON]
 Name = Heat Siphon
@@ -10343,6 +10363,7 @@ Target = NearOther
 FunctionCode = HealUserByHalfOfDamageDone
 Flags = Contact,CanProtect,CanMirrorMove,ThawsUser
 Description = The user slams the target and drains heat from them. The user's HP is restored by half.
+# Added
 #-------------------------------
 [INFERNALBLADE]
 Name = Infernal Blade
@@ -10355,6 +10376,7 @@ Target = NearOther
 FunctionCode = TwoTurnAttackOneTurnInSun
 Flags = Contact,CanProtect,CanMirrorMove,ThawsUser,Slicing
 Description = The user gathers heat into a blade attacking the target on the next turn.
+# Added
 #-------------------------------
 [MELTINGHORN]
 Name = Melting Horn
@@ -10367,6 +10389,7 @@ Target = NearOther
 FunctionCode = RecoilQuarterOfDamageDealt
 Flags = Contact,CanProtect,CanMirrorMove,ThawsUser
 Description = Rams the target with blazing horns or a beak, but damages the user a little.
+# Added
 #-------------------------------
 [SIZZLE]
 Name = Sizzle
