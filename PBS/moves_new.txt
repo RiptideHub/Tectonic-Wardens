@@ -7461,8 +7461,8 @@ Accuracy = 0
 TotalPP = 15
 Target = User
 FunctionCode = RaiseUserAtk2Spd1
-Flags = CanSnatch,Dance
-Description = The user walks through a gate of flames
+Flags = CanSnatch
+Description = The user walks through a gate of flames, raising its Attack by two steps and Speed by one.
 #-------------------------------
 [FIREBALL]
 Name = Fire Ball
@@ -7474,7 +7474,7 @@ TotalPP = 30
 Target = NearOther
 FunctionCode = IceBall
 Flags = CanProtect,CanMirrorMove
-Description = The user continually strikes the target with embers. Its power doubles if it hits in succession., raising its Attack by two steps and Speed by one.
+Description = The user continually strikes the target with embers. Its power doubles if it hits in succession.
 #-------------------------------
 [FLARESWEEP]
 Name = Flare Sweep
@@ -7562,3 +7562,40 @@ Target = NearOther
 FunctionCode = RemovesTargetItemDamageBoost50Percent
 Flags = CanProtect,CanMirrorMove
 Description = A strong wind causes the target to drop their held item.. If they have an item, this deals 50% more damage.
+#-------------------------------
+[DEATHWALTZ]
+Name = Death Waltz
+Type = GHOST
+Category = Special
+Power = 115
+Accuracy = 80
+TotalPP = 5
+Target = NearOther
+FunctionCode = Dizzy
+Flags = CanProtect,CanMirrorMove,Dance
+EffectChance = 20
+Description = The target is blasted by a huge volume of water launched under great pressure. It has a 20% chance to dizzy.
+#-------------------------------
+[GRIMREAPER]
+Name = Grim Reaper
+Type = GHOST
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = RaiseUserAttack5IfTargetFaints,Blade
+Flags = CanProtect,CanMirrorMove
+Description = When the user slashes out a target with this move, the user's Attack stat rises by five steps.
+#-------------------------------
+[NECROPHAGY]
+Name = Necrophagy
+Type = GHOST
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HealUserByThreeQuartersOfDamageDone
+Flags = CanProtect,CanMirrorMove,Biting
+Description = The user devours the target viciously like a corpse. The user's HP is restored by 75% of the damage dealt.

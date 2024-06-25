@@ -10591,6 +10591,7 @@ Target = NearOther
 FunctionCode = HitThreeTimesPowersUpWithEachHit
 Flags = CanProtect,CanMirrorMove,ThawsUser
 Description = Three consecutive ofudas attack that becomes more powerful with each successful hit.
+# Replaced with Seance. Marking as a possible signature for serperior
 #-------------------------------
 [DEATHWALTZ]
 Name = Death Waltz
@@ -10604,6 +10605,7 @@ FunctionCode = ConfuseTarget
 Flags = CanProtect,CanMirrorMove,Dance
 EffectChance = 10
 Description = The target is forced to dance with spirits from the deceased. Chance to confuse.
+# Added
 #-------------------------------
 [ECTOPLASM]
 Name = Ectoplasm
@@ -10617,6 +10619,7 @@ FunctionCode = LowerTargetSpDef1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = A supernatural substance is expelled from the user. It may also lower the target's Sp. Def.
+# Replaced with death knell
 #-------------------------------
 [GOOSEBUMP]
 Name = Goosebump
@@ -10630,6 +10633,7 @@ FunctionCode = FlinchTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = The target is scared by a bone-chilling move. It may also make the target flinch.
+# Replaced with dirge
 #-------------------------------
 [GRIMREAPER]
 Name = Grim Reaper
@@ -10642,6 +10646,7 @@ Target = NearOther
 FunctionCode = RaiseUserAttack2IfTargetFaints
 Flags = Contact,CanProtect,CanMirrorMove,Slicing
 Description = The user slashes the opponent. KOing raises user's Attack sharply.
+# Added
 #-------------------------------
 [HAUNT]
 Name = Haunt
@@ -10655,6 +10660,7 @@ FunctionCode = LowerTargetSpeed1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = The target is haunted. This may lower the target's speed stat.
+# Replaced with Soul Drain
 #-------------------------------
 [NECROPHAGY]
 Name = Necrophagy
@@ -10667,6 +10673,7 @@ Target = NearOther
 FunctionCode = HealUserByThreeQuartersOfDamageDone
 Flags = Contact,CanProtect,CanMirrorMove,Biting
 Description = The user devours the target viciously like a corpse, restoring HP by 75% of the damage dealt.
+# Added
 #-------------------------------
 [MACABREDANCE]
 Name = Macabre Dance
@@ -10678,6 +10685,7 @@ Target = User
 FunctionCode = RaiseUserSpAtkSpd1
 Flags = Dance
 Description = Performs a deadly dance, boosting its Sp. Atk and Speed stats.
+# Replaced with lightning dance
 #-------------------------------
 [POSSESSION]
 Name = Possession
