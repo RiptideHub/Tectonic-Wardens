@@ -1769,8 +1769,6 @@ Flags = CanProtect,CanMirrorMove
 Description = The user soars up high, then strikes on the second turn by dive bombing the target.
 Animation = FLY
 #-------------------------------
-[
-#-------------------------------
 [QUICKATTACK]
 Name = Quick Attack
 Type = NORMAL
@@ -1782,7 +1780,9 @@ Target = NearOther
 Priority = 1
 FunctionCode = Basic
 Flags = CanProtect,CanMirrorMove
-Description = The user lunges at the target at a speed that makes it almost invisible. It is sure to strike first.]
+Description = The user lunges at the target at a speed that makes it almost invisible. It is sure to strike first.
+#-------------------------------
+[STRAFE]
 Name = Strafe
 Type = FLYING
 Category = Physical
