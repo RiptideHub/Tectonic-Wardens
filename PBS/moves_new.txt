@@ -1769,7 +1769,20 @@ Flags = CanProtect,CanMirrorMove
 Description = The user soars up high, then strikes on the second turn by dive bombing the target.
 Animation = FLY
 #-------------------------------
-[STRAFE]
+[
+#-------------------------------
+[QUICKATTACK]
+Name = Quick Attack
+Type = NORMAL
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+Priority = 1
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove
+Description = The user lunges at the target at a speed that makes it almost invisible. It is sure to strike first.]
 Name = Strafe
 Type = FLYING
 Category = Physical
@@ -7511,3 +7524,41 @@ Target = NearOther
 FunctionCode = RecoilQuarterOfDamageDealt
 Flags = CanProtect,CanMirrorMove
 Description = Rams the target with blazing horns or a beak. It also damages the user by 25% of the damage dealt.
+#-------------------------------
+[BOREASBREATH]
+Name = Boreas Breath
+Type = FLYING
+Category = Special
+Power = 115
+Accuracy = 80
+TotalPP = 5
+Target = NearOther
+FunctionCode = FrostbiteTargetAlwaysHitsInHail
+Flags = CanProtect,CanMirrorMove,Wind
+EffectChance = 10
+Description = The user combines Boreas' power to generate an icestorm. Can't miss in hail. 10% chance to frostbite.
+#-------------------------------
+[JETDIVE]
+Name = Jet Dive
+Type = FLYING
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+Priority = 1
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove
+Description = Propels itself towards the target at mach 10 speed. It is sure to strike first.
+#-------------------------------
+[TURBULENCE]
+Name = Turbulence
+Type = FLYING
+Category = Special
+Power = 65
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = RemovesTargetItemDamageBoost50Percent
+Flags = CanProtect,CanMirrorMove
+Description = A strong wind causes the target to drop their held item.. If they have an item, this deals 50% more damage.

@@ -10417,6 +10417,7 @@ FunctionCode = FreezeTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = The user combines Boreas' power to generate an icestorm. It may also freeze the target.
+# Added
 #-------------------------------
 [DEATHVORTEX]
 Name = Death Vortex
@@ -10429,6 +10430,7 @@ Target = AllNearFoes
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove
 Description = The user generates a powerful windstorm that hits all enemy pokemon on the field.
+# Replaced with strafe
 #-------------------------------
 [EROSION]
 Name = Erosion
@@ -10441,6 +10443,7 @@ Target = Other
 FunctionCode = SuperEffectiveAgainstRock
 Flags = CanProtect,CanMirrorMove
 Description = Sudden pressure changes chip away foes. SE against Rock-type.
+# Replaced with air dart
 #-------------------------------
 [FLOCK]
 Name = Flock
@@ -10453,6 +10456,7 @@ Target = Other
 FunctionCode = HitTwoToFiveTimes
 Flags = Contact,CanProtect,CanMirrorMove
 Description = Calls a herd of its own species to carry out 2-5 consecutive attacks on the target.
+# Replaced with fury pecks
 #-------------------------------
 [GALEHOLD]
 Name = Gale Hold
@@ -10466,6 +10470,7 @@ FunctionCode = LowerTargetAttack1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = Encases the target in strong gale-like winds that may lower attack.
+# Replaced with draft
 #-------------------------------
 [GLIDE]
 Name = Glide
@@ -10479,6 +10484,7 @@ FunctionCode = RaiseUserSpeed1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user swoops down on the target and then raises its Speed stat.
+# Replaced with Swoop
 #-------------------------------
 [JETDIVE]
 Name = Jet Dive
@@ -10492,6 +10498,7 @@ Priority = 1
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove
 Description = Propels itself towards the target at mach 10 speed. It is sure to attack first.
+# Added
 #-------------------------------
 [SKYDIVE]
 Name = Sky Dive
@@ -10504,6 +10511,7 @@ Target = Other
 FunctionCode = IgnoreTargetDefSpDefEvaStatStages
 Flags = Contact,CanProtect,CanMirrorMove
 Description = Grips the foe and dives with them to the ground. Ignores target's stat changes.
+# Replace with bird strike
 #-------------------------------
 [STREAMRUSH]
 Name = Stream Rush
@@ -10516,6 +10524,7 @@ Target = NearOther
 FunctionCode = PowerHigherWithUserFasterThanTarget
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user aces down the target at mach-10 speed. It does more damage the faster the user is.
+# Replaced with hunt down
 #-------------------------------
 [SWANSONG]
 Name = Swan Song
@@ -10529,6 +10538,7 @@ FunctionCode = LowerTargetMainStats1
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 10
 Description = The user sings its swan song. Small chance to lower the target's stats by one stage.
+# Replaced with boreal wind
 #-------------------------------
 [TORNADO]
 Name = Tornado
@@ -10541,6 +10551,7 @@ Target = AllNearOthers
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove
 Description = Produces a storm that affects all others in its path.
+# Replaced with Wind Tunnel
 #-------------------------------
 [TURBULENCE]
 Name = Turbulence
@@ -10553,6 +10564,7 @@ Target = NearOther
 FunctionCode = RemoveTargetItem
 Flags = CanProtect,CanMirrorMove
 Description = A strong wind causes the target to drop their held item.
+# Added
 #-------------------------------
 [TYPHOON]
 Name = Typhoon
@@ -10566,6 +10578,7 @@ FunctionCode = RaiseUserSpAtk1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 50
 Description = The user whips up a big storm towards the foe. High chance to +Sp.Atk.
+# Replaced with cold front
 #-------------------------------
 [BURNINGOFUDA]
 Name = Burning Ofuda
