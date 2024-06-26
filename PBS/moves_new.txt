@@ -7709,3 +7709,225 @@ Target = NearOther
 FunctionCode = LowerUserDefSpDef2
 Flags = CanProtect,CanMirrorMove
 Description = A numbing howl. This cuts the user's Defenses by two steps.
+#-------------------------------
+[COUPDEGRACE]
+Name = Coup de Grace
+Type = LIGHT
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DoubleDamageTargetBelowHalf,Blade
+Flags = CanProtect,CanMirrorMove
+Description = If the target's HP is half or less, this attack will hit with double the power.
+#-------------------------------
+[DIVINEVISION]
+Name = Divine Vision
+Type = LIGHT
+Category = Special
+Power = 140
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = AttackTwoTurnsLater
+Flags = Foretold
+Description = Two turns after this move is used, a divine force attacks the target.
+#-------------------------------
+[FINALSTAND]
+Name = Final Stand
+Type = LIGHT
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = RecoilThirdOfDamageDealt
+Flags = CanProtect,CanMirrorMove
+Description = A reckless, life-risking tackle. The user also takes 33% recoil.
+#-------------------------------
+[HALLOWEDGROUND]
+Name = Hallowed Ground
+Type = LIGHT
+Category = Status
+Accuracy = 0
+TotalPP = 3
+Target = UserSide
+FunctionCode = ProtectUserSideFromDamagingMovesIfUserFirstTurn
+Flags = CanSnatch
+Description = The user protects itself and allies from damaging moves. It only works the first turn the user is in battle.
+#-------------------------------
+[HEAVENSKNUCKLE]
+Name = Heaven's Knuckle
+Type = LIGHT
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = RaiseUserAttack5IfTargetFaints
+Flags = CanProtect,CanMirrorMove
+Description = When the user knocks out a target with this move, the user's Attack stat rises by five steps.
+#-------------------------------
+[HOLYBOLT]
+Name = Holy Bolt
+Type = LIGHT
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+Priority = 1
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove
+Description = A bolt of holy light is shot at the target. It is sure to strike first.
+#-------------------------------
+[LIGHTSABER]
+Name = Lightsaber
+Type = LIGHT
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Burn
+Flags = CanProtect,CanMirrorMove,Blade
+EffectChance = 10
+Description = he user weaponizes light and may also leave the target with a burn. It has a 10% chance to burn.
+#-------------------------------
+[LOSTHEAVEN]
+Name = Lost Heaven
+Type = LIGHT
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = RaiseUserAttack2
+Flags = CanProtect,CanMirrorMove
+EffectChance = 20
+Description = Striking opponents repeatedly makes the user's fists harder, it has a 20% chance to raise the user's Attack stat by two steps.
+#-------------------------------
+[LUMINOUSBLADE]
+Name = Luminous Blade
+Type = LIGHT
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttackOneTurnInSun
+Flags = CanProtect,CanMirrorMove
+Description = Gathering heavenly energy into a blade, then attacks on the second turn. Charges instantly in Sunshine.
+#-------------------------------
+[LUMINOUSSCALES]
+Name = Luminous Scales
+Type = LIGHT
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Dizzy
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The user's scales glisten. It has a 10% chance to dizzy.
+#-------------------------------
+[PURGE]
+Name = Purge
+Type = LIGHT
+Category = Physical
+Power = 65
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DoubleDamageTargetStatused
+Flags = CanProtect,CanMirrorMove
+Description = The user purges the target. This deals double damage if the target has a status condition.
+#-------------------------------
+[RAINBOWBEAM]
+Name = Rainbow Beam
+Type = LIGHT
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserSpAtk2
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Shoots a rainbow-colored beam, raising the user's Sp. Atk stat by two steps
+#-------------------------------
+[REBUKE]
+Name = Rebuke
+Type = LIGHT
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = -4
+FunctionCode = DoubleDamageTargetHitUser
+Flags = CanProtect,CanMirrorMove
+Description = An attack move that inflicts double the damage if the user has been hurt by the foe in the same turn.
+#-------------------------------
+[RENEWAL]
+Name = Renewal
+Type = LIGHT
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = The user renews itself. The user's HP is restored by half the damage taken by the target.
+#-------------------------------
+[REVITALIZE]
+Name = Revitalize
+Type = LIGHT
+Category = Special
+Power = 75
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect,CanMirrorMove
+Description = The user revitalizes itself. The user's HP is restored by half the damage taken by the target.
+#-------------------------------
+[SPARKLE]
+Name = Sparkle
+Type = LIGHT
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = Burn
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The target is attacked with blinding lights. It has a 10% chance to burn.
+#-------------------------------
+[SWEETNOTHINGS]
+Name = Sweet Nothings
+Type = LIGHT
+Category = Status
+Accuracy = 0
+TotalPP = 25
+Target = AllNearFoes
+FunctionCode = LowerTargetAtkSpAtk2
+Flags = CanProtect,CanMagicCoat,CanMirrorMove,Sound
+Description = The user whispers lies into the target's ears, lowering their Attack and Sp. Atk by two steps each.
+#-------------------------------
+[ZEAL]
+Name = Zeal
+Type = LIGHT
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = RaiseUserSpd1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user fills itself with energy and attacks. Building up more power, it raises the user's Speed.

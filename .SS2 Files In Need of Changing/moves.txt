@@ -11130,6 +11130,7 @@ Target = NearOther
 FunctionCode = DoublePowerIfTargetHPLessThanHalf
 Flags = Contact,CanProtect,CanMirrorMove,Slicing
 Description = If the target's HP is down to about half, this attack will hit with double the power.
+# Added
 #-------------------------------
 [DIVINEPUNISHMENT]
 Name = Divine Punishment
@@ -11155,6 +11156,7 @@ Target = NearOther
 FunctionCode = AttackTwoTurnsLater
 Flags = CanProtect,CanMirrorMove
 Description = Two turns after this move, a divine force attacks the target.
+# Added
 #-------------------------------
 [FINALSTAND]
 Name = Final Stand
@@ -11167,6 +11169,7 @@ Target = NearOther
 FunctionCode = RecoilThirdOfDamageDealt
 Flags = CanProtect,CanMirrorMove
 Description = A reckless life-risking tackle, damaging the user by a fairly large amount however.
+# Added
 #-------------------------------
 [GUARDIANANGEL]
 Name = Guardian Angel
@@ -11178,6 +11181,7 @@ Target = UserSide
 Priority = 3
 FunctionCode = ProtectUserSideFromStatusMoves
 Description = The user protects itself and its allies from status moves through a guardian angel.
+# Replaced with crafty shield
 #-------------------------------
 [HALLOWEDGROUND]
 Name = Hallowed Ground
@@ -11188,6 +11192,7 @@ TotalPP = 10
 Target = UserSide
 FunctionCode = ProtectUserSideFromDamagingMovesIfUserFirstTurn
 Description = Protects user's side of the field from damaging moves on first turn.
+# Added
 #-------------------------------
 [HEAVENSKNUCKLE]
 Name = Heaven's Knuckle
@@ -11200,6 +11205,7 @@ Target = NearOther
 FunctionCode = RaiseUserAttack2IfTargetFaints
 Flags = Contact,CanProtect,CanMirrorMove,Punching
 Description = The user pummels the target. KOing raises user's Attack sharply.
+# Added
 #-------------------------------
 [HOLYBOLT]
 Name = Holy Bolt
@@ -11213,6 +11219,7 @@ Priority = 1
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove
 Description = A bolt of holy light is shot at the target. It is sure to strike first.
+# Added
 #-------------------------------
 [HOLYFIRE]
 Name = Holy Fire
@@ -11224,6 +11231,7 @@ Target = NearOther
 FunctionCode = BurnTarget
 Flags = CanProtect,CanMirrorMove
 Description = The user shoots a holy white flame at the target to inflict a burn.
+# Replaced with Ignite
 #-------------------------------
 [LIGHTSABER]
 Name = Lightsaber
@@ -11237,6 +11245,7 @@ FunctionCode = BurnTarget
 Flags = CanProtect,CanMirrorMove,ThawsUser,Slicing
 EffectChance = 10
 Description = The user weaponizes light and may also leave the target with a burn.
+# Added
 #-------------------------------
 [LOSTHEAVEN]
 Name = Lost Heaven
@@ -11250,6 +11259,7 @@ FunctionCode = RaiseUserAttack1
 Flags = CanMirrorMove
 EffectChance = 10
 Description = A fallen angel seeks revenge. Goes through Protect. Chance of + Attack.
+# Added
 #-------------------------------
 [LUMINOUSBLADE]
 Name = Luminous Blade
@@ -11262,6 +11272,7 @@ Target = NearOther
 FunctionCode = TwoTurnAttackOneTurnInSun
 Flags = Contact,CanProtect,CanMirrorMove,Slicing
 Description = Gathering heavenly energy into a blade, the user strikes the target on the next turn.
+# Added
 #-------------------------------
 [LUMINOUSSCALES]
 Name = Luminous Scales
@@ -11275,6 +11286,7 @@ FunctionCode = LowerTargetAccuracy1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = The user's scales glisten with chance to lower accuracy by 1.
+# Added
 #-------------------------------
 [PURGE]
 Name = Purge
@@ -11287,6 +11299,7 @@ Target = NearOther
 FunctionCode = DoublePowerIfTargetStatusProblem
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user purges the target, doing double damage if the target is statused.
+# Added
 #-------------------------------
 [RAINBOWBEAM]
 Name = Rainbow Beam
@@ -11300,6 +11313,7 @@ FunctionCode = RaiseUserSpAtk1
 Flags = CanProtect,CanMirrorMove,Pulse
 EffectChance = 100
 Description = Shoots a rainbow-colored beam. Always raises Sp.Atk.
+# Added
 #-------------------------------
 [RAYOFLIGHT]
 Name = Ray of Light
@@ -11325,6 +11339,7 @@ Priority = -4
 FunctionCode = DoublePowerIfUserLostHPThisTurn
 Flags = Contact,CanProtect,CanMirrorMove
 Description = Inflicts 2x damage if the user has been hurt by the foe in the same turn.
+# Added
 #-------------------------------
 [REJUVENATE]
 Name = Rejuvenate
@@ -11350,6 +11365,7 @@ Target = NearOther
 FunctionCode = HealUserByHalfOfDamageDone
 Flags = CanProtect,CanMirrorMove
 Description = The user renews itself, draining 50% of damage dealt.
+# Added
 #-------------------------------
 [REPENTANCE]
 Name = Repentance
@@ -11361,6 +11377,7 @@ Target = User
 FunctionCode = MaxUserSpecialAttackLoseHalfOfTotalHP
 Flags = Sound
 Description = The user repents, cutting its own HP by half and maximizing their Sp. Atk.
+# Removed for now. Marking as a signature for Mismagius
 #-------------------------------
 [REVITALIZE]
 Name = Revitalize
@@ -11373,6 +11390,7 @@ Target = NearOther
 FunctionCode = HealUserByHalfOfDamageDone
 Flags = CanProtect,CanMirrorMove
 Description = The user revitalizes itself, draining 50% of damage dealt.
+# Added
 #-------------------------------
 [SHINYPLUMES]
 Name = Shiny Plumes
@@ -11396,6 +11414,7 @@ TotalPP = 20
 Target = User
 FunctionCode = RaiseUserDefSpDef1
 Description = The user prays to the skies to raise its Defense and Sp. Def stats.
+# Replaced with Cosmic Power
 #-------------------------------
 [SPARKLE]
 Name = Sparkle
@@ -11409,6 +11428,7 @@ FunctionCode = BurnTarget
 Flags = CanProtect,CanMirrorMove,ThawsUser
 EffectChance = 10
 Description = The target is attacked with blinding lights. It may also leave the target with a burn.
+# Added
 #-------------------------------
 [STROBELIGHT]
 Name = Strobe Light
@@ -11420,6 +11440,7 @@ Target = NearOther
 FunctionCode = ConfuseTarget
 Flags = CanProtect,CanMirrorMove
 Description = Strobe lights are exposed to the target with a chance to confuse them.
+# Replaced with Spellbind
 #-------------------------------
 [SWEETNOTHINGS]
 Name = Sweet Nothings
@@ -11431,6 +11452,7 @@ Target = NearOther
 FunctionCode = LowerTargetSpAtkSpDef1
 Flags = CanProtect,Sound
 Description = The user whispers lies into the target's ears reducing Sp. Atk and Sp. Def.
+# Added
 #-------------------------------
 [ZEAL]
 Name = Zeal
@@ -11444,6 +11466,7 @@ FunctionCode = RaiseUserSpeed1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user fills itself with energy to strike and then raises its Speed stat.
+# Added
 #-------------------------------
 [ACHILLESHEEL]
 Name = Achilles Heel
