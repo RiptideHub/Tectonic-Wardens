@@ -7599,3 +7599,113 @@ Target = NearOther
 FunctionCode = HealUserByThreeQuartersOfDamageDone
 Flags = CanProtect,CanMirrorMove,Biting
 Description = The user devours the target viciously like a corpse. The user's HP is restored by 75% of the damage dealt.
+#-------------------------------
+[POSSESSION]
+Name = Possession
+Type = GHOST
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = RecoilThirdOfDamageDealt
+Flags = CanProtect,CanMirrorMove
+Description = The user possesses the target and eviscerates itself. The user also takes 33% recoil.
+#-------------------------------
+[MOSSYPUNCH]
+Name = Mossy Punch
+Type = GRASS
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetDef3
+Flags = CanProtect,CanMirrorMove,Punch
+EffectChance = 100
+Description = The target is punched with a moss covered fist, lowering their Defense by three steps.
+#-------------------------------
+[PEPPERBURST]
+Name = Pepper Burst
+Type = GRASS
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Burn
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The user shoots pepper seeds down on the target. It has a 30% chance to burn.
+#-------------------------------
+[VEXINGVINES]
+Name = Vexing Vines
+Type = GRASS
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = NearOther
+FunctionCode = TrapTarget
+Flags = CanMagicCoat,CanMirrorMove
+Description = Tangling vines ensnare the foes' side of the battle. The target becomes unable to flee.
+#-------------------------------
+[MUDSHACKLES]
+Name = Mud Shackles
+Type = GROUND
+Category = Special
+Power = 50
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = BindTarget3
+Flags = CanProtect,CanMirrorMove
+Description = The user attacks by trapping foes with chains, trapping and damaging it for three turns.
+#-------------------------------
+[SEISMICSHIFT]
+Name = Seismic Shift
+Type = GROUND
+Category = Special
+Power = 1
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = ScalesHeavierThanTarget
+Flags = CanProtect,CanMirrorMove
+Description = The user controls earth to topple the foe. The heavier the user, the greater the damage.
+#-------------------------------
+[ICETOMB]
+Name = Ice Tomb
+Type = ICE
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = BindTarget3
+Flags = CanProtect,CanMirrorMove
+Description = The user attacks by freezing the surroundings of its foe.
+#-------------------------------
+[POLARSPEAR]
+Name = Polar Spear
+Type = ICE
+Category = Physical
+Power = 100
+Accuracy = 50
+TotalPP = 5
+Target = NearOther
+FunctionCode = Frosbite
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user creates a spear to puncture the target. It leaves the target with frostbite.
+#-------------------------------
+[WINTERSHOWL]
+Name = Winter's Howl
+Type = ICE
+Category = Physical
+Power = 110
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserDefSpDef2
+Flags = CanProtect,CanMirrorMove
+Description = A numbing howl. This cuts the user's Defenses by two steps.
