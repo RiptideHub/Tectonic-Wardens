@@ -26,6 +26,20 @@ Flags = CanProtect,CanMirrorMove
 Description = The user grinds stone into shrapnel and sprays it at the target.
 Animation = SANDATTACK
 #-------------------------------
+[FRAGMENTATION]
+Name = Fragmentation
+Type = STEEL
+Category = Special
+Power = 115
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = UserLosesTenthOfTotalHP
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user uses explosive force to shoot shards of its own body at the target. The user loses a tenth of its max HP.
+Animation = SPIKECANNON
+#-------------------------------
 [FUGUFRENZY]
 Name = Fugu Frenzy
 Type = WATER
@@ -3886,7 +3900,20 @@ FunctionCode = TrashTreasure
 Flags = CanProtect,CanMagicCoat,CanMirrorMove
 Description = The target is given a Black Sludge, replacing their item if any. Their Sp. Def is lowered.
 #-------------------------------
-[PETALTEMPEST]
+[
+#-------------------------------
+[IRONHEAD]
+Name = Iron Head
+Type = STEEL
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Flinch
+Flags = CanProtect,CanMirrorMove
+EffectChance = 40
+Description = The foe slams the target with its steel-hard head. It has a 40% chance to make the target flinch.EST]
 Name = Petal Tempest
 Type = GRASS
 Category = Special
@@ -6738,7 +6765,7 @@ Target = NearOther
 FunctionCode = RecoilThirdOfDamageDealtNumbTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
-Description = Calls its species to charges its foe, damaging the user a lot. Chance to paralyze.
+Description = Calls its species to charges its foe, having a 33% recoil. Has a 30% chance to paralyze.
 #-------------------------------
 [ANTIMATTER]
 Name = Antimatter
@@ -6749,7 +6776,7 @@ Accuracy = 0
 TotalPP = 12
 Target = NearOther
 FunctionCode = ResetTargetStatSteps
-Flags = CanProtect,CanMirrorMove,Wind
+Flags = CanProtect,CanMirrorMove
 Description = The target is bombarded with anti-particles, resetting any stat changes.
 #-------------------------------
 [ASTEROIDBELT]
@@ -6797,20 +6824,7 @@ TotalPP = 10
 Target = UserAndAllies
 FunctionCode = HealUserAndAlliesQuarterOfTotalHP
 Flags = CanSnatch
-Description = The user chants a prayer, restoring their side's HP and curing status.
-#-------------------------------
-[SIZZLE]
-Name = Sizzle
-Type = FIRE
-Category = Physical
-Power = 20
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = Burn
-Flags = CanProtect,CanMirrorMove
-EffectChance = 100
-Description = The user nuzzles its burning body against the target. This also leaves the target with burn.
+Description = The user chants a prayer, restoring a quarter of their side's HP.
 #-------------------------------
 [ALKALINEBOMB]
 Name = Alkaline Bomb
@@ -6823,17 +6837,6 @@ Target = NearOther
 FunctionCode = Basic
 Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
 Description = The user throws a chemical mixture at the target. High Crit ratio.
-#-------------------------------
-[CORESMASH]
-Name = Core Collapse
-Type = COSMIC
-Category = Status
-Accuracy = 0
-TotalPP = 12
-Target = User
-FunctionCode = LowerUserDefSpDef2RaiseUserAtkSpAtkSpd3
-Flags = CanSnatch
-Description = The user shatters its core, lowering its defensive stats by two steps but raising attacking and Speed stats by three steps each.
 #-------------------------------
 [AURABEAM]
 Name = Aura Beam
@@ -7136,18 +7139,6 @@ FunctionCode = LowerTargetSpd4
 Flags = CanProtect,CanMagicCoat,CanMirrorMove
 Description = The target is pulled towards the void to reduce its Speed stat by four steps.
 #-------------------------------
-[CHEAPSHOT]
-Name = Cheap Shot
-Type = DARK
-Category = Physical
-Power = 70
-Accuracy = 100
-TotalPP = 5
-Target = NearOther
-FunctionCode = SwitchOutUserDamagingMove
-Flags = CanProtect,CanMirrorMove
-Description = The user takes a cheap shot and switches places with a party Pokémon in waiting.
-#-------------------------------
 [DARKRECITAL]
 Name = Dark Recital
 Type = DARK
@@ -7160,6 +7151,7 @@ FunctionCode = LowerTargetSpDef1
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 10
 Description = The user performs a medley of ballads filled with malice. It has a 10% chance to reduce Sp. Def.
+# Octaveon Signature
 #-------------------------------
 [SCORESETTLER]
 Name = Score Settler
@@ -7172,18 +7164,6 @@ Target = NearOther
 FunctionCode = DoubleDamageAvengingFaint
 Flags = CanProtect,CanMirrorMove
 Description = Gets revenge for a fainted ally. If an ally fainted in the last turn, this attack's damage increases.
-#-------------------------------
-[SINFULSMITE]
-Name = Sinful Smite
-Type = DARK
-Category = Physical
-Power = 60
-Accuracy = 0
-TotalPP = 12
-Target = NearOther
-FunctionCode = ResetTargetStatSteps
-Flags = CanProtect,CanMirrorMove,Wind
-Description = The user attacks with a scathing attack. All of the target's stat step changes are returned to normal.
 #-------------------------------
 [FRENZY]
 Name = Frenzy
@@ -7207,7 +7187,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = IgnoreTargetDefSpDefEvaStatStages
 Flags = CanProtect,CanMirrorMove
-Description = TThe user attacks with a vengeance. Ignores the target's stat step changes.
+Description = The user attacks with a vengeance. Ignores the target's stat step changes.
 #-------------------------------
 [DRACONICCRASH]
 Name = Draconic Crash
@@ -7256,18 +7236,6 @@ FunctionCode = SwitchOutUserDamagingMove
 Flags = CanProtect,CanMirrorMove
 Description = After making its attack, the user rushes back to switch places with a party Pokémon in waiting.
 #-------------------------------
-[WYVERNSLASH]
-Name = Wyvern Slash
-Type = DRAGON
-Category = Physical
-Power = 70
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = Basic
-Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Blade
-Description = The target is slashed apart by draconic claws. Critical hits twice as often.
-#-------------------------------
 [EXCALIBUR]
 Name = Excalibur
 Type = FAIRY
@@ -7305,19 +7273,6 @@ Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = The user bursts into an explosion of love. 10% chance to Dizzy.
 # Needs bomb tag
-#-------------------------------
-[MYSTICPULSE]
-Name = Mystic Pulse
-Type = FAIRY
-Category = Special
-Power = 80
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = Flinch
-Flags = CanProtect,CanMirrorMove,Pulse
-EffectChance = 40
-Description = The user invokes its mystical power. It has a 40% chance to flinch the target.
 #-------------------------------
 [OBERONSWRATH]
 Name = Oberon's Wrath
@@ -7391,19 +7346,6 @@ FunctionCode = Basic
 Flags = CanProtect,CanMirrorMove
 Description = The target is pushed around with brute force.
 #-------------------------------
-[CHIDORI]
-Name = Chidori
-Type = FIGHTING
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = Numb
-Flags = CanProtect,CanMirrorMove
-EffectChance = 30
-Description = Gathers energy into its palm to blast the foe. It has a 30% chance to numb.
-#-------------------------------
 [DEADLYREACH]
 Name = Deadly Reach
 Type = FIGHTING
@@ -7427,18 +7369,6 @@ Target = NearOther
 FunctionCode = Basic
 Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Blade
 Description = A swift chop strikes the target's weak spot. Chance to +Atk. Critical hits twice as often.
-#-------------------------------
-[PARRY]
-Name = Parry
-Type = FIGHTING
-Category = Physical
-Power = 70
-Accuracy = 100
-TotalPP = 5
-Target = NearOther
-FunctionCode = DoubleDamageAvengingFaint
-Flags = CanProtect,CanMirrorMove
-Description = Gets revenge for a fainted ally. If an ally fainted in the last turn, this attack's damage increases.
 #-------------------------------
 [SWEEPINGWIND]
 Name = Sweeping Wind
@@ -8414,3 +8344,66 @@ Priority = -6
 FunctionCode = SwitchOutTargetDamagingMove
 Flags = CanProtect,CanMirrorMove
 Description = The user forces the target to switch out, to be replaced at random. In the wild, the battle ends.
+#-------------------------------
+[SATELLITERAY]
+Name = Satellite Ray
+Type = STEEL
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 20
+Target = Other
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove
+Description = A laser is shot from a satellite.
+#-------------------------------
+[HOLYWARD]
+Name = Holy Ward
+Type = LIGHT
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = AttacksWithSpDef
+Flags = CanProtect,CanMirrorMove
+Description = Manifests a holy ward to attack the foe, dealing damage based on the user's Sp. Def stat.
+#-------------------------------
+[SCENTEDSHIELD]
+Name = Scented Shield
+Type = GRASS
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = AttacksWithSpDef
+Flags = CanProtect,CanMirrorMove
+Description = Manifests a holy ward to attack the foe, dealing damage based on the user's Sp. Def stat.
+#-------------------------------
+[CLUSTERROCKETS]
+Name = Cluster Rockets
+Type = STEEL
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Flinch
+Flags = CanProtect,CanMirrorMove
+EffectChance = 40
+Description = The user bombards the target with rockets. It has a 40% chance to make the target flinch.
+# Needs the bomb tag
+#-------------------------------
+[OVERCLOCK]
+Name = Overclock
+Type = STEEL
+Category = Special
+Power = 50
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = RaiseUserSpd1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user overclocks itself to attack. Building up more power, it raises the user's Speed.

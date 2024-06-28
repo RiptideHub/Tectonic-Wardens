@@ -8982,7 +8982,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = LowerUserDefSpDef1RaiseUserAtkSpAtkSpd2
 Description = The user shatters its core lowering its defenses but sharply raising attacking and Speed stats.
-# Added, renamed to Core Smash as Core Collapse is in Tectonic
+# Replaced with shell smashes
 #-------------------------------
 [DIMENSIONWARP]
 Name = Dimension Warp
@@ -9486,7 +9486,7 @@ Target = NearOther
 FunctionCode = ResetTargetStatStages
 Flags = Contact,CanProtect,CanMirrorMove
 Description = This scathing attack clears the foe's stat changes.
-# Added
+# Replaced with Feint Attack
 #-------------------------------
 [VENDETTA]
 Name = Vendetta
@@ -9499,7 +9499,7 @@ Target = NearOther
 FunctionCode = IgnoreTargetDefSpDefEvaStatStages
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user attacks with a vengeance, and doesn't consider the foe's stat changes.
-# Added
+# Replaced with Lash Out
 #-------------------------------
 [FRENZY]
 Name = Frenzy
@@ -9738,7 +9738,7 @@ Target = NearOther
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate,Slicing
 Description = The target is slashed apart by draconic claws. Critical hits land more easily.
-# Added
+# Replaced with dragon claw
 #-------------------------------
 [BATTERYACID]
 Name = Battery Acid
@@ -9993,7 +9993,7 @@ Target = AllNearFoes
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,Pulse
 Description = The user invokes its mystical power to strike nearby foes.
-# Added
+# Replaced with love burst
 #-------------------------------
 [NYMPHSSPELL]
 Name = Nymph's Spell
@@ -10193,6 +10193,7 @@ FunctionCode = ParalyzeTarget
 Flags = CanProtect,CanMirrorMove,ThawsUser
 EffectChance = 30
 Description = Gathers energy into its palm to blast the foe. Has a chance to paralyze the target
+# Replaced with Concuss
 #-------------------------------
 [CHIORB]
 Name = Chi Orb
@@ -10272,7 +10273,7 @@ Target = NearOther
 FunctionCode = DoublePowerIfAllyFaintedLastTurn
 Flags = Contact,CanProtect,CanMirrorMove
 Description = Deals 2x damage if an ally fainted in the last turn.
-# Added
+# Replaced with Edge Strike
 #-------------------------------
 [SWEEPINGWIND]
 Name = Sweeping Wind
@@ -11327,7 +11328,7 @@ Target = UserAndAllies
 FunctionCode = HealUserAndAlliesQuarterOfTotalHPCureStatus
 Flags = CannotMetronome
 Description = The user chants a prayer, restoring their side's HP and curing status.
-# Added
+# Added as life dew clone
 #-------------------------------
 [REBUKE]
 Name = Rebuke
@@ -12740,6 +12741,7 @@ FunctionCode = RaiseUserAttack1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 30
 Description = The user lashes out in rage. Chance to +Atk.
+# Replaced with clash
 #-------------------------------
 [SWEEPINGTALON]
 Name = Sweeping Talon
@@ -12753,6 +12755,7 @@ FunctionCode = FlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove,Slicing
 EffectChance = 30
 Description = The user swiftly claws at the target from above. It may also make the target flinch.
+# Replaced with bird strike
 #-------------------------------
 [SATELLITERAY]
 Name = Satellite Ray
@@ -12765,6 +12768,7 @@ Target = Other
 FunctionCode = SuperEffectiveAgainstCosmic
 Flags = CanProtect,CanMirrorMove
 Description = A laser is shot from a satellite. SE against Cosmic-type.
+# Added
 #-------------------------------
 [HOLYWARD]
 Name = Holy Ward
@@ -12777,6 +12781,7 @@ Target = NearOther
 FunctionCode = UseUserBaseSpDefInsteadOfUserBaseSpAtk
 Flags = CanProtect,CanMirrorMove
 Description = Manifests a holy ward to attack the foe. Damage increases with the user's SpDef stat.
+# Added
 #-------------------------------
 [BEWITCH]
 Name = Bewitch
@@ -12789,6 +12794,7 @@ Target = NearOther
 FunctionCode = UseTargetSpDefInsteadOfTargetDefense
 Flags = CanProtect,CanMirrorMove
 Description = The user bewitches the target. This attack does special damage.
+# Replaced with pixie punch
 #-------------------------------
 [ALKALINEBOMB]
 Name = Alkaline Bomb
@@ -12814,6 +12820,7 @@ Target = NearOther
 FunctionCode = UseTargetSpDefInsteadOfTargetDefense
 Flags = CanProtect,CanMirrorMove
 Description = The user emits psychic waves that do special damage.
+# Replaced with mage hand
 #-------------------------------
 [CONCOCTION]
 Name = Concoction
@@ -12826,6 +12833,7 @@ Target = NearOther
 FunctionCode = CategoryDependsOnHigherDamageIgnoreTargetAbility
 Flags = CanProtect,CanMirrorMove
 Description = The user throws a concoction that deals physical or special damage opportunistically.
+# Replaced with grime grapple
 #-------------------------------
 [CRUELWHIP]
 Name = Cruel Whip
@@ -12838,6 +12846,7 @@ Target = NearOther
 FunctionCode = DoublePowerIfTargetStatusProblem
 Flags = Contact,CanProtect,CanMirrorMove
 Description = This whip does massive damage to a target affected by status problems.
+# Replaced with Incision
 #-------------------------------
 [BOMBARDMENT]
 Name = Bombardment
@@ -12850,6 +12859,7 @@ Target = NearOther
 FunctionCode = CategoryDependsOnHigherDamageIgnoreTargetAbility
 Flags = Contact,CanProtect,CanMirrorMove,Bomb
 Description = The user drops a barrage that deals physical or special damage opportunistically.
+# Replaced with fragmentation
 #-------------------------------
 [SCENTEDSHIELD]
 Name = Scented Shield
@@ -12862,6 +12872,7 @@ Target = NearOther
 FunctionCode = UseUserBaseSpDefInsteadOfUserBaseSpAtk
 Flags = CanProtect,CanMirrorMove
 Description = Uses a mixture of aromas to attack the foe. Damage increases with the user's SpDef stat.
+# Added as meganium's signature for now
 #-------------------------------
 [IRONSPARKS]
 Name = Iron Sparks
@@ -12875,6 +12886,7 @@ FunctionCode = BurnTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 30
 Description = The user welds itself causing sparks to fly, with a chance to burn the target.
+# Replaced with shine shot
 #-------------------------------
 [SHRAPNEL]
 Name = Shrapnel
@@ -12887,6 +12899,7 @@ Target = AllNearFoes
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,Bomb
 Description = The user attacks the foe with an exploding projectile. This attack will never miss.
+# Untouched, already a tectonic move
 #-------------------------------
 [CLUSTERROCKETS]
 Name = Cluster Rockets
@@ -12900,6 +12913,7 @@ FunctionCode = FlinchTarget
 Flags = CanProtect,CanMirrorMove,Bomb
 EffectChance = 30
 Description = The user bombards the target with rockets. It may also make the target flinch.
+# Added
 #-------------------------------
 [POWERDRILL]
 Name = Power Drill
@@ -12912,6 +12926,7 @@ Target = NearOther
 FunctionCode = RemoveScreens
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user drills past any barrier such as Light Screen and Reflect.
+# Replaced with faraday cage
 #-------------------------------
 [OVERCLOCK]
 Name = Overclock
@@ -12925,6 +12940,7 @@ FunctionCode = RaiseUserSpeed1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user overclocks itself to attack and then raises its Speed stat.
+# Added
 #-------------------------------
 [SONICBLAST]
 Name = Sonic Blast
