@@ -8078,3 +8078,99 @@ FunctionCode = Burn
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = Gathers space power and shoots at the target. It has a 10% chance to burn.
+#-------------------------------
+[BATTLECRY]
+Name = Battle Cry
+Type = NORMAL
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = BindTarget3
+Flags = CanProtect,CanMirrorMove,Sound
+Description = The user cries out with vigor, trapping and damaging it for three turns.
+#-------------------------------
+[BOOMBOX]
+Name = Boombox
+Type = NORMAL
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = AllNearOthers
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove,Sound
+Description = Using nearby objects the user creates an obnoxious sound damaging everything around it.
+#-------------------------------
+[CRESCENDO]
+Name = Crescendo
+Type = Normal
+Category = Physical
+Power = 30
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+FunctionCode = RockRoll
+Flags = CanProtect,CanMirrorMove,Sound
+Description = The user deafens the target and gets progressively louder. Its power doubles if it hits in succession.
+#-------------------------------
+[DEADSILENCE]
+Name = Dead Silence
+Type = SOUND
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = DisableTargetSoundMoves3
+Flags = CanProtect,CanMirrorMove,Sound
+EffectChance = 100
+Description = The user cancels out other sound with their own. The target cannot use sound-based moves for two turns.
+#-------------------------------
+[FORTISSIMO]
+Name = Fortissimo
+Type = FIRE
+Category = Physical
+Power = 130
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserSpAtk4
+Flags = CanProtect,CanMirrorMove,Sound
+Description = The user looses a deafening sound. Lowers the user's Sp. Atk by four steps.
+#-------------------------------
+[GENTLECHIMES]
+Name = Gentle Chimes
+Type = NORMAL
+Category = Special
+Power = 75
+Accuracy = 100
+TotalPP = 10
+Target = AllNearFoes
+Flags = CanProtect,CanMirrorMove,Sound
+Description = A song that appeals to the hearts of those listening.
+#-------------------------------
+[GOSSIP]
+Name = Gossip
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetSpAtkSpDef1
+Flags = CanProtect,CanMirrorMove,Sound
+Description = Annoys the target with mundane chatter. Lowers SpAtk and SpDef by one stage.
+#-------------------------------
+[HALLELUJAH]
+Name = Hallelujah
+Type = NORMAL
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = RaiseUserSpDef1
+Flags = CanProtect,CanMirrorMove,Sound
+EffectChance = 30
+Description = A hymn that has a chance to raise SpDef by 1.
