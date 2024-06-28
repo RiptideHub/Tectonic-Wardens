@@ -6432,6 +6432,7 @@ FunctionCode = BurnTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 20
 Description = Gathers space power and shoots at the target. It may also leave the target with a burn.
+# Replaced with meteoric blast
 #-------------------------------
 [SWIFT]
 Name = Swift
@@ -7651,6 +7652,7 @@ Priority = 2
 FunctionCode = LowerUserDefense1
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user charges the target at light speed (+2 priority) but lowers user's defense.
+# Replaced with Light Speed
 #-------------------------------
 [FLASH]
 Name = Flash
@@ -11480,6 +11482,7 @@ FunctionCode = LowerTargetAtkSpAtk1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = Attacks the target on their weak spot, with a chance to reduce their Atk/Sp.Atk by 1.
+# Replaced with Ransack
 #-------------------------------
 [BEARHUG]
 Name = Bear Hug
@@ -11491,6 +11494,7 @@ Target = NearOther
 FunctionCode = TrapTargetInBattle
 Flags = CanMirrorMove
 Description = Bear hugs the target in a way the target cannot flee or switch out from the battle.
+# Replaced with mean look
 #-------------------------------
 [CLONESURGE]
 Name = Clone Surge
@@ -11503,6 +11507,7 @@ Target = NearOther
 FunctionCode = PowerHigherWithConsecutiveUseOnUserSide
 Flags = CanProtect,CanMirrorMove
 Description = Clones itself to strike the foe. If this move is used every turn it does greater damage.
+# Replaced with Diffuse Pulse
 #-------------------------------
 [CURBSTOMP]
 Name = Curb Stomp
@@ -11515,6 +11520,7 @@ Target = NearOther
 FunctionCode = PowerHigherWithUserHeavierThanTarget
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user curbstomps the target. The heavier the user the greater the damage.
+# Added
 #-------------------------------
 [DETERMINATION]
 Name = Determination
@@ -11527,6 +11533,7 @@ Target = RandomNearFoe
 FunctionCode = MultiTurnAttackConfuseUserAtEnd
 Flags = CanProtect,CanMirrorMove
 Description = The user attacks relentlessly for 2-3 turns! It then becomes confused however.
+# Added
 #-------------------------------
 [FANTASYSEAL]
 Name = Fantasy Seal
@@ -11539,6 +11546,7 @@ Target = NearOther
 FunctionCode = SuperEffectiveAgainstGhost
 Flags = CanProtect,CanMirrorMove
 Description = Filled with skepticism this move is SE on Ghost-types.
+# Replaced with Particle Pulse. Marking as a potential signature.
 #-------------------------------
 [GENESIS]
 Name = Genesis
@@ -11551,6 +11559,7 @@ Target = NearOther
 FunctionCode = ExtendWeatherTerrainIfTargetFaints
 Flags = CanProtect,CanMirrorMove
 Description = Extends the duration of existing weather and terrain by 1 turn when KOing a target.
+# Replaced with long shot
 #-------------------------------
 [LAZYBREAK]
 Name = Lazy Break
@@ -11562,6 +11571,7 @@ Target = NearOther
 FunctionCode = SleepTarget
 Flags = CanProtect,CanMirrorMove
 Description = The user feigns taking a break to make the opponent fall asleep too.
+# Removed
 #-------------------------------
 [POWERNAP]
 Name = Power Nap
@@ -11572,6 +11582,7 @@ TotalPP = 5
 Target = UserAndAllies
 FunctionCode = CureUserPartyStatus
 Description = Taking a power nap, the user heals itself and its team from status conditions.
+# Unchanged, power nap is a recover clone with moon glow synergy in tectonic
 #-------------------------------
 [PRIMALWAVE]
 Name = Primal Wave
@@ -11584,6 +11595,7 @@ Target = AllNearFoes
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,Pulse
 Description = Summoning an ancient wave the user hits the enemy with precision.
+# Replaced with Stellarate
 #-------------------------------
 [PULSE]
 Name = Pulse
@@ -11596,6 +11608,7 @@ Target = AllNearFoes
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,Pulse
 Description = A pulse wave blasts the opponents. It hits without fail.
+# Replaced with Swift (normal type)
 #-------------------------------
 [MAIM]
 Name = Maim
@@ -11609,6 +11622,7 @@ FunctionCode = RaiseUserAttack1
 Flags = Contact,CanProtect,CanMirrorMove,Punching
 EffectChance = 30
 Description = The user builds up its rage by constantly mauling the target. Chance to +Atk.
+# Replaced with hold back
 #-------------------------------
 [RAPIDSTRIKE]
 Name = Rapid Strike
@@ -11622,6 +11636,7 @@ Priority = 2
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user charges the target at blinding speed with +2 priority.
+# Replaced with normal Extreme speed
 #-------------------------------
 [SHUTDOWN]
 Name = Shutdown
@@ -11636,6 +11651,7 @@ FunctionCode = FlinchTargetFailsIfNotUserFirstTurn
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 100
 Description = Flinches the target but only works on the first turn.
+# Replaced with fake out
 #-------------------------------
 [SLICINGTAIL]
 Name = Slicing Tail
@@ -11648,6 +11664,7 @@ Target = NearOther
 FunctionCode = HitThreeTimesPowersUpWithEachHit
 Flags = Contact,CanProtect,CanMirrorMove,Slicing
 Description = A consecutive three-part attack that becomes more powerful with each successive hit.
+# Replaced with Scratch
 #-------------------------------
 [TWINBEAM]
 Name = Twin Beam
@@ -11660,6 +11677,7 @@ Target = NearOther
 FunctionCode = HitTwoTimes
 Flags = CanProtect,CanMirrorMove
 Description = Shoots the target with identical beams in quick succession.
+# Replaced with null pulse
 #-------------------------------
 [WEAPONMASTERY]
 Name = Weapon Mastery
@@ -11671,6 +11689,7 @@ Target = User
 FunctionCode = RaiseUserAtkSpAtkSpd1
 Flags = Dance
 Description = The user's mastery of its weapon shines forth, raising its Atk, Sp.Atk, and Speed stats.
+# Added
 #-------------------------------
 [ACIDRAIN]
 Name = Acid Rain
@@ -11696,6 +11715,7 @@ Target = NearOther
 FunctionCode = DoublePowerIfTargetStatusProblem
 Flags = CanProtect,CanMirrorMove
 Description = Causes an anaphylatic shock, dealing increased damage to a target with status problems.
+# Replaced with Venoshock
 #-------------------------------
 [CORRODE]
 Name = Corrode
@@ -11708,6 +11728,7 @@ Target = NearOther
 FunctionCode = SuperEffectiveAgainstSteel
 Flags = CanProtect,CanMirrorMove
 Description = Corrodes away any and everything in its path. SE against Steel-type.
+# Replaced with Stink Cloud
 #-------------------------------
 [NEUROTOXIN]
 Name = Neurotoxin
@@ -11721,6 +11742,7 @@ FunctionCode = PoisonTarget
 Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate
 EffectChance = 100
 Description = The user injects a deadly substance, poisoning its foe with a high critical hit ratio.
+# Added
 #-------------------------------
 [PLAGUE]
 Name = Plague
@@ -11733,6 +11755,7 @@ Target = AllNearOthers
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove
 Description = The user spreads a virulent plague to everyone around it.
+# Replaced with grime grapple
 #-------------------------------
 [POISONSPIT]
 Name = Poison Spit
@@ -11746,6 +11769,7 @@ FunctionCode = PoisonTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user gathers toxins and fires them at the target. This also leaves the target poisoned.
+# Replaced with envenom
 #-------------------------------
 [SPOIL]
 Name = Spoil
@@ -11758,6 +11782,7 @@ Target = NearOther
 FunctionCode = RemoveTargetItem
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The target's item rots after entering in contact with the user.
+# Replaced with caustic punch
 #-------------------------------
 [VENOMDRAIN]
 Name = Venom Drain
@@ -11770,6 +11795,7 @@ Target = NearOther
 FunctionCode = HealUserByHalfOfDamageDone
 Flags = Contact,CanProtect,CanMirrorMove,Biting
 Description = Drains the target, restoring the user's HP by half the damage dealt to the target.
+# Replaced with Toxic Taste
 #-------------------------------
 [VILEFUMES]
 Name = Vile Fumes
@@ -11782,6 +11808,7 @@ Target = NearOther
 FunctionCode = NegateTargetAbility
 Flags = CanProtect,CanMirrorMove
 Description = Sprays vile fumes that negate the ability of those hit.
+# Replaced with Poison Dart
 #-------------------------------
 [ARCANEENERGY]
 Name = Arcane Energy
@@ -11795,6 +11822,7 @@ FunctionCode = RaiseUserSpAtk1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = The user cites ancient spells against the target. This may +Sp.Atk.
+# Added
 #-------------------------------
 [BLOODRITUAL]
 Name = Blood Ritual
@@ -11807,6 +11835,7 @@ Target = NearOther
 FunctionCode = RecoilThirdOfDamageDealt
 Flags = CanProtect,CanMirrorMove
 Description = Makes a blood pact with a sinister force, causing the user to take serious damage.
+# Added
 #-------------------------------
 [CHECKMATE]
 Name = Checkmate
@@ -11819,6 +11848,7 @@ Target = NearOther
 FunctionCode = RaiseUserSpAtk2IfTargetFaints
 Flags = CanProtect,CanMirrorMove
 Description = The user outsmarts the target. KOing raises user's SpAtk sharply.
+# Added
 #-------------------------------
 [KARMASPELL]
 Name = Karma Spell
@@ -11832,6 +11862,7 @@ Priority = -6
 FunctionCode = SwitchOutTargetDamagingMove
 Flags = CanProtect,CanMirrorMove
 Description = The foe is attacked and replaced by another in its party. In the wild, the battle ends.
+# Replaced with Mage Hand
 #-------------------------------
 [MANICOVERLOAD]
 Name = Manic Overload
@@ -11844,6 +11875,7 @@ Target = NearOther
 FunctionCode = LowerUserAtkSpd1
 Flags = CanProtect,CanMirrorMove
 Description = The user goes mad from holding too much knowledge. -Atk and Spd of the user.
+# Replaced with Omniscient Blow
 #-------------------------------
 [MEMORYBLOCK]
 Name = Memory Block
@@ -11857,6 +11889,7 @@ FunctionCode = LowerTargetAccuracy1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 30
 Description = Scrambles the user's mind with a chance to lower target's accuracy.
+# Replaced with heart stamp
 #-------------------------------
 [MINDBLAST]
 Name = Mind Blast
@@ -11869,6 +11902,7 @@ Target = NearOther
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove
 Description = The user sends a telekinetic blast towards the target.
+# Replaced with Blindside
 #-------------------------------
 [MINDDRAIN]
 Name = Mind Drain
@@ -11881,6 +11915,7 @@ Target = NearOther
 FunctionCode = HealUserByHalfOfDamageDone
 Flags = Contact,CanProtect,CanMirrorMove,Biting
 Description = Drains the mental faculties of the target, restoring half of damage dealt.
+# Removed as a tutor, replaced with kinetic grip/psychoscission
 #-------------------------------
 [MINDSPASM]
 Name = Mind Spasm
@@ -11894,6 +11929,7 @@ FunctionCode = ConfuseTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The target's mind goes haywire and erractic. Always confuses the target.
+# Replaced with confuse ray
 #-------------------------------
 [NURTURINGCHANT]
 Name = Nurturing Chant
@@ -11905,6 +11941,7 @@ Target = UserAndAllies
 FunctionCode = HealUserAndAlliesQuarterOfTotalHP
 Flags = Sound
 Description = The user casts a spell that heals both allies by 25%.
+# Replaced with life dew
 #-------------------------------
 [PYROKINESIS]
 Name = Pyrokinesis
@@ -11918,6 +11955,7 @@ FunctionCode = BurnTarget
 Flags = CanProtect,CanMirrorMove,ThawsUser
 EffectChance = 30
 Description = The user sets the target ablaze using its powers. It may also leave the target with a burn.
+# Added
 #-------------------------------
 [QUICKSPELL]
 Name = Quick Spell
@@ -11931,6 +11969,7 @@ Priority = 1
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,Sound
 Description = Citing magic, the user hexes the target with a priority spell.
+# Replaced with Mind Waves
 #-------------------------------
 [AMBERWAVE]
 Name = Amber Wave
@@ -11944,6 +11983,7 @@ FunctionCode = BurnTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = A burning hot wave of ambers crashes down on the enemies. It has a chance to burn.
+# Replaced with Terraform
 #-------------------------------
 [BEJEWELED]
 Name = Bejeweled
@@ -11957,6 +11997,7 @@ FunctionCode = ParalyzeBurnOrFreezeTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 20
 Description = Nearby gems charge the user to shoot the foe. May also paralyze burn or freeze the target.
+# Replaced with Diamond Force
 #-------------------------------
 [BOULDERHURL]
 Name = Boulder Hurl
@@ -11969,6 +12010,7 @@ Target = NearOther
 FunctionCode = UseUserBaseDefenseInsteadOfUserBaseAttack
 Flags = Contact,CanProtect,CanMirrorMove
 Description = An attack that increases the higher the user's Defense is.
+# Added
 #-------------------------------
 [CATAPULT]
 Name = Catapult
@@ -11982,6 +12024,7 @@ FunctionCode = RaiseUserSpeed1
 Flags = Contact,CanProtect,CanMirrorMove,Bomb
 EffectChance = 30
 Description = The user catapults itself onto the foe. It has a chance to raise the user's Speed stat.
+# Replaced with Admantine Press, but could be added because of cannonfire
 #-------------------------------
 [CRYSTALDUST]
 Name = Crystal Dust
@@ -11995,6 +12038,7 @@ FunctionCode = LowerTargetAccuracy1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = A beautiful dust-like powder is blown on the target's eyes. It may lower accuracy.
+# Replaced with shatter shot
 #-------------------------------
 [DIAMONDBLADE]
 Name = Diamond Blade
@@ -12008,6 +12052,7 @@ FunctionCode = RaiseUserAttack1
 Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate,Slicing
 EffectChance = 30
 Description = The user slashes the target with a diamond tip. High Crit ratio. Chance to +Atk.
+# Added
 #-------------------------------
 [DIAMONDSHARD]
 Name = Diamond Shard
@@ -12021,6 +12066,7 @@ Priority = 1
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove
 Description = The user launches beautiful shards of diamonds at the target.This move always goes first.
+# Replaced with Shatter shot
 #-------------------------------
 [GEMSTORM]
 Name = Gem Storm
@@ -12033,6 +12079,7 @@ Target = AllNearFoes
 FunctionCode = AlwaysHitsInSandstorm
 Flags = CanProtect,CanMirrorMove
 Description = A maelstrom of gems violently hits the enemies. Always hit on Sandstorm.
+# Replaced with rockapult
 #-------------------------------
 [GLISTEN]
 Name = Glisten
@@ -12043,6 +12090,7 @@ TotalPP = 15
 Target = User
 FunctionCode = RaiseUserSpAtkSpDef1
 Description = Glistening brightly the user raises Sp. Atk and Sp. Def stats by 1 stage.
+# Replaced with calm mind
 #-------------------------------
 [MINERALWAVE]
 Name = Mineral Wave
@@ -12056,6 +12104,7 @@ FunctionCode = LowerTargetSpeed1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 100
 Description = Drowns the enemies in a landslide of minerals. Always lowers Speed.
+# Replaced with Starfall
 #-------------------------------
 [MOONSTONERAY]
 Name = Moonstone Ray
@@ -12068,6 +12117,7 @@ Target = NearOther
 FunctionCode = TwoTurnAttackChargeRaiseUserSpAtk1
 Flags = CanProtect,CanMirrorMove
 Description = Draws in power from the moon and +Sp. Atk stat on one turn then attacks on the next turn.
+# Replaced with meteor beam again
 #-------------------------------
 [BATTLECRY]
 Name = Battle Cry

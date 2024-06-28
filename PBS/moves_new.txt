@@ -7931,3 +7931,150 @@ FunctionCode = RaiseUserSpd1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user fills itself with energy and attacks. Building up more power, it raises the user's Speed.
+#-------------------------------
+[CURBSTOMP]
+Name = Curb Stomp
+Type = NORMAL
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = ScalesHeavierThanTarget
+Flags = CanProtect,CanMirrorMove
+Description = The user curbstomps the target. The heavier the user, the greater the damage.
+#-------------------------------
+[DETERMINATION]
+Name = Determination
+Type = NORMAL
+Category = Special
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = RandomNearFoe
+FunctionCode = Rampage
+Flags = CanProtect,CanMirrorMove
+Description = The user attacks relentlessly for three turns.
+#-------------------------------
+[LIGHTSPEED]
+Name = Light Speed
+Type = LIGHT
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+Priority = 2
+FunctionCode = LowerUserDef2
+Flags = CanProtect,CanMirrorMove
+Description =The user charges the target at light speed. This attack always goes before any other move, but lowers defense by 2 steps.
+#-------------------------------
+[WEAPONMASTERY]
+Name = Weapon Mastery
+Type = STEEL
+Category = Status
+Accuracy = 0
+TotalPP = 25
+Target = User
+FunctionCode = RaiseUserAtkSpAtk2Spd2
+Flags = CanSnatch
+Description = The user is roused, raising its Attack, Sp. Atk, and Speed by two steps each.
+#-------------------------------
+[NEUROTOXIN]
+Name = Neurotoxin
+Type = POISON
+Category = Physical
+Power = 85
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Poison
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+EffectChance = 100
+Description = The user injects a deadly substance. It always poisons the target, and critical hits twice as often.
+#-------------------------------
+[ARCANEENERGY]
+Name = Arcane Energy
+Type = PSYCHIC
+Category = Special
+Power = 115
+Accuracy = 80
+TotalPP = 5
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove
+Description = The user cites ancient spells against the target.
+#-------------------------------
+[BLOODRITUAL]
+Name = Blood Ritual
+Type = PSYCHIC
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = RecoilThirdOfDamageDealt
+Flags = CanProtect,CanMirrorMove
+Description = Makes a blood pact with a sinister force. The user also takes 33% recoil.
+#-------------------------------
+[CHECKMATE]
+Name = Checkmate
+Type = PSYCHIC
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = RaiseUserSpatk5IfTargetFaints
+Flags = CanProtect,CanMirrorMove
+Description = When the user knocks out a target with this move, the user's Attack stat rises by five steps.
+#-------------------------------
+[PYROKINESIS]
+Name = Pyrokinesis
+Type = PSYCHIC
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Burn
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The user sets the target ablaze using its powers. It has a 30% chance to burn.
+#-------------------------------
+[BOULDERHURL]
+Name = Boulder Hurl
+Type = ROCK
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = AttacksWithDefense
+Flags = CanProtect,CanMirrorMove
+Description = The user hurls a rock into the opponent, dealing damage based on the user's Defense stat.
+#-------------------------------
+[DIAMONDBLADE]
+Name = Diamond Blade
+Type = ROCK
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Blade
+Description = The user slashes the target with a diamond tip. Critical hits twice as often.
+#-------------------------------
+[METEORICBLAST]
+Name = Meteoric Blast
+Type = COSMIC
+Category = Special
+Power = 115
+Accuracy = 80
+TotalPP = 5
+Target = NearOther
+FunctionCode = Burn
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = Gathers space power and shoots at the target. It has a 10% chance to burn.
