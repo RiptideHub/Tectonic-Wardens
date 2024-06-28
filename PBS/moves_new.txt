@@ -8105,7 +8105,7 @@ Description = Using nearby objects the user creates an obnoxious sound damaging 
 #-------------------------------
 [CRESCENDO]
 Name = Crescendo
-Type = Normal
+Type = NORMAL
 Category = Physical
 Power = 30
 Accuracy = 100
@@ -8117,7 +8117,7 @@ Description = The user deafens the target and gets progressively louder. Its pow
 #-------------------------------
 [DEADSILENCE]
 Name = Dead Silence
-Type = SOUND
+Type = NORMAL
 Category = Physical
 Power = 80
 Accuracy = 100
@@ -8130,7 +8130,7 @@ Description = The user cancels out other sound with their own. The target cannot
 #-------------------------------
 [FORTISSIMO]
 Name = Fortissimo
-Type = FIRE
+Type = NORMAL
 Category = Physical
 Power = 130
 Accuracy = 100
@@ -8173,4 +8173,244 @@ Target = NearOther
 FunctionCode = RaiseUserSpDef1
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 30
-Description = A hymn that has a chance to raise SpDef by 1.
+Description = A hymn that has a 30% chance to raise SpDef by 1.
+#-------------------------------
+[HYPERACUSIS]
+Name = Hyperacusis
+Type = NORMAL
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetSpDef1
+Flags = CanProtect,CanMirrorMove,Sound
+EffectChance = 20
+Description = The user makes a strange noise that baffles the target. It has a 20% chance to lower Sp.Def.
+#-------------------------------
+[MEGAPHONE]
+Name = Megaphone
+Type = NORMAL
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = RaiseUserAttack1
+Flags = CanProtect,CanMirrorMove,Sound
+EffectChance = 30
+Description = The user amplifies its cry towards the target. It has a 30% chance to increase Atk.
+#-------------------------------
+[NOISEPOLLUTION]
+Name = Noise Pollution
+Type = NORMAL
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Poison
+Flags = CanProtect,CanMirrorMove,Sound
+EffectChance = 30
+Description = Amplifies environmental noise which disturbs the opponent. It has a 30% chance to poison the target.
+#-------------------------------
+[PERFECTPITCH]
+Name = Perfect Pitch
+Type = NORMAL
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = RaiseUserMainStats1
+Flags = CanProtect,CanMirrorMove,Sound
+EffectChance = 20
+Description = The user blasts the target with a gust of repulsive wind. It has a 20% chance to raise all stats.
+#-------------------------------
+[PHILHARMONIC]
+Name = Philharmonic
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = UserAndAllies
+FunctionCode = HealUserAndAlliesQuarterOfTotalHPCureStatus
+Flags = Sound
+Description = The user performs a concert, and restores HP and heals status of itself and its ally Pokémon in battle.
+#-------------------------------
+[REVERB]
+Name = Reverb
+Type = NORMAL
+Category = Special
+Power = 25
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+FunctionCode = HitTwoToFiveTimes
+Flags = CanProtect,CanMirrorMove
+Description = The user issues a bellowing sound that produces a large echo. Two to five waves are shot in rapid succession.
+#-------------------------------
+[SCHIZOPHRENIA]
+Name = Schizophrenia
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 30
+Target = UserOrNearAlly
+FunctionCode = Basic
+Flags = Sound
+Description = The user begins to hear and feel things, boosting its highest and lowest stat.
+#-------------------------------
+[SONGOFPASSION]
+Name = Song of Passion
+Type = NORMAL
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserSpAtk2
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The user recites a hymn. It has a 30% chance to raise the user's Sp. Atk stat by two steps.
+#-------------------------------
+[SONGOFSILENCE]
+Name = Song of Silence
+Type = NORMAL
+Category = Special
+Power = 60
+Accuracy = 0
+TotalPP = 12
+Target = NearOther
+FunctionCode = ResetTargetStatSteps
+Flags = CanProtect,CanMirrorMove,Sound
+Description = The user plays John Cage's 4'33. All of the target's stat step changes are returned to normal.
+#-------------------------------
+[SONICPUNCH]
+Name = Sonic Punch
+Type = NORMAL
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+Priority = 1
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove,Punching,Sound
+Description = The user throws a punch that breaks the speed of sound. It is certain to strike first.
+#-------------------------------
+[TALKSMACK]
+Name = Talk Smack
+Type = NORMAL
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = LowerTargetDef1
+Flags = CanProtect,CanMirrorMove,Sound
+EffectChance = 20
+Description = The user begins to trash talk the target to disrupt them with a 20% chance to lower Defense.
+#-------------------------------
+[WAIL]
+Name = Wail
+Type = NORMAL
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = DoubleDamageUserStatsLowered
+Flags = CanProtect,CanMirrorMove,Sound
+EffectChance = 100
+Description = If the user's stats were lowered during the turn, the power of this move is doubled.
+#-------------------------------
+[CHROMERAY]
+Name = Chrome Ray
+Type = STEEL
+Category = Special
+Power = 115
+Accuracy = 80
+TotalPP = 5
+Target = NearOther
+FunctionCode = Paralyze
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The user crafts shiny metal that reflects bright light onto the target. It has a 10% chance to cause paralysis.
+#-------------------------------
+[MAGNETICCANNON]
+Name = Magnetic Cannon
+Type = STEEL
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetSpDef1
+Flags = CanProtect,CanMirrorMove,Pulse
+EffectChance = 20
+Description = The user fires a highly energetic blast at the target. It has a 20% chance to lower Sp. Def.
+#-------------------------------
+[SHIELDBASH]
+Name = Shield Bash
+Type = STEEL
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = AttacksWithDefense
+Flags = CanProtect,CanMirrorMove
+Description = The user slams its hardened body into the opponent, dealing damage based on the user's Defense stat.
+#-------------------------------
+[TITANHAMMER]
+Name = Titan Hammer
+Type = STEEL
+Category = Physical
+Power = 130
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerUserAtk4
+Flags = CanProtect,CanMirrorMove
+Description = Wields a gigantic hammer and slams the target. Lowers the user's Attack by four steps.
+#-------------------------------
+[TIMEBOMB]
+Name = Time Bomb
+Type = STEEL
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = DoubleDamageAvengingFaint
+Flags = CanProtect,CanMirrorMove
+Description = Gets revenge for a fainted ally. If an ally fainted in the last turn, this attack's damage increases.
+# Need bomb tag
+#-------------------------------
+[CORALBOMB]
+Name = Coral Bomb
+Type = WATER
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Burn
+Flags = CanProtect,CanMirrorMove
+EffectChance =  10
+Description = Coral bombs are launched at the opposing team. It has a 10% chance to burn.
+# Needs bomb tag
+#-------------------------------
+[HYPERTORRENT]
+Name = Hyper Torrent
+Type = WATER
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = -6
+FunctionCode = SwitchOutTargetDamagingMove
+Flags = CanProtect,CanMirrorMove
+Description = The user forces the target to switch out, to be replaced at random. In the wild, the battle ends.

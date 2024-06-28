@@ -12249,6 +12249,7 @@ FunctionCode = LowerTargetSpDef1
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 20
 Description = The user makes a strange noise that baffles the target. Chance to -Sp.Def.
+# Added
 #-------------------------------
 [LULLABY]
 Name = Lullaby
@@ -12260,6 +12261,7 @@ Target = NearOther
 FunctionCode = SleepTargetNextTurn
 Flags = CanProtect,CanMirrorMove,Sound
 Description = A soothing lullaby is sung putting the target to sleep on the next turn.
+# Removed
 #-------------------------------
 [MEGAPHONE]
 Name = Megaphone
@@ -12273,6 +12275,7 @@ FunctionCode = RaiseUserAttack1
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 30
 Description = The user amplifies its cry towards the target. Chance to +Atk.
+# Added
 #-------------------------------
 [NOISEPOLLUTION]
 Name = Noise Pollution
@@ -12286,6 +12289,7 @@ FunctionCode = PoisonTarget
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 30
 Description = Amplifies environmental noise which disturbs the opponent. It may also poison the target.
+# Added
 #-------------------------------
 [ODETOJOY]
 Name = Ode to Joy
@@ -12297,6 +12301,7 @@ Target = User
 FunctionCode = HealUserHalfOfTotalHP
 Flags = Sound
 Description = Sings a beautiful melody that heals user for half of its total HP.
+# Replaced with recover. The name is marked for a potential signature
 #-------------------------------
 [PERFECTPITCH]
 Name = Perfect Pitch
@@ -12310,6 +12315,7 @@ FunctionCode = RaiseUserMainStats1
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 10
 Description = The user recites a note that may also raise all the user's stats at once.
+# Added
 #-------------------------------
 [PHILHARMONIC]
 Name = Philharmonic
@@ -12321,6 +12327,7 @@ Target = UserAndAllies
 FunctionCode = HealUserAndAlliesQuarterOfTotalHPCureStatus
 Flags = Sound
 Description = The user performs a concert, restoring its HP and curing status conditions of itself and allies.
+# Added
 #-------------------------------
 [RALLENTANDO]
 Name = Rallentando
@@ -12332,6 +12339,7 @@ Target = NearOther
 FunctionCode = LowerTargetAtkSpAtk1SwitchOutUser
 Flags = CanProtect,CanMirrorMove,Sound
 Description = The user makes a soft sound that lowers the target's Atk and SpAtk and switches out.
+# Raplaced with parting shot (it's a sound tagged move already)
 #-------------------------------
 [REVERB]
 Name = Reverb
@@ -12344,6 +12352,7 @@ Target = NearOther
 FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect,CanMirrorMove,Sound
 Description = The user issues a bellowing sound that produces a large echo that can hit the target 2-5 times.
+# Added
 #-------------------------------
 [SCHIZOPHRENIA]
 Name = Schizophrenia
@@ -12355,6 +12364,7 @@ Target = UserOrNearAlly
 FunctionCode = RaiseMinMaxStat1
 Flags = Sound
 Description = The user begins to hear and feel things, boosting its highest and lowest stat.
+# Added but don't know ATM how to implement
 #-------------------------------
 [SONGOFPASSION]
 Name = Song of Passion
@@ -12368,6 +12378,7 @@ FunctionCode = RaiseUserSpAtk1
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 30
 Description = The user recites a hymn that may also raise the user's Sp. Atk stat.
+# Added
 #-------------------------------
 [SONGOFSILENCE]
 Name = Song of Silence
@@ -12380,6 +12391,7 @@ Target = NearOther
 FunctionCode = ResetTargetStatStages
 Flags = CanProtect,CanMirrorMove,Sound
 Description = The user plays John Cage's 4'33 that returns all stat changes to normal.
+# Added
 #-------------------------------
 [SONICCRASH]
 Name = Sonic Crash
@@ -12392,6 +12404,7 @@ Target = NearOther
 FunctionCode = RecoilThirdOfDamageDealt
 Flags = Contact,CanProtect,CanMirrorMove,Sound
 Description = The users looses a soundwave that causes 33% recoil.
+# Replaced with double edge
 #-------------------------------
 [SONICPUNCH]
 Name = Sonic Punch
@@ -12405,6 +12418,7 @@ Priority = 1
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove,Punching
 Description = The user throws a punch that breaks the speed of sound. It is certain to strike first.
+# Added
 #-------------------------------
 [STACCATO]
 Name = Staccato
@@ -12419,6 +12433,7 @@ FunctionCode = FlinchTargetFailsIfNotUserFirstTurn
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 100
 Description = Flinches the target but only works on the first turn.
+# Replaced with fake out
 #-------------------------------
 [TALKSMACK]
 Name = Talk Smack
@@ -12432,6 +12447,7 @@ FunctionCode = LowerTargetDefense1
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 10
 Description = The user begins to trash talk the target to disrupt them. Chance to -Defense.
+# Added
 #-------------------------------
 [WAIL]
 Name = Wail
@@ -12444,6 +12460,7 @@ Target = NearOther
 FunctionCode = DoublePowerIfUserStatsLoweredThisTurn
 Flags = CanProtect,CanMirrorMove,Sound
 Description = The user chimes a blaring cry. Deals double damage if its stats have been lowered this turn.
+# Added
 #-------------------------------
 [CHROMERAY]
 Name = Chrome Ray
@@ -12457,6 +12474,7 @@ FunctionCode = ParalyzeTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = The user crafts shiny metal that reflects bright light onto the target. It may also cause paralysis.
+# Added
 #-------------------------------
 [GOLDENBULLET]
 Name = Golden Bullet
@@ -12470,6 +12488,7 @@ Priority = 1
 FunctionCode = FailsIfTargetActed
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user hits the target at bullet speed. It fails if the target is not readying an attack however.
+# Replaced with Smart Horn
 #-------------------------------
 [HELLBULLET]
 Name = Hell Bullet
@@ -12482,6 +12501,7 @@ Target = NearOther
 FunctionCode = CannotBeRedirected
 Flags = CanProtect,CanMirrorMove,Bomb
 Description = Ignores all attempts at redirection allowing this move to hit the chosen target.
+# Replaced with Slag
 #-------------------------------
 [MAGNETICCANNON]
 Name = Magnetic Cannon
@@ -12495,6 +12515,7 @@ FunctionCode = LowerTargetSpDef1
 Flags = CanProtect,CanMirrorMove,Pulse
 EffectChance = 20
 Description = The user fires a highly energetic blast at the target. Chance to lower Sp. Def.
+# Added
 #-------------------------------
 [MISSILESHOT]
 Name = Missile Shot
@@ -12507,6 +12528,7 @@ Target = NearOther
 FunctionCode = UseTargetDefenseInsteadOfTargetSpDef
 Flags = CanProtect,CanMirrorMove
 Description = The user fires a projectile towards the target. This attack does physical damage.
+# Added
 #-------------------------------
 [NERVESOFSTEEL]
 Name = Nerves of Steel
@@ -12517,6 +12539,7 @@ TotalPP = 10
 Target = UserSide
 FunctionCode = StartUserSideImmunityToStatStageLowering
 Description = The user steadies itself to remain calm. Prevents lowering of stats for 5 turns.
+# Replaced with puzzle room
 #-------------------------------
 [QUICKSILVER]
 Name = Quicksilver
@@ -12530,6 +12553,7 @@ Priority = 1
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove
 Description = A light metal in liquid state is thrown at the target. Strikes with priority.
+# Replaced with hot shot
 #-------------------------------
 [SHIELDBASH]
 Name = Shield Bash
@@ -12542,6 +12566,7 @@ Target = NearOther
 FunctionCode = UseUserBaseDefenseInsteadOfUserBaseAttack
 Flags = Contact,CanProtect,CanMirrorMove
 Description = Slams its hardened body into the target. Uses the Defense of the user to calculate damage.
+# Added
 #-------------------------------
 [SMARTBLADE]
 Name = Smart Blade
@@ -12554,6 +12579,7 @@ Target = NearOther
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate,Slicing
 Description = The user slices the target with very sharp blades. It has a high critical-hit ratio
+# Replaced with Slay
 #-------------------------------
 [SWORDSTRIKE]
 Name = Sword Strike
@@ -12567,6 +12593,7 @@ FunctionCode = RaiseUserAttack1
 Flags = Contact,CanProtect,CanMirrorMove,Slicing
 EffectChance = 20
 Description = Readies a sword and strikes the target down. Chance to +Atk.
+# Replaced with Slay
 #-------------------------------
 [TIMEBOMB]
 Name = Time Bomb
@@ -12579,6 +12606,7 @@ Target = NearOther
 FunctionCode = DoublePowerIfAllyFaintedLastTurn
 Flags = CanProtect,CanMirrorMove,Bomb
 Description = Deals 2x damage if an ally fainted in the last turn.
+# Added
 #-------------------------------
 [TITANHAMMER]
 Name = Titan Hammer
@@ -12591,6 +12619,7 @@ Target = NearOther
 FunctionCode = LowerUserAttack2
 Flags = Contact,CanProtect,CanMirrorMove
 Description = Wields a gigantic hammer and slams the target. Lowers the user's attack stat by 2 stages.
+# Added
 #-------------------------------
 [CORALBOMB]
 Name = Coral Bomb
@@ -12604,6 +12633,7 @@ FunctionCode = BurnTarget
 Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate,Bomb
 EffectChance = 30
 Description = Coral bombs are launched at the opposing team with chance to burn. High Crit ratio.
+# Added
 #-------------------------------
 [HYPERTORRENT]
 Name = Hyper Torrent
@@ -12617,6 +12647,7 @@ Priority = -6
 FunctionCode = SwitchOutTargetDamagingMove
 Flags = CanProtect,CanMirrorMove
 Description = The user blasts the target and drags out another Pokémon in its party. In the wild the battle ends.
+# Saharicane's signature, replaced with maelstrom on poltegeist
 #-------------------------------
 [OCEANBLAST]
 Name = Ocean Blast
@@ -12629,6 +12660,7 @@ Target = NearOther
 FunctionCode = CannotBeRedirected
 Flags = CanProtect,CanMirrorMove
 Description = Ignores all attempts at redirection allowing this move to hit the chosen target.
+# Replaced with Bubble Blaster
 #-------------------------------
 [OCEANWRATH]
 Name = Ocean Wrath
@@ -12641,6 +12673,7 @@ Target = NearOther
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate
 Description = The target is struck by the ocean's might. High Crit ratio.
+# Replaced with depth charge
 #-------------------------------
 [SURGINGBLOW]
 Name = Surging Blow
@@ -12654,6 +12687,7 @@ Priority = 1
 FunctionCode = FailsIfTargetActed
 Flags = Contact,CanProtect,CanMirrorMove,Punching
 Description = This move enables the user to attack first. It fails if the target is not readying an attack.
+# Replaced with slamshut
 #-------------------------------
 [WATERPRESSURE]
 Name = Water Pressure
@@ -12666,6 +12700,7 @@ Target = NearOther
 FunctionCode = RecoilThirdOfDamageDealt
 Flags = Contact,CanProtect,CanMirrorMove
 Description = A column of water is slammed at the target. 1/3rd Recoil damage.
+# Replaced with harbor breaker
 #-------------------------------
 [WATERWHIP]
 Name = Water Whip
@@ -12679,6 +12714,7 @@ Priority = -6
 FunctionCode = SwitchOutTargetDamagingMove
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user knocks away the target and drags out another Pokémon. In the wild the battle ends.
+# Replaced with Snap
 #-------------------------------
 [QUICKSAND]
 Name = Quicksand
@@ -12690,6 +12726,7 @@ Target = AllNearFoes
 FunctionCode = LowerTargetSpeed2
 Flags = CanProtect,CanMirrorMove
 Description = Loose sand begins to form around the target's feet, lowering their speed by 2 stages.
+# Replaced with scary face
 #-------------------------------
 [DRAGONFURY]
 Name = Dragon Fury
