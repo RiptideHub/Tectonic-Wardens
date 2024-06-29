@@ -10487,7 +10487,7 @@ FunctionCode = RaiseUserSpeed1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user swoops down on the target and then raises its Speed stat.
-# Replaced with Swoop
+# Added
 #-------------------------------
 [JETDIVE]
 Name = Jet Dive
@@ -10501,7 +10501,7 @@ Priority = 1
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove
 Description = Propels itself towards the target at mach 10 speed. It is sure to attack first.
-# Added
+# Replaced with Hop
 #-------------------------------
 [SKYDIVE]
 Name = Sky Dive
@@ -11956,7 +11956,7 @@ FunctionCode = BurnTarget
 Flags = CanProtect,CanMirrorMove,ThawsUser
 EffectChance = 30
 Description = The user sets the target ablaze using its powers. It may also leave the target with a burn.
-# Added
+# Added as Meowstic fire's signature move, replaced with mind warp on anything else
 #-------------------------------
 [QUICKSPELL]
 Name = Quick Spell

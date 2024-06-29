@@ -6765,7 +6765,7 @@ Target = NearOther
 FunctionCode = RecoilThirdOfDamageDealtNumbTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
-Description = Calls its species to charges its foe, having a 33% recoil. Has a 30% chance to paralyze.
+Description = Calls its species to charges its foe, having a 33% recoil. Has a 30% chance to numb.
 #-------------------------------
 [ANTIMATTER]
 Name = Antimatter
@@ -7468,18 +7468,18 @@ Flags = CanProtect,CanMirrorMove,Wind
 EffectChance = 10
 Description = The user combines Boreas' power to generate an icestorm. Can't miss in hail. 10% chance to frostbite.
 #-------------------------------
-[JETDIVE]
-Name = Jet Dive
+[GLIDE]
+Name = Glide
 Type = FLYING
 Category = Physical
-Power = 40
+Power = 50
 Accuracy = 100
 TotalPP = 25
 Target = NearOther
-Priority = 1
-FunctionCode = Basic
-Flags = CanProtect,CanMirrorMove
-Description = Propels itself towards the target at mach 10 speed. It is sure to strike first.
+FunctionCode = RaiseUserSpeed1
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user swoops down on the target and then raises its Speed stat.
 #-------------------------------
 [TURBULENCE]
 Name = Turbulence
@@ -7491,7 +7491,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = RemovesTargetItemDamageBoost50Percent
 Flags = CanProtect,CanMirrorMove
-Description = A strong wind causes the target to drop their held item.. If they have an item, this deals 50% more damage.
+Description = A strong wind causes the target to drop their held item. If they have an item, this deals 50% more damage.
 #-------------------------------
 [DEATHWALTZ]
 Name = Death Waltz
@@ -7510,7 +7510,7 @@ Description = The target is blasted by a huge volume of water launched under gre
 Name = Grim Reaper
 Type = GHOST
 Category = Physical
-Power = 60
+Power = 50
 Accuracy = 100
 TotalPP = 20
 Target = NearOther
@@ -7691,7 +7691,7 @@ Description = The user protects itself and allies from damaging moves. It only w
 Name = Heaven's Knuckle
 Type = LIGHT
 Category = Physical
-Power = 60
+Power = 50
 Accuracy = 100
 TotalPP = 20
 Target = NearOther
@@ -7897,7 +7897,7 @@ Target = NearOther
 Priority = 2
 FunctionCode = LowerUserDef2
 Flags = CanProtect,CanMirrorMove
-Description =The user charges the target at light speed. This attack always goes before any other move, but lowers defense by 2 steps.
+Description = The user charges the target at light speed. This attack always goes before any other move, but lowers defense by 2 steps.
 #-------------------------------
 [WEAPONMASTERY]
 Name = Weapon Mastery
@@ -7951,7 +7951,7 @@ Description = Makes a blood pact with a sinister force. The user also takes 33% 
 Name = Checkmate
 Type = PSYCHIC
 Category = Special
-Power = 60
+Power = 50
 Accuracy = 100
 TotalPP = 20
 Target = NearOther
@@ -8036,7 +8036,7 @@ Description = Using nearby objects the user creates an obnoxious sound damaging 
 [CRESCENDO]
 Name = Crescendo
 Type = NORMAL
-Category = Physical
+Category = Special
 Power = 30
 Accuracy = 100
 TotalPP = 30
@@ -8148,7 +8148,7 @@ Description = Amplifies environmental noise which disturbs the opponent. It has 
 Name = Perfect Pitch
 Type = NORMAL
 Category = Special
-Power = 60
+Power = 50
 Accuracy = 100
 TotalPP = 12
 Target = NearOther
@@ -8344,6 +8344,7 @@ Priority = -6
 FunctionCode = SwitchOutTargetDamagingMove
 Flags = CanProtect,CanMirrorMove
 Description = The user forces the target to switch out, to be replaced at random. In the wild, the battle ends.
+# Saharicane's signature
 #-------------------------------
 [SATELLITERAY]
 Name = Satellite Ray
@@ -8380,6 +8381,7 @@ Target = NearOther
 FunctionCode = AttacksWithSpDef
 Flags = CanProtect,CanMirrorMove
 Description = Manifests a holy ward to attack the foe, dealing damage based on the user's Sp. Def stat.
+# Meganium's Signature
 #-------------------------------
 [CLUSTERROCKETS]
 Name = Cluster Rockets
