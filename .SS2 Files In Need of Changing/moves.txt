@@ -12953,6 +12953,7 @@ Target = AllNearFoes
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,Bomb,Sound
 Description = The user attacks the enemy foe with a blast of sound. This attack will never miss.
+# Added
 #-------------------------------
 [SONICWAVE]
 Name = Sonic Wave
@@ -12965,6 +12966,7 @@ Target = NearOther
 FunctionCode = FixedDamageUserLevelRandom
 Flags = CanProtect,CanMirrorMove,Sound
 Description = The target is attacked with a wave of sound energy. The attack varies in intensity.
+# Removed
 #-------------------------------
 [DEAFEN]
 Name = Deafen
@@ -12978,6 +12980,7 @@ FunctionCode = LowerTargetDefense1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user aims for the target's hearing, lowering its defense by one stage if it hits.
+# Added
 #-------------------------------
 [SHATTER]
 Name = Shatter
@@ -12990,6 +12993,7 @@ Target = NearOther
 FunctionCode = RemoveScreens
 Flags = Contact,CanProtect,CanMirrorMove,Sound
 Description = The user shatters any screens such as Light Screen and Reflect.
+# Added
 #-------------------------------
 [PENANCE]
 Name = Penance
@@ -13003,6 +13007,7 @@ Priority = -6
 FunctionCode = SwitchOutTargetDamagingMove
 Flags = CanProtect,CanMirrorMove
 Description = The user makes the target pay penance and switch out. In the wild, the battle ends.
+# Added
 #-------------------------------
 [STARGAZE]
 Name = Star Gaze
@@ -13013,6 +13018,7 @@ TotalPP = 30
 Target = User
 FunctionCode = RaiseUserAtkSpAtk1
 Description = The user gazes into the night sky, increasing its Attack and Sp. Atk stats by one stage.
+# Removed
 #-------------------------------
 [GRAVITYPRESS]
 Name = Gravity Press
@@ -13025,6 +13031,7 @@ Target = NearOther
 FunctionCode = PowerHigherWithUserHeavierThanTarget
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user slams the foe with its dense body. The heavier the user is the greater the damage.
+# Added
 #-------------------------------
 [BIGBANG]
 Name = Big Bang
@@ -13037,6 +13044,7 @@ Target = NearOther
 FunctionCode = LowerUserSpAtk2
 Flags = CanProtect,CanMirrorMove
 Description = The user explodes in a cosmic finale. The attack's recoil harshly reduces the user's Sp. Atk stat.
+# Added
 #-------------------------------
 [METEORSHOWER]
 Name = Meteor Shower
@@ -13049,6 +13057,7 @@ Target = Other
 FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect,CanMirrorMove
 Description = Calls down a meteor shower that lands 2-5 consecutive attacks on the target.
+# Added
 #-------------------------------
 [CELESTIALFURY]
 Name = Celestial Fury
@@ -13074,6 +13083,7 @@ FunctionCode = PoisonTarget
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 30
 Description = Channels invisible radio waves at the target. It may also poison the target.
+# Added
 #-------------------------------
 [RADIATION]
 Name = Radiation
@@ -13087,6 +13097,7 @@ FunctionCode = LowerTargetSpDef1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = The foe is attacked with cosmic wave energy that may also lower the target's Sp. Def stat.
+# Added
 #-------------------------------
 [COSMICAVATAR]
 Name = Cosmic Avatar
@@ -13099,6 +13110,7 @@ Target = NearOther
 FunctionCode = LowerUserAtkDef1
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user becomes a cosmic avatar but lowers its Attack and Defense.
+# Added
 #-------------------------------
 [ASTRALBARRAGE]
 Name = Astral Barrage
@@ -13111,6 +13123,7 @@ Target = NearOther
 FunctionCode = IgnoreTargetDefSpDefEvaStatStages
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user channels astral energy that doesn't consider the foe's stat changes.
+# Added
 #-------------------------------
 [ASTRALWIND]
 Name = Astral Wind
@@ -13124,6 +13137,7 @@ FunctionCode = RaiseUserMainStats1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = The user blasts the target with stellar wind. It may also raise all the user's stats at once.
+# Added
 #-------------------------------
 [SOUNDBARRIER]
 Name = Sound Barrier
