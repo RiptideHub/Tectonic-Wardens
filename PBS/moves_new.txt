@@ -6719,18 +6719,6 @@ FunctionCode = Basic
 Flags = CanProtect,CanMirrorMove
 Description = A corrosive substance is sprayed on the target.
 #-------------------------------
-[GAMMARAY]
-Name = Gamma Ray
-Type = COSMIC
-Category = Special
-Power = 70
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = Basic
-Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
-Description = The user shoots gamma radiation at the target. High Crit ratio.
-#-------------------------------
 [NECTARTAP]
 Name = Nectar Tap
 Type = BUG
@@ -6766,126 +6754,6 @@ FunctionCode = RecoilThirdOfDamageDealtNumbTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = Calls its species to charges its foe, having a 33% recoil. Has a 30% chance to numb.
-#-------------------------------
-[ANTIMATTER]
-Name = Antimatter
-Type = COSMIC
-Category = Physical
-Power = 80
-Accuracy = 0
-TotalPP = 12
-Target = NearOther
-FunctionCode = ResetTargetStatSteps
-Flags = CanProtect,CanMirrorMove
-Description = The target is bombarded with anti-particles, resetting any stat changes.
-#-------------------------------
-[ASTEROIDBELT]
-Name = Asteroid Belt
-Type = COSMIC
-Category = Status
-Accuracy = 0
-TotalPP = 3
-Target = User
-Priority = 4
-FunctionCode = ProtectUserHurtPhysAttackerForEightOfTotalHP
-Description = The user shields itself with space debris, damaging attackers that make contact.
-#-------------------------------
-[BLACKHOLE]
-Name = Black Hole
-Type = COSMIC
-Category = Special
-Power = 90
-Accuracy = 100
-TotalPP = 12
-Target = AllNearFoes
-FunctionCode = HitsTargetInSkyGroundsTarget
-Flags = CanProtect,CanMirrorMove
-Description = Creates a gravitational field knocking down airborne units to the ground.
-#-------------------------------
-[COMET]
-Name = Comet
-Type = COSMIC
-Category = Physical
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = Dizzy
-Flags = CanProtect,CanMirrorMove
-EffectChance = 30
-Description = A comet is shot towards the target. It may also dizzy the target.
-#-------------------------------
-[RAYOFLIGHT]
-Name = Ray of Light
-Type = LIGHT
-Category = Status
-Accuracy = 0
-TotalPP = 10
-Target = UserAndAllies
-FunctionCode = HealUserAndAlliesQuarterOfTotalHP
-Flags = CanSnatch
-Description = The user chants a prayer, restoring a quarter of their side's HP.
-#-------------------------------
-[ALKALINEBOMB]
-Name = Alkaline Bomb
-Type = POISON
-Category = Physical
-Power = 50
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = Basic
-Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
-Description = The user throws a chemical mixture at the target. High Crit ratio.
-#-------------------------------
-[AURABEAM]
-Name = Aura Beam
-Type = LIGHT
-Category = Special
-Power = 65
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = LowerTargetAtk1
-Flags = CanProtect,CanMirrorMove
-EffectChance = 30
-Description = The target is hit with a beam. It has a 30% chance to lower Attack.
-#-------------------------------
-[SHINYPLUMES]
-Name = Shiny Plumes
-Type = LIGHT
-Category = Special
-Power = 80
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = Basic
-Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Blade
-Description = The user shoots shiny feathers at the targets. Critical hits twice as often.
-#-------------------------------
-[DIVINEPUNISHMENT]
-Name = Divine Punishment
-Type = LIGHT
-Category = Special
-Power = 130
-Accuracy = 100
-TotalPP = 5
-Target = NearOther
-FunctionCode = LowerUserSpAtk4
-Flags = CanProtect,CanMirrorMove
-Description = Deities smite the target. The attack's recoil harshly reduces the user's Sp. Atk stat.
-#-------------------------------
-[REJUVENATE]
-Name = Rejuvenate
-Type = LIGHT
-Category = Special
-Power = 25
-Accuracy = 100
-TotalPP = 20
-Target = NearOther
-FunctionCode = HealUserByHalfOfDamageDone
-Flags = CanProtect,CanMirrorMove
-Description = The user rejuvenates itself. The user's HP is restored by half the damage taken by the target.
 #-------------------------------
 [DIMENSIONWARP]
 Name = Dimension Warp
@@ -7138,6 +7006,165 @@ Target = NearOther
 FunctionCode = LowerTargetSpd4
 Flags = CanProtect,CanMagicCoat,CanMirrorMove
 Description = The target is pulled towards the void to reduce its Speed stat by four steps.
+#-------------------------------
+[ANTIMATTER]
+Name = Antimatter
+Type = COSMIC
+Category = Physical
+Power = 80
+Accuracy = 0
+TotalPP = 12
+Target = NearOther
+FunctionCode = ResetTargetStatSteps
+Flags = CanProtect,CanMirrorMove
+Description = The target is bombarded with anti-particles, resetting any stat changes.
+#-------------------------------
+[ASTEROIDBELT]
+Name = Asteroid Belt
+Type = COSMIC
+Category = Status
+Accuracy = 0
+TotalPP = 3
+Target = User
+Priority = 4
+FunctionCode = ProtectUserHurtPhysAttackerForEightOfTotalHP
+Description = The user shields itself with space debris, damaging attackers that make contact.
+#-------------------------------
+[BLACKHOLE]
+Name = Black Hole
+Type = COSMIC
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 12
+Target = AllNearFoes
+FunctionCode = HitsTargetInSkyGroundsTarget
+Flags = CanProtect,CanMirrorMove
+Description = Creates a gravitational field knocking down airborne units to the ground.
+#-------------------------------
+[COMET]
+Name = Comet
+Type = COSMIC
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Dizzy
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = A comet is shot towards the target. It may also dizzy the target.
+#-------------------------------
+[GAMMARAY]
+Name = Gamma Ray
+Type = COSMIC
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = The user shoots gamma radiation at the target. High Crit ratio.
+#-------------------------------
+[ASTRALBARRAGE]
+Name = Astral Barrage
+Type = COSMIC
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = IgnoreTargetDefSpDefEvaStatStages
+Flags = CanProtect,CanMirrorMove
+Description = The user channels astral energy. Ignores the target's stat step changes.
+#-------------------------------
+[ASTRALWIND]
+Name = Astral Wind
+Type = COSMIC
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = RaiseUserMainStats1
+Flags = CanProtect,CanMirrorMove,Wind
+EffectChance = 20
+Description = The user blasts the target with stellar wind. It has a 20% chance to raise all stats.
+#-------------------------------
+[METEORICBLAST]
+Name = Meteoric Blast
+Type = COSMIC
+Category = Special
+Power = 115
+Accuracy = 80
+TotalPP = 5
+Target = NearOther
+FunctionCode = Burn
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = Gathers space power and shoots at the target. It has a 10% chance to burn.
+#-------------------------------
+[GRAVITYPRESS]
+Name = Gravity Press
+Type = COSMIC
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = ScalesHeavierThanTarget
+Flags = CanProtect,CanMirrorMove
+Description = The user slams into the foe with its dense body. The heavier the user, the greater the damage.
+#-------------------------------
+[BIGBANG]
+Name = Big Bang
+Type = COSMIC
+Category = Special
+Power = 130
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserSpAtk4
+Flags = CanProtect,CanMirrorMove
+Description = The user explodes in a cosmic finale. Lowers the user's Sp. Atk by four steps.
+#-------------------------------
+[METEORSHOWER]
+Name = Meteor Shower
+Type = COSMIC
+Category = Special
+Power = 20
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = HitTwoToFiveTimes
+Flags = CanProtect,CanMirrorMove
+Description = The user calls down a meteor shower hit the target two to five times in a row.
+#-------------------------------
+[RADIOWAVES]
+Name = Radio Waves
+Type = COSMIC
+Category = Special
+Power = 65
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Poison
+Flags = CanProtect,CanMirrorMove,Sound
+EffectChance = 30
+Description = Channels invisible radio waves at the target. It has a 30% chance to poison the target.
+#-------------------------------
+[COSMICAVATAR]
+Name = Cosmic Avatar
+Type = COSMIC
+Category = Physical
+Power = 110
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserDefSpDef2
+Flags = CanProtect,CanMirrorMove
+Description = The user becomes a cosmic avatar without guarding itself. This cuts the user's Defenses by two steps.
 #-------------------------------
 [DARKRECITAL]
 Name = Dark Recital
@@ -7579,6 +7606,19 @@ FunctionCode = TrapTarget
 Flags = CanMagicCoat,CanMirrorMove
 Description = Tangling vines ensnare the foes' side of the battle. The target becomes unable to flee.
 #-------------------------------
+[SCENTEDSHIELD]
+Name = Scented Shield
+Type = GRASS
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = AttacksWithSpDef
+Flags = CanProtect,CanMirrorMove
+Description = Manifests a holy ward to attack the foe, dealing damage based on the user's Sp. Def stat.
+# Meganium's Signature
+#-------------------------------
 [MUDSHACKLES]
 Name = Mud Shackles
 Type = GROUND
@@ -7862,29 +7902,65 @@ Flags = CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user fills itself with energy and attacks. Building up more power, it raises the user's Speed.
 #-------------------------------
-[CURBSTOMP]
-Name = Curb Stomp
-Type = NORMAL
-Category = Physical
-Power = 1
-Accuracy = 100
+[RAYOFLIGHT]
+Name = Ray of Light
+Type = LIGHT
+Category = Status
+Accuracy = 0
 TotalPP = 10
-Target = NearOther
-FunctionCode = ScalesHeavierThanTarget
-Flags = CanProtect,CanMirrorMove
-Description = The user curbstomps the target. The heavier the user, the greater the damage.
+Target = UserAndAllies
+FunctionCode = HealUserAndAlliesQuarterOfTotalHP
+Flags = CanSnatch
+Description = The user chants a prayer, restoring a quarter of their side's HP.
 #-------------------------------
-[DETERMINATION]
-Name = Determination
-Type = NORMAL
+[AURABEAM]
+Name = Aura Beam
+Type = LIGHT
 Category = Special
-Power = 120
+Power = 65
 Accuracy = 100
-TotalPP = 10
-Target = RandomNearFoe
-FunctionCode = Rampage
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetAtk1
 Flags = CanProtect,CanMirrorMove
-Description = The user attacks relentlessly for three turns.
+EffectChance = 30
+Description = The target is hit with a beam. It has a 30% chance to lower Attack.
+#-------------------------------
+[SHINYPLUMES]
+Name = Shiny Plumes
+Type = LIGHT
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Blade
+Description = The user shoots shiny feathers at the targets. Critical hits twice as often.
+#-------------------------------
+[DIVINEPUNISHMENT]
+Name = Divine Punishment
+Type = LIGHT
+Category = Special
+Power = 130
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserSpAtk4
+Flags = CanProtect,CanMirrorMove
+Description = Deities smite the target. The attack's recoil harshly reduces the user's Sp. Atk stat.
+#-------------------------------
+[REJUVENATE]
+Name = Rejuvenate
+Type = LIGHT
+Category = Special
+Power = 25
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect,CanMirrorMove
+Description = The user rejuvenates itself. The user's HP is restored by half the damage taken by the target.
 #-------------------------------
 [LIGHTSPEED]
 Name = Light Speed
@@ -7899,16 +7975,30 @@ FunctionCode = LowerUserDef2
 Flags = CanProtect,CanMirrorMove
 Description = The user charges the target at light speed. This attack always goes before any other move, but lowers defense by 2 steps.
 #-------------------------------
-[WEAPONMASTERY]
-Name = Weapon Mastery
-Type = STEEL
-Category = Status
-Accuracy = 0
-TotalPP = 25
-Target = User
-FunctionCode = RaiseUserAtkSpAtk2Spd2
-Flags = CanSnatch
-Description = The user is roused, raising its Attack, Sp. Atk, and Speed by two steps each.
+[HOLYWARD]
+Name = Holy Ward
+Type = LIGHT
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = AttacksWithSpDef
+Flags = CanProtect,CanMirrorMove
+Description = Manifests a holy ward to attack the foe, dealing damage based on the user's Sp. Def stat.
+#-------------------------------
+[PENANCE]
+Name = Penance
+Type = LIGHT
+Category = Special
+Power = 55
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = -6
+FunctionCode = SwitchOutTargetDamagingMove
+Flags = CanProtect,CanMirrorMove
+Description = The user forces the target to pay penance and switch out, to be replaced at random. In the wild, the battle ends.
 #-------------------------------
 [NEUROTOXIN]
 Name = Neurotoxin
@@ -7922,6 +8012,18 @@ FunctionCode = Poison
 Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
 EffectChance = 100
 Description = The user injects a deadly substance. It always poisons the target, and critical hits twice as often.
+#-------------------------------
+[ALKALINEBOMB]
+Name = Alkaline Bomb
+Type = POISON
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = The user throws a chemical mixture at the target. High Crit ratio.
 #-------------------------------
 [ARCANEENERGY]
 Name = Arcane Energy
@@ -7996,18 +8098,29 @@ FunctionCode = Basic
 Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Blade
 Description = The user slashes the target with a diamond tip. Critical hits twice as often.
 #-------------------------------
-[METEORICBLAST]
-Name = Meteoric Blast
-Type = COSMIC
-Category = Special
-Power = 115
-Accuracy = 80
-TotalPP = 5
+[CURBSTOMP]
+Name = Curb Stomp
+Type = NORMAL
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 10
 Target = NearOther
-FunctionCode = Burn
+FunctionCode = ScalesHeavierThanTarget
 Flags = CanProtect,CanMirrorMove
-EffectChance = 10
-Description = Gathers space power and shoots at the target. It has a 10% chance to burn.
+Description = The user curbstomps the target. The heavier the user, the greater the damage.
+#-------------------------------
+[DETERMINATION]
+Name = Determination
+Type = NORMAL
+Category = Special
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = RandomNearFoe
+FunctionCode = Rampage
+Flags = CanProtect,CanMirrorMove
+Description = The user attacks relentlessly for three turns.
 #-------------------------------
 [BATTLECRY]
 Name = Battle Cry
@@ -8255,6 +8368,44 @@ Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 100
 Description = If the user's stats were lowered during the turn, the power of this move is doubled.
 #-------------------------------
+[SONICBLAST]
+Name = Sonic Blast
+Type = NORMAL
+Category = Physical
+Power = 60
+Accuracy = 0
+TotalPP = 20
+Target = AllNearFoes
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,Sound
+Description = The user attacks the enemy foe with a blast of sound. This attack will never miss.
+# Needs bomb tag
+#-------------------------------
+[DEAFEN]
+Name = Deafen
+Type = NORMAL
+Category = Physical
+Power = 55
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = LowerTargetDefense2
+Flags = Contact,CanProtect,CanMirrorMove,Sound
+EffectChance = 100
+Description = The user aims for the target's hearing, lowering its Defense by two steps if it hits.
+#-------------------------------
+[SHATTER]
+Name = Shatter
+Type = NORMAL
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = RemoveScreens
+Flags = CanProtect,CanMirrorMove,Sound
+Description = The user lets out a shattering cry. It also breaks any screens protecting the target's side.
+#-------------------------------
 [CHROMERAY]
 Name = Chrome Ray
 Type = STEEL
@@ -8317,33 +8468,6 @@ FunctionCode = DoubleDamageAvengingFaint
 Flags = CanProtect,CanMirrorMove
 Description = Gets revenge for a fainted ally. If an ally fainted in the last turn, this attack's damage increases.
 # Need bomb tag
-#-------------------------------
-[CORALBOMB]
-Name = Coral Bomb
-Type = WATER
-Category = Physical
-Power = 70
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = Burn
-Flags = CanProtect,CanMirrorMove
-EffectChance =  10
-Description = Coral bombs are launched at the opposing team. It has a 10% chance to burn.
-# Needs bomb tag
-#-------------------------------
-[HYPERTORRENT]
-Name = Hyper Torrent
-Type = WATER
-Category = Special
-Power = 90
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-Priority = -6
-FunctionCode = SwitchOutTargetDamagingMove
-Flags = CanProtect,CanMirrorMove
-Description = The user forces the target to switch out, to be replaced at random. In the wild, the battle ends.
 # Saharicane's signature
 #-------------------------------
 [SATELLITERAY]
@@ -8357,31 +8481,6 @@ Target = Other
 FunctionCode = Basic
 Flags = CanProtect,CanMirrorMove
 Description = A laser is shot from a satellite.
-#-------------------------------
-[HOLYWARD]
-Name = Holy Ward
-Type = LIGHT
-Category = Special
-Power = 80
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = AttacksWithSpDef
-Flags = CanProtect,CanMirrorMove
-Description = Manifests a holy ward to attack the foe, dealing damage based on the user's Sp. Def stat.
-#-------------------------------
-[SCENTEDSHIELD]
-Name = Scented Shield
-Type = GRASS
-Category = Special
-Power = 80
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = AttacksWithSpDef
-Flags = CanProtect,CanMirrorMove
-Description = Manifests a holy ward to attack the foe, dealing damage based on the user's Sp. Def stat.
-# Meganium's Signature
 #-------------------------------
 [CLUSTERROCKETS]
 Name = Cluster Rockets
@@ -8410,139 +8509,40 @@ Flags = CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user overclocks itself to attack. Building up more power, it raises the user's Speed.
 #-------------------------------
-[SONICBLAST]
-Name = Sonic Blast
-Type = NORMAL
-Category = Physical
-Power = 60
+[WEAPONMASTERY]
+Name = Weapon Mastery
+Type = STEEL
+Category = Status
 Accuracy = 0
-TotalPP = 20
-Target = AllNearFoes
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove,Sound
-Description = The user attacks the enemy foe with a blast of sound. This attack will never miss.
-# Needs bomb tag
+TotalPP = 25
+Target = User
+FunctionCode = RaiseUserAtkSpAtk2Spd2
+Flags = CanSnatch
+Description = The user is roused, raising its Attack, Sp. Atk, and Speed by two steps each.
 #-------------------------------
-[DEAFEN]
-Name = Deafen
-Type = SOUND
+[CORALBOMB]
+Name = Coral Bomb
+Type = WATER
 Category = Physical
-Power = 55
-Accuracy = 100
-TotalPP = 20
-Target = NearOther
-FunctionCode = LowerTargetDefense2
-Flags = Contact,CanProtect,CanMirrorMove,Sound
-EffectChance = 100
-Description = The user aims for the target's hearing, lowering its Defense by two steps if it hits.
-#-------------------------------
-[SHATTER]
-Name = Shatter
-Type = NORMAL
-Category = Physical
-Power = 75
+Power = 70
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
-FunctionCode = RemoveScreens
-Flags = CanProtect,CanMirrorMove,Sound
-Description = The user lets out a shattering cry. It also breaks any screens protecting the target's side.
+FunctionCode = Burn
+Flags = CanProtect,CanMirrorMove
+EffectChance =  10
+Description = Coral bombs are launched at the opposing team. It has a 10% chance to burn.
+# Needs bomb tag
 #-------------------------------
-[PENANCE]
-Name = Penance
-Type = LIGHT
+[HYPERTORRENT]
+Name = Hyper Torrent
+Type = WATER
 Category = Special
-Power = 55
+Power = 90
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
 Priority = -6
 FunctionCode = SwitchOutTargetDamagingMove
 Flags = CanProtect,CanMirrorMove
-Description = The user forces the target to pay penance and switch out, to be replaced at random. In the wild, the battle ends.
-#-------------------------------
-[GRAVITYPRESS]
-Name = Gravity Press
-Type = COSMIC
-Category = Physical
-Power = 1
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = ScalesHeavierThanTarget
-Flags = CanProtect,CanMirrorMove
-Description = The user slams into the foe with its dense body. The heavier the user, the greater the damage.
-#-------------------------------
-[BIGBANG]
-Name = Big Bang
-Type = COSMIC
-Category = Special
-Power = 130
-Accuracy = 100
-TotalPP = 5
-Target = NearOther
-FunctionCode = LowerUserSpAtk4
-Flags = CanProtect,CanMirrorMove
-Description = The user explodes in a cosmic finale. Lowers the user's Sp. Atk by four steps.
-#-------------------------------
-[METEORSHOWER]
-Name = Meteor Shower
-Type = COSMIC
-Category = Special
-Power = 20
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = HitTwoToFiveTimes
-Flags = CanProtect,CanMirrorMove
-Description = The user calls down a meteor shower hit the target two to five times in a row.
-#-------------------------------
-[RADIOWAVES]
-Name = Radio Waves
-Type = COSMIC
-Category = Special
-Power = 65
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = Poison
-Flags = CanProtect,CanMirrorMove,Sound
-EffectChance = 30
-Description = Channels invisible radio waves at the target. It has a 30% chance to poison the target.
-#-------------------------------
-[COSMICAVATAR]
-Name = Cosmic Avatar
-Type = COSMIC
-Category = Physical
-Power = 110
-Accuracy = 100
-TotalPP = 5
-Target = NearOther
-FunctionCode = LowerUserDefSpDef2
-Flags = CanProtect,CanMirrorMove
-Description = The user becomes a cosmic avatar without guarding itself. This cuts the user's Defenses by two steps.
-#-------------------------------
-[ASTRALBARRAGE]
-Name = Astral Barrage
-Type = COSMIC
-Category = Special
-Power = 70
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = IgnoreTargetDefSpDefEvaStatStages
-Flags = CanProtect,CanMirrorMove
-Description = The user channels astral energy. Ignores the target's stat step changes.
-#-------------------------------
-[ASTRALWIND]
-Name = Astral Wind
-Type = COSMIC
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = RaiseUserMainStats1
-Flags = CanProtect,CanMirrorMove,Wind
-EffectChance = 20
-Description = The user blasts the target with stellar wind. It has a 20% chance to raise all stats.
+Description = The user forces the target to switch out, to be replaced at random. In the wild, the battle ends.
