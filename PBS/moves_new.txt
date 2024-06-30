@@ -5896,7 +5896,18 @@ Flags = CanProtect,CanMirrorMove
 Description = The user conjures up the past, transforming the target into their previous evolutionary form.
 Animation = TRANSFORM
 #-------------------------------
-[PULVERIZERCHORD]
+[
+#-------------------------------
+[RATTLETAIL]
+Name = Rattle Tail
+Type = SOUND
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetDefSpDef1
+Flags = CanProtect,CanMirrorMove,Sound
+Description = The user rattles its tail, lowering target's Def and SpDef by 1.CHORD]
 Name = Pulverizer Chord
 Type = GROUND
 Category = Special
@@ -7850,7 +7861,7 @@ Accuracy = 100
 TotalPP = 12
 Target = NearOther
 FunctionCode = HealUserByHalfOfDamageDone
-Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Flags = CanProtect,CanMirrorMove
 Description = The user renews itself. The user's HP is restored by half the damage taken by the target.
 #-------------------------------
 [REVITALIZE]
@@ -8049,8 +8060,8 @@ FunctionCode = RecoilThirdOfDamageDealt
 Flags = CanProtect,CanMirrorMove
 Description = Makes a blood pact with a sinister force. The user also takes 33% recoil.
 #-------------------------------
-[CHECKMATE]
-Name = Checkmate
+[INCHECK]
+Name = In Check
 Type = PSYCHIC
 Category = Special
 Power = 50
@@ -8546,3 +8557,221 @@ Priority = -6
 FunctionCode = SwitchOutTargetDamagingMove
 Flags = CanProtect,CanMirrorMove
 Description = The user forces the target to switch out, to be replaced at random. In the wild, the battle ends.
+#-------------------------------
+[SOUNDBARRIER]
+Name = Sound Barrier
+Type = SOUND
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserDef1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = Manifests a sound barrier to attack the foe. It has a 30% chance to raise the user's Defense.
+#-------------------------------
+[FLATULENCE]
+Name = Flatulence
+Type = POISON
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DoubleDamageBerryConsumed
+Flags = CanProtect,Sound
+Description = The user lets out a damaging fart at the target. Deals double damage if the user has eaten a berry this battle.
+#-------------------------------
+[RATTLETAIL]
+Name = Rattle Tail
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetDefSpDef1
+Flags = CanProtect,CanMirrorMove,Sound
+Description = The user rattles its tail, lowering target's Def and SpDef by 1.
+# Don't know if this will work
+#-------------------------------
+[STONEGAZE]
+Name = Stone Gaze
+Type = ROCK
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = 3
+FunctionCode = FlinchTargetFailsIfNotUserFirstTurn
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user glares at the target and makes them flinch. It only works the first turn the user is in battle.
+# T.Gothitelle signature, could have a more unique effect.
+#-------------------------------
+[CHAOSBLAST]
+Name = Chaos Blast
+Type = DARK
+Category = Special
+Power = 25
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = HitThreeTimesAlwaysCriticalHit
+Flags = CanProtect,CanMirrorMove
+Description = Strikes the target thrice, with chaotic energies. Always results in a critical hit.
+# Swadloon's signature. Needs a unique effect
+#-------------------------------
+[SIPHON]
+Name = Siphon
+Type = DARK
+Category = Special
+Power = 50
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect,CanMirrorMove
+Description = The user siphons life from the target. The user's HP is restored by half the damage taken by the target.
+#-------------------------------
+[REFRACTION]
+Name = Refraction
+Type = LIGHT
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = IgnoreTargetDefSpDefEvaStatStages
+Flags = CanProtect,CanMirrorMove
+Description = The user reflects light back to the target. Ignores the target's stat step changes.
+#-------------------------------
+[GLITCH]
+Name = Glitch
+Type = BUG
+Category = Special
+Power = 95
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove
+Description = Bugs and glitches ravage the opponent. This move deals inverse Bug damage.
+# O.Musharna signature. Needs the GlitchMove move code
+#-------------------------------
+[SONICNOVA]
+Name = Sonic Nova
+Type = NORMAL
+Category = Physical
+Power = 95
+Accuracy = 100
+TotalPP = 10
+Target = AllNearOthers
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove
+Description = The user releases a nova of sonic energy that strikes every Pokémon around it and underground.
+#-------------------------------
+[PLASMAFORGE]
+Name = Plasma Forge
+Type = STEEL
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOthers
+FunctionCode = Burn
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The user exudes superheated plasma that engulfs the opponent. It has a 10% chance to burn.
+#-------------------------------
+[MUDBLAST]
+Name = Mud Blast
+Type = GROUND
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Flinch
+Flags = CanProtect,CanMirrorMove
+EffectChance = 40
+Description = The user bombards the target with mud. It has a 40% chance to make the target flinch.
+# Needs the bomb tag
+#-------------------------------
+[MUDSURGE]
+Name = Mud Surge
+Type = GROUND
+Category = Special
+Power = 110
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserDefSpDef2
+Flags = CanProtect,CanMirrorMove
+Description = Description = The user covers itself in mud and splashes the target. This cuts the user's Defenses by two steps.
+#-------------------------------
+[GRABANDGO]
+Name = Grab and Go!
+Type = DARK
+Category = Physical
+Power = 55
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = StealPositiveStatSteps
+# FunctionCode = StealStatsAndPassToAlly
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = The user steals the target's stat boosts, and then passes the boosts to an ally.
+# Needs the passing the stats effect. O.Delibird signature
+#-------------------------------
+[DIRTYBOMB]
+Name = Dirty Bomb
+Type = DARK
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Poison
+Flags = CanProtect,CanMirrorMove
+EffectChance = 20
+Description = The user throws a mix of dirty substances at the target. It has a 20% chance to poison.
+# Needs the bomb tag
+#-------------------------------
+[TEMPESTFLARE]
+Name = Tempest Flare
+Type = FLYING
+Category = Special
+Power = 110
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserDefSpDef2
+Flags = CanProtect,CanMirrorMove
+Description = The user blasts the target with gale force winds. This cuts the user's Defenses by two steps.
+#-------------------------------
+[SACREDSTRIKE]
+Name = Sacred Strike
+Type = LIGHT
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetDefense2
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 20
+Description = The user strikes the target with sacred power. It has a 20% chance to lower the target's Defense stat by 2 steps.
+#-------------------------------
+[AERIALPULSE]
+Name = Aerial Pulse
+Type = FLYING
+Category = Special
+Power = 90
+Accuracy = 0
+TotalPP = 15
+Target = AllNearFoes
+FunctionCode = AlwaysHits
+Flags = CanMirrorMove,Pulse
+Description = The user looses a gale force pulse. Can't miss and skips protections.

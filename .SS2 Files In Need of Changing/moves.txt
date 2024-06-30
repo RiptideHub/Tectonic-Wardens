@@ -13150,6 +13150,7 @@ Target = NearOther
 FunctionCode = UseUserBaseSpDefInsteadOfUserBaseSpAtk
 Flags = CanProtect,CanMirrorMove
 Description = Manifests a sound barrier to attack the foe. Damage increases with the user's SpDef stat.
+# Added
 #-------------------------------
 [FLATULENCE]
 Name = Flatulence
@@ -13162,6 +13163,7 @@ Target = NearOther
 FunctionCode = DoublePowerIfUserConsumedBerry
 Flags = CanProtect
 Description = The user farts on the target. Damage is double if a berry has been eaten beforehand.
+# Added
 #-------------------------------
 [DARKOMEN]
 Name = Dark Omen
@@ -13174,6 +13176,7 @@ Target = NearOther
 FunctionCode = AttackTwoTurnsLater
 Flags = CanProtect,CanMirrorMove
 Description = Two turns after this move, a sinister force attacks the target.
+# Replaced with Mass Destruction
 #-------------------------------
 [DUNEBLAST]
 Name = Dune Blast
@@ -13199,6 +13202,7 @@ Target = NearOther
 FunctionCode = BindTarget
 Flags = CanProtect,CanMirrorMove
 Description = The target becomes trapped within a vortex of sand that rages for four to five turns.
+# Replaced with pulverizer chord
 #-------------------------------
 [RATTLETAIL]
 Name = Rattle Tail
@@ -13210,6 +13214,7 @@ Target = NearOther
 FunctionCode = LowerTargetDefSpDef1
 Flags = CanProtect,CanMirrorMove,Sound
 Description = The user rattles its tail, lowering target's Def and SpDef by 1.
+# Added
 #-------------------------------
 [STONEGAZE]
 Name = Stone Gaze
@@ -13224,6 +13229,7 @@ FunctionCode = FlinchTargetFailsIfNotUserFirstTurn
 Flags = CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user glares at the target, turning the target to stone, resulting in them flinching.
+# Added
 #-------------------------------
 [BOIL]
 Name = Boil
@@ -13236,6 +13242,7 @@ Target = Other
 FunctionCode = SuperEffectiveAgainstWater
 Flags = CanProtect,CanMirrorMove
 Description = The target is boiled alive. SE against Water-type.
+# Replaced with crimson storm
 #-------------------------------
 [MELTAWAY]
 Name = Melt Away
@@ -13246,6 +13253,7 @@ TotalPP = 15
 Target = User
 FunctionCode = RaiseUserSpeed2LowerUserWeight
 Description = The user melts away making itself lighter and sharply raising its Speed stat.
+# Replaced with autotomize. Marking as a potential signature
 #-------------------------------
 [KINDLE]
 Name = Kindle
@@ -13256,6 +13264,7 @@ TotalPP = 40
 Target = User
 FunctionCode = RaiseUserAttack1
 Description = The user kindles the flames deep inside, raising its Attack stat.
+# Replaced with sharpen
 #-------------------------------
 [HOTSPRINGS]
 Name = Hot Springs
@@ -13267,6 +13276,7 @@ Target = NearOther
 FunctionCode = CureTargetStatusHealUserHalfOfTotalHP
 Flags = CanProtect,CanMirrorMove
 Description = The user heals the target's status condition. If so it also restores the user's own HP.
+# Replaced with purify. Marking as a potential camerupt signature
 #-------------------------------
 [IGNITE]
 Name = Ignite
@@ -13277,6 +13287,7 @@ TotalPP = 40
 Target = User
 FunctionCode = RaiseUserSpAtk1
 Description = The user ignites its flame, raising its Sp. Atk stat.
+# Effectively replaced with tectonic's ignite
 #-------------------------------
 [HEATSTROKE]
 Name = Heat Stroke
@@ -13288,6 +13299,7 @@ Target = NearOther
 FunctionCode = ConfuseTarget
 Flags = CanProtect,CanMirrorMove
 Description = The user expels heat that causes the target to become confused.
+# Replaced with confuse ray
 #-------------------------------
 [CHAOSBLAST]
 Name = Chaos Blast
@@ -13300,6 +13312,7 @@ Target = NearOther
 FunctionCode = HitThreeTimesAlwaysCriticalHit
 Flags = CanProtect,CanMirrorMove
 Description = Strikes the target thrice with chaotic energies. Always results in a critical hit.
+# Added
 #-------------------------------
 [PHOBIA]
 Name = Phobia
@@ -13312,6 +13325,7 @@ Target = NearOther
 FunctionCode = DoublePowerIfTargetStatusProblem
 Flags = CanProtect,CanMirrorMove
 Description = This attack exploits the target's fears, dealing increased damage if it's affected by status problems.
+# Replaced with tease.
 #-------------------------------
 [SIPHON]
 Name = Siphon
@@ -13324,6 +13338,7 @@ Target = NearOther
 FunctionCode = HealUserByHalfOfDamageDone
 Flags = CanProtect,CanMirrorMove
 Description = The user siphons life from the target. The user's HP is restored by half the damage done.
+# Added
 #-------------------------------
 [MANIPULATION]
 Name = Manipulation
@@ -13337,6 +13352,7 @@ FunctionCode = LowerTargetSpDef1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 20
 Description = The user manipulates the target's perceptions. It may also lower the target's Sp. Def stat.
+# Replaced with scam
 #-------------------------------
 [JUDOFLIP]
 Name = Judo Flip
@@ -13348,6 +13364,7 @@ Target = NearOther
 FunctionCode = InvertTargetStatStages
 Flags = CanProtect,CanMirrorMove
 Description = All stat changes affecting the target become the opposite of what they were.
+# Removed
 #-------------------------------
 [ELEGY]
 Name = Elegy
@@ -13361,6 +13378,7 @@ FunctionCode = LowerTargetMainStats1
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 10
 Description = The user plays an elegy. This move has a small chance to lower the target's stats by one stage.
+# Replaced with clamor
 #-------------------------------
 [BOOMINGBEATS]
 Name = Booming Beats
@@ -13372,7 +13390,8 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = PowerHigherWithUserPositiveStatStages
 Flags = CanProtect,CanMirrorMove,Sound
-Description = The user attacks with booming beats. The more the user's stats are raised the greater the damage.
+Description = The user attacks with booming beats. The more the user's stats are raised the greater the damage.	
+# Replaced with shout. Marking as a potential signature
 #-------------------------------
 [PSYCHOBREAK]
 Name = Psycho Break
@@ -13386,6 +13405,7 @@ FunctionCode = LowerTargetDefense1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 20
 Description = The user impales the target's mind. It may also lower the target's Defense stat.
+# Replaced with psycho cut
 #-------------------------------
 [BONECHILL]
 Name = Bone Chill
@@ -13399,6 +13419,7 @@ FunctionCode = FreezeTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = The user sends out an eerie sensation that may also freeze the target solid.
+# Replaced with spiteful chant
 #-------------------------------
 [REFRACTION]
 Name = Refraction
@@ -13411,6 +13432,7 @@ Target = NearOther
 FunctionCode = IgnoreTargetDefSpDefEvaStatStages
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user reflects light back and doesn't consider the foe's stat changes in the process.
+# Added
 #-------------------------------
 [ZEPHYRPURGE]
 Name = Zephyr Purge
@@ -13423,6 +13445,7 @@ Target = NearOther
 FunctionCode = FailsIfUserHasUnusedMove
 Flags = CanProtect,CanMirrorMove
 Description = This move can be used only after the user has used all the other moves it knows in the battle.
+# Replaced with skyfall, or I would if anything learned it
 #-------------------------------
 [GLITCH]
 Name = Glitch
@@ -13435,6 +13458,7 @@ Target = NearOther
 FunctionCode = GlitchMove
 Flags = CanProtect,CanMirrorMove
 Description = Bugs and glitches ravage the opponent. This move deals inverse Bug damage.
+# Added but need help with the inverse part
 #-------------------------------
 [SONICNOVA]
 Name = Sonic Nova
@@ -13447,6 +13471,7 @@ Target = AllNearOthers
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove
 Description = The user releases a nova of sonic energy, striking everything around it.
+# Added
 #-------------------------------
 [LUMINESCENCE]
 Name = Luminescence
@@ -13460,6 +13485,7 @@ FunctionCode = LowerTargetAccuracy1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = The user emits a bright light. It may also lower the target's accuracy.
+# Replaced with Rainbow Beam
 #-------------------------------
 [BOULDERCRUSH]
 Name = Boulder Crush
@@ -13472,6 +13498,7 @@ Target = NearOther
 FunctionCode = LowerUserAtkDef1
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user crushes the target and itself, lowering its Attack and Defense.
+# Replaced with Bedrock Breaker
 #-------------------------------
 [STONESURGE]
 Name = Stone Surge
@@ -13485,6 +13512,7 @@ FunctionCode = BurnTarget
 Flags = CanProtect,CanMirrorMove,ThawsUser
 EffectChance = 20
 Description = The user strikes with a surge of superheated stones. It may also burn the target.
+# Replaced with adamantine press
 #-------------------------------
 [PLASMAFORGE]
 Name = Plasma Forge
@@ -13498,6 +13526,7 @@ FunctionCode = BurnTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = The user exudes superheated plasma that engulfs the opponent. It may burn.
+# Added
 #-------------------------------
 [COBALTRAY]
 Name = Cobalt Ray
@@ -13510,6 +13539,7 @@ Target = NearOther
 FunctionCode = ResetTargetStatStages
 Flags = CanProtect,CanMirrorMove
 Description = The target is struck with a metallic ray, resetting any stat changes.
+# Replaced with plasma forge
 #-------------------------------
 [MUDBLAST]
 Name = Mud Blast
@@ -13523,6 +13553,7 @@ FunctionCode = FlinchTarget
 Flags = CanProtect,CanMirrorMove,Bomb
 EffectChance = 30
 Description = The user bombards the target with mud. It may also make the target flinch.
+# Added
 #-------------------------------
 [MUDSURGE]
 Name = Mud Surge
@@ -13536,6 +13567,7 @@ FunctionCode = RaiseUserSpDef1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 30
 Description = The user covers itself in mud and splashes the target. May raise the user's Sp.Def.
+# Added
 #-------------------------------
 [GRABANDGO]
 Name = Grab and Go!
@@ -13548,6 +13580,7 @@ Target = NearOther
 FunctionCode = StealStatsAndPassToAlly
 Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
 Description = The user steals the target's stat boosts, and then passes the boosts to an ally.
+# Added, but needs the function code
 #-------------------------------
 [AQUAFANG]
 Name = Aqua Fang
@@ -13561,6 +13594,7 @@ FunctionCode = FlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove,Biting
 EffectChance = 30
 Description = The target is bitten with viciously sharp fangs. It may make the target flinch.
+# Replaced with snap
 #-------------------------------
 [POWERWASH]
 Name = Power Wash
@@ -13573,6 +13607,7 @@ Target = NearOther
 FunctionCode = RemoveTargetItem
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user blasts a gush of water at the target's held item preventing it from using it in the battle.
+# Replaced with spattering ram. Marked as a potential signature
 #-------------------------------
 [ENERGYSURGE]
 Name = Energy Surge
@@ -13586,6 +13621,7 @@ FunctionCode = RaiseUserAttack1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 20
 Description = The target surges at its foe in a blast of energy. It may also raise the user's Attack.
+# Replaced with thunderclap
 #-------------------------------
 [DIRTYBOMB]
 Name = Dirty Bomb
@@ -13599,6 +13635,7 @@ FunctionCode = PoisonTarget
 Flags = CanProtect,CanMirrorMove,Bomb
 EffectChance = 20
 Description = The user throws a mix of dirty substances at the target. Chance to poison.
+# Added
 #-------------------------------
 [TEMPESTFLARE]
 Name = Tempest Flare
@@ -13611,6 +13648,7 @@ Target = NearOther
 FunctionCode = LowerUserDefSpDef1
 Flags = CanProtect,CanMirrorMove
 Description = The user blasts the target with gale force winds, but then lowers its own Def and SpDef.
+# Added
 #-------------------------------
 [SACREDSTRIKE]
 Name = Sacred Strike
@@ -13624,6 +13662,7 @@ FunctionCode = LowerTargetDefense1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 20
 Description = The user strikes the target with sacred power. It may also lower the target's Defense stat.
+# Added
 #-------------------------------
 [RAINBOWSCALES]
 Name = Rainbow Scales
@@ -13637,6 +13676,7 @@ FunctionCode = LowerTargetAccuracy1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 30
 Description = The user attacks with colourful scales. It may also lower the target's accuracy.
+# Replaced with Allergy
 #-------------------------------
 [SCORCH]
 Name = Scorch
@@ -13650,6 +13690,7 @@ FunctionCode = LowerTargetAttack1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 10
 Description = Scorches the target and may lower its attack.
+# Replaced with kindle
 #-------------------------------
 [AERIALPULSE]
 Name = Aerial Pulse
@@ -13662,6 +13703,7 @@ Target = Other
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,Pulse
 Description = The user looses a gale force pulse. This move is certain to hit.
+# Added
 #-------------------------------
 [ARROWFLURRY]
 Name = Arrow Flurry
@@ -13674,258 +13716,10 @@ Target = NearOther
 FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect,CanMirrorMove
 Description = Launches a volley of arrows at the target in rapid succession. They hit two to five times in a row.
-#-------------------------------
-[HIDDENPOWERNORMAL]
-Name = Hidden Power
-Type = NORMAL
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERFIRE]
-Name = Hidden Power
-Type = FIRE
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERWATER]
-Name = Hidden Power
-Type = WATER
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERGRASS]
-Name = Hidden Power
-Type = GRASS
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERELECTRIC]
-Name = Hidden Power
-Type = ELECTRIC
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERICE]
-Name = Hidden Power
-Type = ICE
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERPOISON]
-Name = Hidden Power
-Type = POISON
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERFIGHTING]
-Name = Hidden Power
-Type = FIGHTING
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERGROUND]
-Name = Hidden Power
-Type = GROUND
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERFLYING]
-Name = Hidden Power
-Type = FLYING
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERPSYCHIC]
-Name = Hidden Power
-Type = PSYCHIC
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERBUG]
-Name = Hidden Power
-Type = BUG
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERROCK]
-Name = Hidden Power
-Type = ROCK
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERGHOST]
-Name = Hidden Power
-Type = GHOST
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERDRAGON]
-Name = Hidden Power
-Type = DRAGON
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERSTEEL]
-Name = Hidden Power
-Type = STEEL
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERDARK]
-Name = Hidden Power
-Type = DARK
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERFAIRY]
-Name = Hidden Power
-Type = FAIRY
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERCOSMIC]
-Name = Hidden Power
-Type = COSMIC
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERSOUND]
-Name = Hidden Power
-Type = SOUND
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
-#-------------------------------
-[HIDDENPOWERLIGHT]
-Name = Hidden Power
-Type = LIGHT
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
+# Replaced with spike cannon
+
+# No one learns these yet
+
 #-------------------------------
 [PIDDLE]
 Name = Piddle
