@@ -5896,18 +5896,7 @@ Flags = CanProtect,CanMirrorMove
 Description = The user conjures up the past, transforming the target into their previous evolutionary form.
 Animation = TRANSFORM
 #-------------------------------
-[
-#-------------------------------
-[RATTLETAIL]
-Name = Rattle Tail
-Type = SOUND
-Category = Status
-Accuracy = 0
-TotalPP = 15
-Target = NearOther
-FunctionCode = LowerTargetDefSpDef1
-Flags = CanProtect,CanMirrorMove,Sound
-Description = The user rattles its tail, lowering target's Def and SpDef by 1.CHORD]
+[PULVERIZERCHORD]
 Name = Pulverizer Chord
 Type = GROUND
 Category = Special
