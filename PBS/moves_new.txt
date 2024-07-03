@@ -8791,3 +8791,15 @@ Flags = CanProtect,CanMirrorMove
 EffectChance = 20
 Description = The user whips up a hot desert twister to attack the target. It has a 20% chance to burn.
 # Needs the bomb tag
+#-------------------------------
+[COURTCHANGE]
+Name = Court Change
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 10
+Target = BothSides
+FunctionCode = Basic
+Flags = CanMirrorMove
+Description = With its mysterious power, the user swaps the effects on either side of the field.
+# Needs the code back
