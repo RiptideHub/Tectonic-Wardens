@@ -8803,3 +8803,51 @@ FunctionCode = Basic
 Flags = CanMirrorMove
 Description = With its mysterious power, the user swaps the effects on either side of the field.
 # Needs the code back
+#-------------------------------
+[SPIRITBARRAGE]
+Name = Spirit Barrage
+Type = GHOST
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = PowerBoostTargetMoved25Percent
+Flags = CanProtect,CanMirrorMove
+Description = The user sends spirits to attack. Deals 25% more damage if the target attacked first.
+#-------------------------------
+[GLEAMINGSPHERE]
+Name = Gleaming Sphere
+Type = LIGHT
+Category = Special
+Power = 90
+Accuracy = 0
+TotalPP = 20
+Target = Other
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,Pulse
+Description = The user looses a sphere of gleaming light from deep within its body. This move is certain to hit.
+#-------------------------------
+[DAZZLERS]
+Name = Dazzlers
+Type = LIGHT
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = LowerTargetAtk1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The user emits a powerful damaging flash. It has a 10% chance to lower Atk.
+#-------------------------------
+[FLASH]
+Name = Flash
+Type = LIGHT
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+Flags = CanProtect,CanMirrorMove
+Description = The user flashes a light at the target.

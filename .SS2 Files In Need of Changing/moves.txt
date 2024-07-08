@@ -7338,6 +7338,7 @@ Target = AllNearFoes
 FunctionCode = LowerTargetSpAtk2
 Flags = CanProtect,CanMirrorMove
 Description = The user captivates the target and harshly lowers its Sp. Atk stat.
+# Replaced with star dance
 #-------------------------------
 [COVET]
 Name = Covet
@@ -7350,6 +7351,7 @@ Target = NearOther
 FunctionCode = UserTakesTargetItem
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user endearingly approaches the target then steals the target's held item.
+# Replaced with glitter bomb or left alone
 #-------------------------------
 [DIZZYPUNCH]
 Name = Dizzy Punch
@@ -7363,6 +7365,7 @@ FunctionCode = ConfuseTarget
 Flags = Contact,CanProtect,CanMirrorMove,Punching
 EffectChance = 10
 Description = The target is hit with rhythmically launched punches that may also leave it confused.
+# Replaced with pixie punch or left alone
 #-------------------------------
 [DRAININGKISS]
 Name = Draining Kiss
@@ -7402,6 +7405,7 @@ Target = NearOther
 FunctionCode = LowerUserSpAtk2
 Flags = CanProtect,CanMirrorMove,CannotMetronome
 Description = The user unleashes a strong beam. The attack's recoil harshly lowers the user's Sp. Atk stat.
+# Fine
 #-------------------------------
 [HEARTSTAMP]
 Name = Heart Stamp
@@ -7415,6 +7419,7 @@ FunctionCode = FlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 30
 Description = The user lowers the target's guard and attacks. It may also cause flinching.
+# Deal with surgically
 #-------------------------------
 [LOVELYKISS]
 Name = Lovely Kiss
@@ -7426,6 +7431,7 @@ Target = NearOther
 FunctionCode = SleepTarget
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user tries to force a kiss on the target. If it suceeds the target falls asleep.
+# Replaed with pacify
 #-------------------------------
 [MISTBALL]
 Name = Mist Ball
@@ -7439,6 +7445,7 @@ FunctionCode = LowerTargetSpAtk1
 Flags = CanProtect,CanMirrorMove,Bomb
 EffectChance = 50
 Description = A mistlike flurry envelops and damages the target. It may also lower the target's Sp. Atk.
+# Replaced with psypierce
 #-------------------------------
 [PLAYROUGH]
 Name = Play Rough
@@ -7466,6 +7473,7 @@ FunctionCode = ConfuseTarget
 Flags = CanProtect,CanMirrorMove,ThawsUser
 EffectChance = 10
 Description = The user attacks the targets by emitting a dizzying steam. This may also confuse the target.
+# Fine
 #-------------------------------
 [SWEETKISS]
 Name = Sweet Kiss
@@ -7477,6 +7485,7 @@ Target = NearOther
 FunctionCode = ConfuseTarget
 Flags = CanProtect,CanMirrorMove
 Description = The user kisses the target with a sweet angelic cuteness that causes confusion.
+# Replaced with angel's kiss
 #-------------------------------
 [ARMTHRUST]
 Name = Arm Thrust
@@ -7553,6 +7562,7 @@ Target = NearOther
 FunctionCode = HitsTargetInSky
 Flags = Contact,CanProtect,CanMirrorMove,Punching
 Description = The user attacks the target with an uppercut thrown skyward with force.
+# Replaced with cross chop
 #-------------------------------
 [THUNDEROUSKICK]
 Name = Thunderous Kick
@@ -7566,6 +7576,7 @@ FunctionCode = ParalyzeTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 30
 Description = The user kicks the target with lightning-like movement. It may leave the target paralyzed.
+# Fine
 #-------------------------------
 [TRIPLEKICK]
 Name = Triple Kick
@@ -7578,6 +7589,7 @@ Target = NearOther
 FunctionCode = HitThreeTimesPowersUpWithEachHit
 Flags = Contact,CanProtect,CanMirrorMove
 Description = A consecutive three-kick attack that becomes more powerful with each successive hit.
+# Replaced with drop kick
 #-------------------------------
 [BLAZEKICK]
 Name = Blaze Kick
@@ -7630,6 +7642,7 @@ Target = AllNearFoes
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,ThawsUser,Bomb
 Description = The user attacks the foe with a bursting flame. This attack will never miss.
+# Replaced with fire pulse
 #-------------------------------
 [SACREDFIRE]
 Name = Sacred Fire
@@ -7643,6 +7656,7 @@ FunctionCode = BurnTarget
 Flags = CanProtect,CanMirrorMove,ThawsUser
 EffectChance = 50
 Description = The target is hit with a mystical fire. It may also leave the target with a burn.
+# Fine
 #-------------------------------
 [WILLOWISP]
 Name = Will-O-Wisp
@@ -7695,6 +7709,7 @@ FunctionCode = DisableTargetSoundMoves
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 100
 Description = A vortex of air hits the foe disrupting sound moves for 4 turns.
+# Replaced with dive bomb
 #-------------------------------
 [BOUNCE]
 Name = Bounce
@@ -7747,6 +7762,7 @@ Target = Other
 FunctionCode = HealUserByThreeQuartersOfDamageDone
 Flags = CanProtect,CanMirrorMove
 Description = The user absorbs its target's HP. The user's HP is restored by 75% of the damage dealt.
+# Replaced with air slash on swablu line
 #-------------------------------
 [PECK]
 Name = Peck
@@ -7788,6 +7804,7 @@ Priority = -4
 FunctionCode = DoublePowerIfUserLostHPThisTurn
 Flags = CanProtect,CanMirrorMove
 Description = Inflicts 2x damage if the user has been hurt by the foe in the same turn.
+# Added
 #-------------------------------
 [CONFUSERAY]
 Name = Confuse Ray
@@ -7811,6 +7828,7 @@ Target = NearOther
 FunctionCode = TrapTargetInBattle
 Flags = CanMirrorMove
 Description = The user pins the target with a dark arresting look. The target becomes unable to flee.
+# Fine
 #-------------------------------
 [MEMENTO]
 Name = Memento
@@ -7850,6 +7868,7 @@ FunctionCode = LowerTargetDefense1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 20
 Description = The user clobs the target with a spectral bone. Chance to lower the target's Defense.
+# Fine
 #-------------------------------
 [SHADOWCLAW]
 Name = Shadow Claw
@@ -7875,6 +7894,7 @@ Target = NearOther
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove,Punching
 Description = The user throws a punch from the shadows. The punch lands without fail.
+# Fine
 #-------------------------------
 [SPECTRALTHIEF]
 Name = Spectral Thief
@@ -7887,6 +7907,7 @@ Target = NearOther
 FunctionCode = UserStealTargetPositiveStatStages
 Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
 Description = The user hides in the target's shadow, steals the target's stat boosts, and then attacks.
+# Fine
 #-------------------------------
 [TRICKORTREAT]
 Name = Trick-or-Treat
@@ -7898,6 +7919,7 @@ Target = NearOther
 FunctionCode = AddGhostTypeToTarget
 Flags = CanProtect,CanMirrorMove
 Description = The user takes the target trick-or-treating. This adds Ghost type to the target's type.
+# Fine
 #-------------------------------
 [BULLETSEED]
 Name = Bullet Seed
@@ -7922,6 +7944,7 @@ Target = NearOther
 FunctionCode = HealTargetDependingOnGrassyTerrain
 Flags = CanProtect
 Description = The user restores the target's HP by 50%. It restores more HP when the terrain is grass.
+# Fine
 #-------------------------------
 [FLOWERSHIELD]
 Name = Flower Shield
@@ -7932,6 +7955,7 @@ TotalPP = 10
 Target = AllBattlers
 FunctionCode = RaiseGrassBattlersDef1
 Description = The user raises the Defense stats of all Grass-type Pokémon in battle with a mysterious power.
+# Replaced with stand together
 #-------------------------------
 [FORESTSCURSE]
 Name = Forest's Curse
@@ -7943,6 +7967,7 @@ Target = NearOther
 FunctionCode = AddGrassTypeToTarget
 Flags = CanProtect,CanMirrorMove
 Description = The user puts a forest curse on the target. The target is now Grass type as well.
+# Fine
 #-------------------------------
 [GROWTH]
 Name = Growth
@@ -8030,6 +8055,7 @@ Target = NearOther
 FunctionCode = SleepTarget
 Flags = CanProtect,CanMirrorMove,Powder
 Description = The user scatters a big cloud of sleep-inducing dust around the target.
+# Replaced with puffball
 #-------------------------------
 [SWEETSCENT]
 Name = Sweet Scent
@@ -8041,6 +8067,7 @@ Target = AllNearFoes
 FunctionCode = LowerTargetEvasion2
 Flags = CanProtect,CanMirrorMove
 Description = A sweet scent that lowers the foe's evasiveness.
+# Replaced with aromatic mist
 #-------------------------------
 [TROPKICK]
 Name = Trop Kick
@@ -8054,6 +8081,7 @@ FunctionCode = LowerTargetAttack1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user lands an intense tropical kick on the target. This also lowers the target's Attack stat.
+# Fine
 #-------------------------------
 [BONECLUB]
 Name = Bone Club
@@ -8067,6 +8095,7 @@ FunctionCode = FlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 30
 Description = The user clubs the target with a bone. It may also make the target flinch.
+# Fine
 #-------------------------------
 [BONERUSH]
 Name = Bone Rush
@@ -8079,6 +8108,7 @@ Target = NearOther
 FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect,CanMirrorMove
 Description = The user strikes the target with a hard bone two to five times in a row.
+# Fine
 #-------------------------------
 [DIG]
 Name = Dig
@@ -8117,6 +8147,7 @@ Target = NearOther
 FunctionCode = OHKO
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user stabs the foe with a horn that rotates like a drill. If it hits the target faints instantly.
+# Nothing has it
 #-------------------------------
 [MUDSLAP]
 Name = Mud-Slap
@@ -8130,6 +8161,7 @@ FunctionCode = LowerTargetSpeed1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
 Description = The user hurls mud in the target's face to inflict damage. This may lower the target's Speed.
+# Replaced with mud sling
 #-------------------------------
 [STEAMROLLER]
 Name = Steamroller
@@ -8156,6 +8188,7 @@ Target = NearOther
 FunctionCode = MultiTurnAttackPowersUpEachTurn
 Flags = Contact,CanProtect,CanMirrorMove,Bomb
 Description = The user continually rolls into the target over five turns. It becomes stronger each time it hits.
+# Replaced with snowball
 #-------------------------------
 [ICICLECRASH]
 Name = Icicle Crash
@@ -8195,6 +8228,7 @@ Target = Other
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,Pulse,Bomb
 Description = The user looses a blast of aura power from deep within its body. This move is certain to hit.
+# Renamed Gleaming Sphere
 #-------------------------------
 [AURAWHEEL]
 Name = Aura Wheel
@@ -8207,6 +8241,7 @@ Target = NearOther
 FunctionCode = TypeDependsOnUserMorpekoFormRaiseUserSpeed1
 Flags = CanProtect,CanMirrorMove
 Description = The user combines light and dark energy and fires it at the user. This move is Light and Dark type.
+# Not on anything
 #-------------------------------
 [AURORABEAM]
 Name = Aurora Beam
@@ -8244,6 +8279,7 @@ Target = AllNearFoes
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove
 Description = The user damages foes by blinding them with a powerful flash.
+# Renamed Dazzlers
 #-------------------------------
 [EXTREMESPEED]
 Name = Extreme Speed
@@ -8271,6 +8307,7 @@ FunctionCode = LowerTargetAccuracy1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 20
 Description = The user flashes a light that cuts the target's accuracy.
+# Added
 #-------------------------------
 [FLASHCANNON]
 Name = Flash Cannon
