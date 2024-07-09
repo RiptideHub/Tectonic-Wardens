@@ -8851,3 +8851,92 @@ TotalPP = 20
 Target = NearOther
 Flags = CanProtect,CanMirrorMove
 Description = The user flashes a light at the target.
+#-------------------------------
+[FLASHBLINDER]
+Name = Flash Blinder
+Type = LIGHT
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetSpDef2
+Flags = CanProtect,CanMirrorMove,Pulse
+EffectChance = 20
+Description = The user gathers all its light energy and releases it at once. It has a 20% chance to lower Sp. Def.
+#-------------------------------
+[MIRRORSHOT]
+Name = Mirror Shot
+Type = LIGHT
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetSpDef1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The user looses a flash of energy from its polished body. It has a 30% chance to lower Sp. Def.
+#-------------------------------
+[EXPOSINGBEAM]
+Name = Exposing Beam
+Type = LIGHT
+Category = Special
+Power = 75
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = LowerUserDefSpDef2
+Flags = CanProtect,CanMirrorMove
+Description = The user lights itself up to attack. This lowers the user's defensive stats by two steps each.
+#-------------------------------
+[PETRIFYINGGLARE]
+Name = Petrifying Glare
+Type = ROCK
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Frostbite
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The user glares at the target. It has a 10% chance to frostbite.
+#-------------------------------
+[ARCTICPARASITE]
+Name = Arctic Parasite
+Type = BUG
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Frostbite
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = Summons a swarm of icy bugs that engulf the foe. It has a 10% chance to frostbite.
+#-------------------------------
+[BUTTERFLYKISS]
+Name = Butterfly Kiss
+Type = BUG
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect,CanMirrorMove
+Description = Rapidly drains body fluids from the target with a kiss. The user's HP is restored by half the damage taken by the target.
+#-------------------------------
+[DRAGONFLYCHARGE]
+Name = Dragonfly Charge
+Type = BUG
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+Priority = 2
+FunctionCode = RecoilQuarterOfDamageDealt
+Flags = CanProtect,CanMirrorMove
+Description = The user rams into the foe. This attack always goes before any other move. The user also takes 25% recoil.
