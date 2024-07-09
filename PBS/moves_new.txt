@@ -8468,7 +8468,6 @@ FunctionCode = DoubleDamageAvengingFaint
 Flags = CanProtect,CanMirrorMove
 Description = Gets revenge for a fainted ally. If an ally fainted in the last turn, this attack's damage increases.
 # Need bomb tag
-# Saharicane's signature
 #-------------------------------
 [SATELLITERAY]
 Name = Satellite Ray
@@ -8940,3 +8939,4 @@ Priority = 2
 FunctionCode = RecoilQuarterOfDamageDealt
 Flags = CanProtect,CanMirrorMove
 Description = The user rams into the foe. This attack always goes before any other move. The user also takes 25% recoil.
+# Yanma's signature
