@@ -782,19 +782,6 @@ Flags = CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user hurls mud in the target's face to inflict damage and lower its accuracy.
 #-------------------------------
-[MUDBOMB]
-Name = Mud Bomb
-Type = GROUND
-Category = Special
-Power = 65
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = Invalid
-Flags = CanProtect,CanMirrorMove
-EffectChance = 30
-Description = The user launches a hard-packed mud ball to attack. It has a 30% chance to lower accuracy.
-#-------------------------------
 [SANDATTACK]
 Name = Sand Attack
 Type = GROUND
@@ -805,17 +792,6 @@ Target = NearOther
 FunctionCode = Invalid
 Flags = CanProtect,CanMagicCoat,CanMirrorMove
 Description = Sand is hurled in the target's face, reducing its accuracy.
-#-------------------------------
-[FLASH]
-Name = Flash
-Type = NORMAL
-Category = Status
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = Invalid
-Flags = CanProtect,CanMagicCoat,CanMirrorMove
-Description = The user flashes a light that cuts the target's accuracy. It can also be used to illuminate caves.
 #-------------------------------
 [SMOKESCREEN]
 Name = Smokescreen
@@ -877,19 +853,6 @@ FunctionCode = Invalid
 Flags = CanProtect,CanMirrorMove
 EffectChance = 50
 Description = The user attacks its foe by encircling it in sharp leaves. It has a 50% chance to lower accuracy.
-#-------------------------------
-[MIRRORSHOT]
-Name = Mirror Shot
-Type = STEEL
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = Invalid
-Flags = CanProtect,CanMirrorMove
-EffectChance = 30
-Description = The user looses a flash of energy from its polished body. It has a 30% chance to lower accuracy.
 #-------------------------------
 [NIGHTDAZE]
 Name = Night Daze
@@ -1210,19 +1173,6 @@ FunctionCode = Invalid
 Flags = CanProtect,CanMirrorMove
 EffectChance = 100
 Description = Inflicts damage by dropping an apple from high above. Lowers the target's Defense stat.
-#-------------------------------
-[APPLEACID]
-Name = Apple Acid
-Type = GRASS
-Category = Special
-Power = 80
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = Invalid
-Flags = CanProtect,CanMirrorMove
-EffectChance = 100
-Description = Attacks with an acidic liquid created from tart apples. Lowers the target's Sp. Def stat.
 #-------------------------------
 [SWEETSCENT]
 Name = Sweet Scent
@@ -1789,17 +1739,6 @@ Target = AllNearOthers
 FunctionCode = Invalid
 Flags = CanProtect,CanMagicCoat,CanMirrorMove
 Description = Darkness rolls over the field, damaging all other Pokémon, ending weather, and healing statuses.
-#-------------------------------
-[COURTCHANGE]
-Name = Court Change
-Type = NORMAL
-Category = Status
-Accuracy = 100
-TotalPP = 10
-Target = BothSides
-FunctionCode = Invalid
-Flags = CanMirrorMove
-Description = With its mysterious power, the user swaps the effects on either side of the field.
 #-------------------------------
 [AURAWHEEL]
 Name = Aura Wheel

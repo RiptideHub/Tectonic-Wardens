@@ -34,7 +34,7 @@ Power = 115
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
-FunctionCode = UserLosesTenthOfTotalHP
+FunctionCode = Basic
 Flags = CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user uses explosive force to shoot shards of its own body at the target. The user loses a tenth of its max HP.
@@ -1782,19 +1782,6 @@ FunctionCode = TwoTurnAttackInvulnerableInSky
 Flags = CanProtect,CanMirrorMove
 Description = The user soars up high, then strikes on the second turn by dive bombing the target.
 Animation = FLY
-#-------------------------------
-[QUICKATTACK]
-Name = Quick Attack
-Type = NORMAL
-Category = Physical
-Power = 40
-Accuracy = 100
-TotalPP = 25
-Target = NearOther
-Priority = 1
-FunctionCode = Basic
-Flags = CanProtect,CanMirrorMove
-Description = The user lunges at the target at a speed that makes it almost invisible. It is sure to strike first.
 #-------------------------------
 [STRAFE]
 Name = Strafe
@@ -3900,20 +3887,7 @@ FunctionCode = TrashTreasure
 Flags = CanProtect,CanMagicCoat,CanMirrorMove
 Description = The target is given a Black Sludge, replacing their item if any. Their Sp. Def is lowered.
 #-------------------------------
-[
-#-------------------------------
-[IRONHEAD]
-Name = Iron Head
-Type = STEEL
-Category = Physical
-Power = 80
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = Flinch
-Flags = CanProtect,CanMirrorMove
-EffectChance = 40
-Description = The foe slams the target with its steel-hard head. It has a 40% chance to make the target flinch.EST]
+[PETALTEMPEST]
 Name = Petal Tempest
 Type = GRASS
 Category = Special
@@ -6922,8 +6896,8 @@ Flags = CanProtect,CanMirrorMove
 EffectChance = 20
 Description = The opposing team is engulfed in a sea of stardust. It has a 20% chance to dizzy.
 #-------------------------------
-[STARFALL]
-Name = Starfall
+[STARSHINE]
+Name = Star Shine
 Type = COSMIC
 Category = Special
 Power = 60
@@ -7067,8 +7041,8 @@ FunctionCode = Basic
 Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
 Description = The user shoots gamma radiation at the target. High Crit ratio.
 #-------------------------------
-[ASTRALBARRAGE]
-Name = Astral Barrage
+[ASTRALACCRETION]
+Name = Astral Accretion
 Type = COSMIC
 Category = Special
 Power = 70
@@ -7357,9 +7331,9 @@ Category = Status
 Accuracy = 0
 TotalPP = 12
 Target = NearAlly
-FunctionCode = RaiseTargetAtkSpAtk2
+FunctionCode = RaiseTargetAtkSpAtk5
 Description = The user decorates the target, raising their Attack and Sp. Atk by 2 steps each.
-# Idk how to make this work
+# Idk how to make the original work
 #-------------------------------
 [BRUTEFORCE]
 Name = Brute Force
@@ -7405,7 +7379,7 @@ Power = 80
 Accuracy = 100
 TotalPP = 10
 Target = AllNearFoes
-FunctionCode = LowerTargetSpeed2
+FunctionCode = LowerTargetSpd2
 Flags = CanProtect,CanMirrorMove,Wind
 EffectChance = 20
 Description = Sweeps the air towards all foes. It has a 20% chance to lower Speed by 2.
@@ -7503,7 +7477,7 @@ Power = 50
 Accuracy = 100
 TotalPP = 25
 Target = NearOther
-FunctionCode = RaiseUserSpeed1
+FunctionCode = RaiseUserSpd1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user swoops down on the target and then raises its Speed stat.
@@ -7663,7 +7637,7 @@ Power = 100
 Accuracy = 50
 TotalPP = 5
 Target = NearOther
-FunctionCode = Frosbite
+FunctionCode = Frostbite
 Flags = CanProtect,CanMirrorMove
 EffectChance = 100
 Description = The user creates a spear to puncture the target. It leaves the target with frostbite.
@@ -8057,9 +8031,10 @@ Power = 50
 Accuracy = 100
 TotalPP = 20
 Target = NearOther
-FunctionCode = RaiseUserSpatk5IfTargetFaints
+FunctionCode = RaiseUserAttack5IfTargetFaints
 Flags = CanProtect,CanMirrorMove
 Description = When the user knocks out a target with this move, the user's Attack stat rises by five steps.
+# Make it spatk oops
 #-------------------------------
 [PYROKINESIS]
 Name = Pyrokinesis
@@ -8201,7 +8176,8 @@ Category = Status
 Accuracy = 0
 TotalPP = 10
 Target = NearOther
-FunctionCode = LowerTargetSpAtkSpDef1
+FunctionCode = Basic
+#FunctionCode = LowerTargetSpAtkSpDef1
 Flags = CanProtect,CanMirrorMove,Sound
 Description = Annoys the target with mundane chatter. Lowers SpAtk and SpDef by one stage.
 #-------------------------------
@@ -8239,10 +8215,10 @@ Power = 40
 Accuracy = 100
 TotalPP = 20
 Target = NearOther
-FunctionCode = RaiseUserAttack1
+FunctionCode = RaiseUserAttack2
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 30
-Description = The user amplifies its cry towards the target. It has a 30% chance to increase Atk.
+Description = The user amplifies its cry towards the target. It has a 30% chance to increase Attack by 2 steps.
 #-------------------------------
 [NOISEPOLLUTION]
 Name = Noise Pollution
@@ -8338,7 +8314,7 @@ Accuracy = 100
 TotalPP = 30
 Target = NearOther
 Priority = 1
-FunctionCode = None
+FunctionCode = Basic
 Flags = Contact,CanProtect,CanMirrorMove,Punching,Sound
 Description = The user throws a punch that breaks the speed of sound. It is certain to strike first.
 #-------------------------------
@@ -8376,7 +8352,7 @@ Power = 60
 Accuracy = 0
 TotalPP = 20
 Target = AllNearFoes
-FunctionCode = None
+FunctionCode = Basic
 Flags = CanProtect,CanMirrorMove,Sound
 Description = The user attacks the enemy foe with a blast of sound. This attack will never miss.
 # Needs bomb tag
@@ -8389,7 +8365,7 @@ Power = 55
 Accuracy = 100
 TotalPP = 20
 Target = NearOther
-FunctionCode = LowerTargetDefense2
+FunctionCode = LowerTargetDef2
 Flags = Contact,CanProtect,CanMirrorMove,Sound
 EffectChance = 100
 Description = The user aims for the target's hearing, lowering its Defense by two steps if it hits.
@@ -8414,10 +8390,10 @@ Power = 115
 Accuracy = 80
 TotalPP = 5
 Target = NearOther
-FunctionCode = Paralyze
+FunctionCode = Numb
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
-Description = The user crafts shiny metal that reflects bright light onto the target. It has a 10% chance to cause paralysis.
+Description = The user crafts shiny metal that reflects bright light onto the target. It has a 10% chance to cause numb.
 #-------------------------------
 [MAGNETICCANNON]
 Name = Magnetic Cannon
@@ -8515,7 +8491,8 @@ Category = Status
 Accuracy = 0
 TotalPP = 25
 Target = User
-FunctionCode = RaiseUserAtkSpAtk2Spd2
+FunctionCode = RaiseUserAtk2Spd1
+#FunctionCode = RaiseUserAtkSpAtk2Spd2
 Flags = CanSnatch
 Description = The user is roused, raising its Attack, Sp. Atk, and Speed by two steps each.
 #-------------------------------
@@ -8548,7 +8525,7 @@ Description = The user forces the target to switch out, to be replaced at random
 #-------------------------------
 [SOUNDBARRIER]
 Name = Sound Barrier
-Type = SOUND
+Type = NORMAL
 Category = Special
 Power = 80
 Accuracy = 100
@@ -8578,7 +8555,8 @@ Category = Status
 Accuracy = 0
 TotalPP = 15
 Target = NearOther
-FunctionCode = LowerTargetDefSpDef1
+FunctionCode = LowerTargetDef2
+#FunctionCode = LowerTargetDefSpDef1
 Flags = CanProtect,CanMirrorMove,Sound
 Description = The user rattles its tail, lowering target's Def and SpDef by 1.
 # Don't know if this will work
@@ -8667,7 +8645,7 @@ Category = Special
 Power = 80
 Accuracy = 100
 TotalPP = 10
-Target = NearOthers
+Target = NearOther
 FunctionCode = Burn
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
@@ -8747,7 +8725,7 @@ Power = 80
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
-FunctionCode = LowerTargetDefense2
+FunctionCode = LowerTargetDef1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 20
 Description = The user strikes the target with sacred power. It has a 20% chance to lower the target's Defense stat by 2 steps.
@@ -8823,7 +8801,7 @@ Power = 90
 Accuracy = 0
 TotalPP = 20
 Target = Other
-FunctionCode = None
+FunctionCode = Basic
 Flags = CanProtect,CanMirrorMove,Pulse
 Description = The user looses a sphere of gleaming light from deep within its body. This move is certain to hit.
 #-------------------------------
