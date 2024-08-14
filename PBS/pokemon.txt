@@ -33785,11 +33785,11 @@ BattlerEnemyX = 0
 BattlerEnemyY = 16
 BattlerShadowX = 0
 BattlerShadowSize = 2
-Evolutions = ODIRGEER,Level,25
+Evolutions = OHAUNTER,Level,25
 #-------------------------------
 [2539]
-Name = O.DIRGEer
-InternalName = ODIRGEER
+Name = O.Haunter
+InternalName = OHAUNTER
 Type1 = ICE
 Type2 = FLYING
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
