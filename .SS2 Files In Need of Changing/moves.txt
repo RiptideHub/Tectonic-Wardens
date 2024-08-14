@@ -2877,7 +2877,7 @@ Target = NearOther
 FunctionCode = HealUserByHalfOfDamageDone
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user drains the foe's energy with its horn or tusks. The user's HP is restored by 50%.
-# Fine
+# Replaced with Root Driver
 #-------------------------------
 [LEAFTORNADO]
 Name = Leaf Tornado
@@ -13808,6 +13808,7 @@ Target = AllNearOthers
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user channels the power of the cosmos in a wild rage that attacks everything around it.
+# Added
 #-------------------------------
 [RADIOWAVES]
 Name = Radio Waves

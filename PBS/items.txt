@@ -4460,10 +4460,6 @@ Pocket = 5
 Price = 1000
 Description = A gleaming feather that boosts the holder's Fairy-type moves by 20%.
 #-------------------------------
-
-# Soulstones 2 New Items
-
-#-------------------------------
 [LINKSTONE]
 Name = Link Stone
 NamePlural = Link Stones
