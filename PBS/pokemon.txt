@@ -52996,6 +52996,7 @@ BattlerEnemyX = 0
 BattlerEnemyY = 17
 BattlerShadowX = 0
 BattlerShadowSize = 2
+Evolutions = OLOCHORANK, Level, 40
 #-------------------------------
 [3109]
 Name = O.Smoochum
@@ -53569,6 +53570,7 @@ BattlerEnemyX = 0
 BattlerEnemyY = 8
 BattlerShadowX = 0
 BattlerShadowSize = 2
+Evolutions = OMISHOGAN,Item,DAWNSTONE
 #-------------------------------
 [3126]
 Name = O.Poliwag
@@ -60029,8 +60031,8 @@ BattlerShadowX = 0
 BattlerShadowSize = 2
 #-------------------------------
 [3317]
-Name = O.Dodrio
-InternalName = ODODRIO_1
+Name = O.Docinco
+InternalName = ODOCINCO
 Type1 = COSMIC
 Type2 = FLYING
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -60097,8 +60099,8 @@ BattlerShadowX = 0
 BattlerShadowSize = 2
 #-------------------------------
 [3319]
-Name = O.Starmie
-InternalName = OSTARMIE_1
+Name = O.Starus
+InternalName = OSTARUS
 Type1 = COSMIC
 Type2 = ROCK
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -60302,8 +60304,8 @@ BattlerShadowX = 0
 BattlerShadowSize = 2
 #-------------------------------
 [3325]
-Name = O.Rapidash
-InternalName = ORAPIDASH_1
+Name = O.Unidash
+InternalName = UNIDASH
 Type1 = GHOST
 Type2 = FIRE
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -60641,8 +60643,8 @@ BattlerShadowX = 0
 BattlerShadowSize = 2
 #-------------------------------
 [3335]
-Name = O.Glalie
-InternalName = OGLALIE_1
+Name = O.Glacegiri
+InternalName = OGLACEGIRI
 Type1 = GHOST
 Type2 = DARK
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -60675,8 +60677,8 @@ BattlerShadowX = 0
 BattlerShadowSize = 2
 #-------------------------------
 [3336]
-Name = O.Froslass
-InternalName = OFROSLASS_1
+Name = O.Yukimono
+InternalName = OYUKIMONO
 Type1 = GHOST
 Type2 = FLYING
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -60845,8 +60847,8 @@ BattlerShadowX = 0
 BattlerShadowSize = 2
 #-------------------------------
 [3341]
-Name = O.Hippowdon
-InternalName = OHIPPOWDON_1
+Name = O.Hippodune
+InternalName = OHIPPODUNE
 Type1 = GRASS
 Type2 = WATER
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -61083,8 +61085,8 @@ BattlerShadowX = 0
 BattlerShadowSize = 2
 #-------------------------------
 [3348]
-Name = O.Butterfree
-InternalName = OBUTTERFREE_1
+Name = O.Papellumen
+InternalName = OPAPELLUMEN
 Type1 = BUG
 Type2 = FAIRY
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -61973,8 +61975,8 @@ BattlerShadowX = 0
 BattlerShadowSize = 2
 #-------------------------------
 [3374]
-Name = O.Cornifear
-InternalName = OCORNIFEAR
+Name = O.Conifear
+InternalName = OCONIFEAR
 Type1 = GRASS
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 90,102,115,70,102,115
@@ -62044,8 +62046,8 @@ BattlerShadowX = 0
 BattlerShadowSize = 2
 #-------------------------------
 [3376]
-Name = O.Garbodor
-InternalName = OGARBODOR_1
+Name = O.Donster
+InternalName = ODONSTER
 Type1 = ELECTRIC
 Type2 = POISON
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -62146,7 +62148,7 @@ BattlerShadowX = 0
 BattlerShadowSize = 2
 #-------------------------------
 [3379]
-Name = O.Veilvueran2
+Name = T.Veilvueran
 InternalName = OVEILVUERAN2
 Type1 = GRASS
 Type2 = FLYING
